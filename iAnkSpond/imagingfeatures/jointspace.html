@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Joint Space</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/swiper.css">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="open-menu closed">
+				<i class="fa fa-bars"></i>
+			</div>
+			<nav>
+				<a href="../introduction.html">Introduction</a>
+				<a href="../radiographicbasics.html">Radiographic Basics</a>
+				<a href="../imaginganatomy.html">Imaging Anatomy</a>
+				<a href="../imagingfeatures.html" class="current">Imaging Features</a>
+				<a href="../approach.html">Radiographic Interpretation</a>
+				<a href="../diagnosis.html">Clinical Diagnosis</a>
+				<a href="../arthritides.html">The Arthitides</a>
+				<a href="../cases.html">Cases</a>
+			</nav>
+			
+			<h1>Key Imaging Features - Joint Space</h1>
+		</header>
+
+		<article>
+			<div class="swiper-container">
+	        	<div class="swiper-wrapper">
+					
+					<div class="swiper-slide">
+						<section class="header">
+							<h2>Joint Space</h2>
+						</section>
+						<section>
+							<ul>
+								<li>In synovial joints, the congruent bony surfaces are lined with articular cartilage</li>
+								<li>The <b>joint space</b> seen radiographically represents the two layers of radiolucent articular cartilage between the articulating bones</li>
+								<li>Narrowing of this space is due to cartilage destruction</li>
+								<li>Uniform/symmetrical narrowing may be across the joint space and is typical of an inflammatory arthritis.</li>
+								<li>Concentric/asymmetric narrowing is typical of degenerative joint disease.</li>
+								<li>In contrast joint space widening is secondary to occupation of  and expansion of the joint space due to effusion (simple, inflammatory, infective/pus, hemorrhagic) and/or synovial proliferation. </li>
+
+							</ul>
+
+								<div class="flex-container" style="display: -webkit-flex; display: flex;">
+	                                <div class="image-block" style="width:26%; ">
+	                                    <img src="../images/jointspace/jspace1.jpg">
+	                                    <div class="text">
+	                                        <p>Normal joint space</p>
+	                                    </div>
+	                                </div>
+
+	                                <div class="image-block" style="width:26%; ">
+	                                    <img src="../images/jointspace/jspace2.jpg">
+	                                    <div class="text">
+	                                        <p> Non-uniform Joint space narrowing (Osteoarthritis)</p>
+	                                    </div>
+	                                </div>
+
+	                                <div class="image-block" style="width:31%; ">
+	                                    <img src="../images/jointspace/jspace3.jpg">
+	                                    <div class="text">
+	                                      	<p>Uniform joint space loss with multiple marginal erosions (Rheumatoid Arthritis)</p>  
+	                                    </div>
+	                                </div>
+	                            </div>
+
+	                            <div class="flex-container" style="display: -webkit-flex; display: flex;">
+	                                <div class="image-block" style="width:40%; ">
+	                                    <img src="../images/jointspace/jspace4.jpg">
+	                                    <div class="text">
+	                                        <p>Widened joint space in a patient with rheumatoid arthritis. Note marginal erosion of the 2nd MCPJ (arrow) and soft tissue swelling. The joint space is widened when compared to the normal third MCPJ in keeping with joint effusion and/or synovitis.</p>
+	                                    </div>
+	                                </div>
+	                            </div>
+
+
+
+							
+						</section>
+
+					</div>
+
+
+
+
+
+
+					
+				</div>
+
+				<div class="swiper-button-prev swiper-button-black"></div>
+	    		<div class="swiper-button-next swiper-button-black"></div>
+
+				<div class="swiper-pagination"></div>
+			
+			</div>
+
+		</article>
+
+		<footer>
+			<nav>
+				<a href="../introduction.html">Introduction</a>
+				<a href="../radiographicbasics.html">Radiographic Basics</a>
+				<a href="../imaginganatomy.html">Imaging Anatomy</a>
+				<a href="../imagingfeatures.html" class="current">Imaging Features</a>
+				<a href="../approach.html">Radiographic Interpretation</a>
+				<a href="../diagnosis.html">Clinical Diagnosis</a>
+				<a href="../arthritides.html">The Arthitides</a>
+				<a href="../cases.html">Cases</a>
+			</nav>
+		</footer>
+	</div>
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script>
+	$( ".open-menu" ).click(function() {
+	  $( this ).toggleClass( "closed" );
+	});
+
+	var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        keyboardControl: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+    });
+</script>
+
