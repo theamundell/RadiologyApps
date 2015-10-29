@@ -1,0 +1,192 @@
+/* Specific Css */
+
+body{
+	-webkit-font-smoothing:antialiased;
+}
+p, 
+li{
+	font-size:16px;
+	line-height:1.4
+}
+ul{
+	padding-left:20px
+}
+li{
+	margin-bottom:10px;
+}
+.clearfix:after{
+	content:'';
+	display:none;
+	clear:both;
+}
+.page-content{
+	margin:40px;
+}
+.page-content.no-padding{
+	margin:0px;
+}
+.mdl-layout__header{
+	background:rgb(40,40,40);
+	min-height:5vh;
+}
+.dark-back {
+	background:rgb(40,40,40);
+	color:rgb(245,245,245);	
+}
+.dark-back h2, 
+.dark-back h3,
+.dark-back h4{
+	color:#fff;
+	margin:10px 0;
+}
+.dark-back h3 span{
+	font-weight:100;
+	font-size:24px;
+}
+
+@media (max-width: 1024px){
+	.mdl-layout__drawer-button{
+		color:#fff;
+	}
+}
+.mdl-button{
+	width:auto;
+	display: table;
+    margin: 0 auto;
+}
+
+.card-wrapper:after{
+	content:'';
+	display:none;
+	clear:both;
+}
+.card-wrapper .mdl-card{
+	float:left;
+	margin: 0 auto;
+	width:33.400%;
+	border-radius: 0px;
+}
+.card-wrapper .mdl-card__title{
+	height:31.800vh;
+}
+.card-wrapper .mdl-card__title-text{
+	z-index:5;
+}
+.card-wrapper .mdl-card__title.blue-overlay:after{
+	content:'';
+	display:block;
+	background: rgba(68,138,255,.8);
+	width:100%;
+	height: 31.800vh;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom:0px;
+	transition:all .25s;
+	-webkit-transition-delay:all;
+	-webkit-transition-delay:background .25s;
+    transition-delay: .25s;
+    box-sizing:border-box;
+    box-shadow:inset 0px 0px 3px 0px rgba(0, 0, 0, .05);
+    z-index:2;
+}
+@media (max-width: 1024px){
+	.card-wrapper .mdl-card__title,
+	.card-wrapper .mdl-card__title.blue-overlay:after{
+		height:33.400vh;
+	}
+}
+.card-wrapper .mdl-card__title:hover:after{
+	background: rgba(0,0,0,.4);
+	cursor:pointer;
+	box-shadow:inset 0px 0px 100px rgba(0, 0, 0, .5);
+}
+.card-wrapper2 .mdl-card{
+	margin-bottom:20px;
+	height:250px;
+}
+.grid-sizer { width: 25%; }
+
+.mdl-button{
+	text-decoration: none;
+}
+a.no-color{
+	color:rgba(0, 0, 0, 0);
+}
+.card-wrapper.index-page .grid-sizer{
+	width:33.333%;
+}
+.card-wrapper.index-page .mdl-card.demo-card-square{
+	width:33.343%;
+}
+.demo-card-image{
+	width:22%;
+}
+.grid-sizer-33{
+	width:33%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: auto;
+} 
+
+.swiper-slide{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:100%;
+	height:auto;
+	box-sizing:border-box;
+}
+
+.padding{
+	padding:10px 80px;
+	display:flex;
+	flex-direction:column;
+	width:100%;
+}
+.margin-top{
+	margin-top:20px;
+}
+
+.center{
+	text-align:center;
+}
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link.mdl-navigation__link.sub-nav-item{
+	padding:0px 40px 10px 20px;
+	border-left:2px solid #e0e0e0;
+	margin-left:40px;
+}
+.image-left {
+	float:left;
+	width:300px;
+}
+.image-left .mdl-card{
+	width:90%;
+	margin-bottom:10px;
+}
+.image-left .mdl-card__title{
+	height:100px;
+}
+.open-supporting-text{
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	padding:10px;
+	transition:opacity .25s;
+	transition:right .1s;
+}
+.open-supporting-text:hover{
+	opacity:0;
+	right:0px;
+	cursor:pointer;
+}
+.mdl-card__supporting-text{
+	display:none;
+}
+.open-supporting-text:hover + .mdl-card__supporting-text{
+	display:block;
+}

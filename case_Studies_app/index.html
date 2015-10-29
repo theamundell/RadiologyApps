@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Index</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
+
+    <!-- MDL -->
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue_grey-blue.min.css" /> 
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <style type="text/css">
+        #wrapper {
+            width: 500px;
+            margin: 150px auto 0; 
+        }
+        /* Apply a pointer cursor and style the background upon hover to indicate <summary> is a clickable element. */
+        /* These styles can be applied regardless of whether the fallback is needed */
+        summary { cursor: pointer; }
+
+        /* The following styles are not really needed, since the jQuery script takes care of hiding/displaying the elements. */
+        /* However, we’re still gonna use CSS as well to prevent FOUC in browsers that understand these selectors. */
+        /* Remember: by default (and probably most of the time), the contents of the <details> element are hidden. */
+        .no-details details > * { display: none; }
+        /* This doesn’t work very well in Firefox 3.6.x */
+        /* .no-details details[open] > * { display: block; } */
+        /* The following doesn’t toggle correctly in WebKit:
+        .no-details details > summary:before { content: '► '; }
+        .no-details details[open] > summary:before { content: '▼ '; }
+        */
+        /* And yes, it should really be ::before, but that doesn’t work in IE8 */
+        .no-details details > summary:before { float: left; width: 30px; content: '► '; }
+        .no-details details.open > summary:before { content: '▼ '; }
+        /* For IE6 and IE7, who don’t support generated content, you could use padding-left + a background image instead */
+        /* I really couldn’t be bothered though. */
+        /*
+        .no-details details > summary { padding-left: 20px; background: url(img/arrow-sprite.png) no-repeat 0 0; }
+        .no-details details.open > summary { background-position: 0 -20px; }
+        */
+        /* Make sure summary remains visible */
+        .no-details details summary { display: block; }
+    </style>
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout dark-back" id="temp">
+        <header class="mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Case Studies Index</span>
+            </div>
+        </header>
+
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Table of Contents</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link current" href="index.html">Index</a>
+                <a class="mdl-navigation__link" href="section1.html">Section 1</a>
+                <a class="mdl-navigation__link" href="section2.html">Section 2</a>
+                <a class="mdl-navigation__link" href="section3.html">Section 3</a>
+                <a class="mdl-navigation__link" href="section4.html">Section 4</a>
+                <a class="mdl-navigation__link" href="javascript:randomcase()">Random Case</a>
+            </nav>
+        </div>
+
+        <article class="mdl-layout__content" >
+
+            <section class="header">
+                <h2>Spot cases - Section 1</h2>
+            </section>
+
+            <section>
+                <table>
+
+
+                    <tr><td class="left">Sec 1.1</td><td class="right"><a href="section1.html#1">Achilles tendon thickening</a></td></tr>
+                    <tr><td class="left">Sec 1.2</td><td class="right"><a href="section1.html#2">Subchondral Insufficency fracture</a></td></tr>
+                    <tr><td class="left">Sec 1.3</td><td class="right"><a href="section1.html#3">AVN Hip</a></td></tr>
+                    <tr><td class="left">Sec 1.4</td><td class="right"><a href="section1.html#4">Grade 1 SII</a></td></tr>
+                    <tr><td class="left">Sec 1.5</td><td class="right"><a href="section1.html#5">Gout</a></td></tr>
+                    <tr><td class="left">Sec 1.6</td><td class="right"><a href="section1.html#6">JIA SH</a></td></tr>
+                    <tr><td class="left">Sec 1.7</td><td class="right"><a href="section1.html#7">Paget's with humeral fracture </a></td></tr>
+                    <tr><td class="left">Sec 1.8</td><td class="right"><a href="section1.html#8">PsA Feet</a></td></tr>
+                    <tr><td class="left">Sec 1.9</td><td class="right"><a href="section1.html#9">Butterfly vertebrae</a></td></tr>
+                    <tr><td class="left">Sec 1.10</td><td class="right"><a href="section1.html#10">Rheumatoid arthritis - rice bodies</a></td></tr>
+                    <tr><td class="left">Sec 1.11</td><td class="right"><a href="section1.html#11">AS Syndesmophytes Cervical MRI</a></td></tr>
+                    <tr><td class="left">Sec 1.12</td><td class="right"><a href="section1.html#12">Atlantoaxial Subluxation</a></td></tr>
+                    <tr><td class="left">Sec 1.14</td><td class="right"><a href="section1.html#14">Basilar Invagination</a></td></tr>
+                    <tr><td class="left">Sec 1.15</td><td class="right"><a href="section1.html#15">DISH Cervical spine</a></td></tr>
+                    <tr><td class="left">Sec 1.16</td><td class="right"><a href="section1.html#16">OPLL</a></td></tr>
+                    <tr><td class="left">Sec 1.17</td><td class="right"><a href="section1.html#17">Sudeck’s atrophy</a></td></tr>
+                </table>
+
+
+
+            </section>
+
+            <section class="header">
+                <h2>Extended Cases - Section 2</h2>
+            </section>
+
+            <section>
+                <table>
+
+
+                    <tr><td class="left">Sec 2.1</td><td class="right"><a href="section2.html#1">Calcific tendinosis</a></td></tr>
+                    <tr><td class="left">Sec 2.2</td><td class="right"><a href="section2.html#2">CPPD acute case </a></td></tr>
+                    <tr><td class="left">Sec 2.3</td><td class="right"><a href="section2.html#3">Stress fractures</a></td></tr>
+                    <tr><td class="left">Sec 2.4</td><td class="right"><a href="section2.html#4">DISH </a></td></tr>
+                    <tr><td class="left">Sec 2.5</td><td class="right"><a href="section2.html#5">Myeloma</a></td></tr>
+                    <tr><td class="left">Sec 2.6</td><td class="right"><a href="section2.html#6">Gout chronic tophaceous case </a></td></tr>
+                    <tr><td class="left">Sec 2.7</td><td class="right"><a href="section2.html#7">Hypertrophic Osteoarthropathy </a></td></tr>
+                    <tr><td class="left">Sec 2.8</td><td class="right"><a href="section2.html#8">Osteomyelitis case</a></td></tr>
+                    <tr><td class="left">Sec 2.9</td><td class="right"><a href="section2.html#9">Psoriatic arthritis </a></td></tr>
+                    <tr><td class="left">Sec 2.10</td><td class="right"><a href="section2.html#10">RA chronic erosive case </a></td></tr>
+                    <tr><td class="left">Sec 2.11</td><td class="right"><a href="section2.html#11">RS3PE (moved to Short)</a></td></tr>
+                    <tr><td class="left">Sec 2.12</td><td class="right"><a href="section2.html#12">SAPHO </a></td></tr>
+                    <tr><td class="left">Sec 2.13</td><td class="right"><a href="section2.html#13">Scheuermann's Disease SHORT CASE</a></td></tr>
+                    <tr><td class="left">Sec 2.14</td><td class="right"><a href="section2.html#14">Septic arthritis </a></td></tr>
+                    <tr><td class="left">Sec 2.15</td><td class="right"><a href="section2.html#15">Stress fracture</a></td></tr>
+                    <tr><td class="left">Sec 2.16</td><td class="right"><a href="section2.html#16">SpA</a></td></tr>
+                    <tr><td class="left">Sec 2.17</td><td class="right"><a href="section2.html#17">Spondylolysis </a></td></tr>
+                    <tr><td class="left">Sec 2.18</td><td class="right"><a href="section2.html#18">Septic arthritis (vs DM foot) case</a></td></tr>
+                    <tr><td class="left">Sec 2.19</td><td class="right"><a href="section2.html#19">CPPD chronic case</a></td></tr>
+                    <tr><td class="left">Sec 2.20</td><td class="right"><a href="section2.html#20">Cellulitis</a></td></tr>
+                    <tr><td class="left">Sec 2.21</td><td class="right"><a href="section2.html#21">Myeloma</a></td></tr>
+                </table>
+
+
+
+
+            </section>
+
+
+            <section class="header">
+                <h2>Short Cases - Section 3</h2>
+            </section>
+
+            <section>
+
+                <table>
+
+
+                    <tr><td class="left">Sec 3.1</td><td class="right"><a href="section3.html#1">Early DISH </a></td></tr>
+                    <tr><td class="left">Sec 3.2</td><td class="right"><a href="section3.html#2">Normal </a></td></tr>
+                    <tr><td class="left">Sec 3.3</td><td class="right"><a href="section3.html#3">Milwaukee shoulder </a></td></tr>
+                    <tr><td class="left">Sec 3.4</td><td class="right"><a href="section3.html#4">MCRH</a></td></tr>
+                    <tr><td class="left">Sec 3.5</td><td class="right"><a href="section3.html#5">Acromegaly </a></td></tr>
+                    <tr><td class="left">Sec 3.6</td><td class="right"><a href="section3.html#6">Hyperparathyroidism </a></td></tr>
+                    <tr><td class="left">Sec 3.7</td><td class="right"><a href="section3.html#7">PsA - minor degenerative changes </a></td></tr>
+                    <tr><td class="left">Sec 3.8</td><td class="right"><a href="section3.html#8">quinolone-induced Achilles Tendon</a></td></tr>
+                    <tr><td class="left">Sec 3.9</td><td class="right"><a href="section3.html#9">Unilateral sacroiliitis </a></td></tr>
+                    <tr><td class="left">Sec 3.10</td><td class="right"><a href="section3.html#10">RS3PE</a></td></tr>
+                    <tr><td class="left">Sec 3.11</td><td class="right"><a href="section3.html#11">Sternal insufficiency fracture</a></td></tr>
+                    <tr><td class="left">Sec 3.12</td><td class="right"><a href="section3.html#12">Ankle infection - abscess +/- septic arthritis</a></td></tr>
+                    <tr><td class="left">Sec 3.13</td><td class="right"><a href="section3.html#13">CRMO</a></td></tr>
+                </table>
+
+
+
+
+            </section>
+
+
+            <section class="header">
+                <h2>Spot Cases 2 - Section 4</h2>
+            </section>
+
+            <section id="last">
+                <table>
+
+
+                    <tr><td class="left">Sec 4.1</td><td class="right"><a href="section4.html#1">Sharp Method</a></td></tr>
+                    <tr><td class="left">Sec 4.2</td><td class="right"><a href="section4.html#2">Lupus Vasculopathy</a></td></tr>
+                    <tr><td class="left">Sec 4.3</td><td class="right"><a href="section4.html#3">PAN CT </a></td></tr>
+                    <tr><td class="left">Sec 4.4</td><td class="right"><a href="section4.html#4">Amyloid ankle MRI</a></td></tr>
+                    <tr><td class="left">Sec 4.5</td><td class="right"><a href="section4.html#5">Eburnation</a></td></tr>
+                    <tr><td class="left">Sec 4.6</td><td class="right"><a href="section4.html#6">Metacarpal Index</a></td></tr>
+                    <tr><td class="left">Sec 4.7</td><td class="right"><a href="section4.html#7">Rugger Jersey lat spine</a></td></tr>
+                    <tr><td class="left">Sec 4.8</td><td class="right"><a href="section4.html#8">Atypical Stress Fracture</a></td></tr>
+                    <tr><td class="left">Sec 4.9</td><td class="right"><a href="section4.html#9">Medullary Infarcts</a></td></tr>
+                    <tr><td class="left">Sec 4.10</td><td class="right"><a href="section4.html#10">Focal Protrusion</a></td></tr>
+                    <tr><td class="left">Sec 4.11</td><td class="right"><a href="section4.html#11">DDD Baastrup’s</a></td></tr>
+                    <tr><td class="left">Sec 4.12</td><td class="right"><a href="section4.html#12">Dermatomyositis</a></td></tr>
+                    <tr><td class="left">Sec 4.13</td><td class="right"><a href="section4.html#13">Tumoral calcinosis</a></td></tr>
+                    <tr><td class="left">Sec 4.14</td><td class="right"><a href="section4.html#14">PVNS</a></td></tr>
+                    <tr><td class="left">Sec 4.15</td><td class="right"><a href="section4.html#15">Chondrocarcinoma</a></td></tr>
+                </table>
+
+
+
+
+            </section>
+        </article>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script> 
+    <script src="js/randomcase.js"></script>
+    <script src="jquery.details.js"></script>
+    <script>
+        $(function() {
+                // Add conditional classname based on support
+                $('html').addClass($.fn.details.support ? 'details' : 'no-details');
+                // Emulate <details> where necessary and enable open/close event handlers
+                $('details').details();
+            });
+    </script>
+
+    <script>
+
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            keyboardControl: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+        });
+    </script>
+</body>
+</html>
