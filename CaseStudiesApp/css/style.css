@@ -47,16 +47,7 @@ footer nav{
 
 
 
-/*
-
-
-COLLAPSIBLE MENU
-
-
-
-
-
-*/
+/* COLLAPSIBLE MENU */
 summary::-webkit-details-marker {
 	/*color: #000000;*/
 
@@ -84,17 +75,7 @@ details details summary {
 }
 
 
-
-/*
-
-
-END OF css for collapsible menu MENU
-
-
-
-
-
-*/
+/* END OF css for collapsible menu MENU */
 
 
 #wrapper {
@@ -145,18 +126,9 @@ summary {
 }
 
 
-
-
-
-
-
-
-
 .imageframe {
 	background-color: #666666;
 }
-
-
 
 section article summary {
 
@@ -304,7 +276,9 @@ div.swiper-slide a.fancybox {
 
 .mdl-card__title-text {
 	margin: none;
-
+}
+.mdl-layout__header.mdl-layout__header--transparent.is-casting-shadow{
+	z-index:0;
 }
 
 table {
@@ -321,20 +295,6 @@ tr {
 
 	padding: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 section{
