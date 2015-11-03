@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SPA</title>
+
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue_grey-blue.min.css" /> 
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/css/swiper.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.min.js"></script>
+  
+  <link rel="stylesheet" href="../css/specific-css.css">
+
+</head>
+<body>
+  
+
+<!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+<div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
+  <header class="mdl-layout__header mdl-layout__header--scroll">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"></span>
+    </div>
+      
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">SpA</span>
+    <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="../index.html">Table of Contents</a>
+
+        <a class="mdl-navigation__link" href="overview.html">Overview</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="1" href="overview.html#whatisspa">What are the Spondyloarthropathies?</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="2" href="overview.html#Spondyloarthropathy">Spondyloarthropathy</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="3" href="overview.html#presentation">Presentation</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="4" href="overview.html#demographic">Demographic</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="5" href="overview.html#prevalence">Prevalence</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="6" href="overview.html#predispositions">Predispositions</a>
+
+        <a class="mdl-navigation__link" href="../AnatomyImaging/AnatomyImaging-sacroiliac.html">Anatomy &amp; Imaging - Sacroiliac</a>
+        <a class="mdl-navigation__link" href="../AnatomyImaging/AnatomyImaging-spinal.html">Anatomy &amp; Imaging - Spinal</a>
+        <a class="mdl-navigation__link" href="../ImagingAlgorithm/ImagingAlgorithm.html">Imaging Algorithm</a>
+        <a class="mdl-navigation__link" href="../DiagnosticSpA/DiagnosticSpA.html">Diagnosis SpA</a>
+        <a class="mdl-navigation__link" href="../AlternatePathologies/AlternatePathologies.html">Alternate Pathologies</a>
+        <a class="mdl-navigation__link" href="../ImagingFindings/ImagingFindings-sacroiliac.html">Imaging Findings - Sacroiliac</a>
+        <a class="mdl-navigation__link" href="../ImagingFindings/ImagingFindings-spinal.html">Imaging Findings - Spinal</a>
+        <a class="mdl-navigation__link" href="../CaseStudies/CaseStudies.html">Case Studies</a>
+    </nav>
+  </div>
+
+<!-- Content Below -->
+
+<main class="mdl-layout__content dark-back">
+  <div class="page-content">
+
+<!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide" data-hash="start">    
+          <div class="padding center">
+            <h3>Overview Section</h3>
+            <p>Short introductory blurb about what will be covered in this section.</p>
+            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="../index.html">
+              <i class="zmdi zmdi-long-arrow-left"></i> Back to Table of Contents
+            </a>
+          </div>
+        </div> 
+
+        <div class="swiper-slide whatisspa" data-hash="whatisspa">
+          <div class="padding">
+            <h3>What are the Spondyloarthropathies?</h3>
+            <ul>
+              <li>The seronegative spondyloarthropathies (SpA) are a group of chronic autoimmune inflammatory joint diseases</li>
+              <li>Seronegative implies no association with rheumatoid factor</li>
+              <li>Predominantly affects the axial skeleton (spine and sacroiliac joints)</li>
+              <li>Often accompanied by peripheral arthritis</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="swiper-slide Spondyloarthropathy" data-hash="Spondyloarthropathy">
+          <div class="padding">
+
+            <h3>Spondyloarthropathy</h3>
+            <ul>
+              <li>Ankylosing Spondylitis (AS) is the prototype of the SpA. We will use AS throughout this presentation as our archetype which includes:</li>
+                <ul>
+                  <li>Psoriatic arthritis</li>
+                  <li>Reactive arthritis</li>
+                  <li>Arthritis associated with inflammatory bowel disease</li>
+                  <li>Undifferentiated SpA</li>
+                </ul>
+              </ul>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="swiper-slide presentation" data-hash="presentation">
+          <div class="padding">
+            <h3>Presentation</h3>
+            <ul>
+                <li>Onset generally occurs in young adulthood</li>
+                <li>Often insidious onset with periods of relapse and remittance</li>
+                <li>In many cases it is a progressive disease with increased limitation of spinal mobility</li>
+                <li>Often presents with inflammatory back pain, enthesitis, peripheral joint synovitis, uveitis</li>
+                <li>Inflammatory back pain is defined as: symptoms lasting greater than 30 minutes and persisting for 3 months of greater, exacerbated by rest and relieved with exercise.</li>
+                <li><b>Enthesitis</b> is inflammation at ligament and tendon attachment to bone. Achilles enthesitis is the most common peripheral enthesitis.</li>
+                <li><b>Peripheral joint synovitis</b> may present before or after axial presentation. Usually oligoarthritis, asymmetrical with lower limb dominance (hips, knees, ankles, MTPJ commonest)</li>
+                <li><b>Anterior uveitis</b> occurs in up to 1/3 patients, presents with pain, redness and photophobia. Usually unilateral and may be recurrent.</li>
+                <li>With Ankylosing Spondylitis as the model for SpA, the time from initial symptom presentation to final diagnosis can be up to 9 years (symptoms often relapse and remit, may be low grade, often thought to be related to muscular strain injuries/degenerative disease by patients/clinicians all of which contribute to a significant delay in diagnosis)</li>
+                <li>Delay in diagnosis has negative implications for the patient's well-being</li>
+                <li>Treatment with anti-TNF agents is most effective earlier in the course of the disease before structural changes occur.</li>   
+            </ul> 
+          </div>
+        </div>
+
+        <div class="swiper-slide demographic" data-hash="demographic">
+          <div class="padding">
+            <h3>Demographic AS</h3>
+            <ul>
+                <li>Ankylosing spondylitis (AS) is more common in men (2:1)</li>
+                <li>Men develop chronic radiographic findings earlier than women</li>
+                <li>Majority of patients present in middle age although disease often commences in late teens and twenties</li>
+                <ul>
+                  <li>75% present between 20-45 years of age</li>
+                  <li>20% before the age of 20</li>
+                  <li>5% after 45 years of age</li>
+                </ul>
+              </ul>
+          </div>
+        </div>
+
+        <div class="swiper-slide prevalence" data-hash="prevalence">
+          <div class="padding">
+            <h3>Prevalence</h3>
+            <ul>
+              <li>Varies between ethnic populations (Highest in European ancestry, 1.4%)</li>
+              <li>Overall prevalence in the United States of SpA is as high as 1.3%, 0.2% - 0.5% for ankylosing spondylitis</li>
+                
+              <ul>
+                <li>0.05% for psoriatic arthritis</li>
+                <li>0.065% for enteropathic peripheral arthritis</li>
+                <li>0.05% - 0.25% for enteropathic axial arthritis</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+
+        <div class="swiper-slide predispositions" data-hash="predispositions">    
+          <div class="padding">
+            <h3>Predispositions</h3>
+            <ul>
+              <li>Closely linked with HLA-B27 status: constitutes 40% of total disease risk for SpA</li>
+              <li>5% of HLA-B27 positive individuals will develop AS</li>
+              <li>0.2% - 0.5% for ankylosing spondylitis</li>
+              <li>95% of patients with AS are HLA-B27 positive</li>
+              <li>60-70% with psoriatic arthritis or inflammatory back disease are HLA-B27 positive</li>
+              <li>HLA-B27 status predisposes greater risk to certain populations</li>
+              <li>Up to 75 variants of HLA-B27 described, some of which demonstrate a greater predisposition to AS</li>
+              <li>12% risk of developing AS in HLA-B27 positive primary relatives of patient with AS</li>
+              <li>Theorized that HLA-B27 positive patients with SpA have interacted with an environmental factor/s, likely infectious, causing an inflammatory response at the cartilage-bone interface</li>
+              <li>Other genetic predispositions include ERAP1, endoplasmic reticulum aminopeptidase 1, interlukin 1 and 23.</li>
+            </ul>  
+          </div>
+        </div> 
+
+        <div class="swiper-slide end" data-hash="end">    
+          <div class="padding center">
+            <h3>Overview Section Complete</h3>
+            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="../AnatomyImaging/AnatomyImaging-Sacroiliac.html">
+              Continue to Anatomy and Imaging <i class="zmdi zmdi-long-arrow-right"></i>
+            </a>
+          </div>
+        </div> 
+
+    </div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+</div>
+
+  </div>
+</main>
+</div>
+
+</body>
+
+<script>
+
+
+    var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    hashnav:true,
+    keyboardControl:true,
+    
+    // Navigation arrows
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    
+  });
+
+    $('.sub-nav-item').on('click', function(e){
+      
+      mySwiper.slideTo($(this).data('index'), 1);
+
+      $('.mdl-layout__drawer').removeClass('is-visible');
+    });
+    
+</script>
+</html>

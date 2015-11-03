@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SPA</title>
+
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue_grey-blue.min.css" /> 
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
+
+
+  <link rel="stylesheet" href="../js/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="../js/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  <link rel="stylesheet" href="../js/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="../js/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  <script type="text/javascript" src="../js/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/css/swiper.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.min.js"></script>
+
+   <link rel="stylesheet" href="../css/specific-css.css">
+
+
+</head>
+<body>
+  
+
+<!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+<div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
+  <header class="mdl-layout__header mdl-layout__header--scroll">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"></span>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">SpA</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="../index.html">Table of Contents</a>
+      <a class="mdl-navigation__link" href="../overview/overview.html">Overview</a>
+
+      <a class="mdl-navigation__link" href="AnatomyImaging-sacroiliac.html">Anatomy &amp; Imaging - Sacroiliac</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="1" href="AnatomyImaging-sacroiliac.html#SacroiliacAnatomy">Sacroiliac Anatomy</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="2" href="AnatomyImaging-sacroiliac.html#Radiograph">Radiograph</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="3" href="AnatomyImaging-sacroiliac.html#MRI">MRI</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="4" href="AnatomyImaging-sacroiliac.html#CT">CT</a>
+
+      <a class="mdl-navigation__link" href="AnatomyImaging-spinal.html">Anatomy &amp; Imaging - Spinal</a>
+      <a class="mdl-navigation__link" href="../ImagingAlgorithm/ImagingAlgorithm.html">Imaging Algorithm</a>
+      <a class="mdl-navigation__link" href="../DiagnosticSpA/DiagnosticSpA.html">Diagnosis SpA</a>
+      <a class="mdl-navigation__link" href="../AlternatePathologies/AlternatePathologies.html">Alternate Pathologies</a>
+      <a class="mdl-navigation__link" href="../ImagingFindings/ImagingFindings-sacroiliac.html">Imaging Findings - Sacroiliac</a>
+      <a class="mdl-navigation__link" href="../ImagingFindings/ImagingFindings-spinal.html">Imaging Findings - Spinal</a>
+      <a class="mdl-navigation__link" href="../CaseStudies/CaseStudies.html">Case Studies</a>
+    </nav>
+  </div>
+
+<!-- Content Below -->
+
+<main class="mdl-layout__content dark-back">
+  <div class="page-content">
+      
+      <!-- Slider main container -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide" data-hash="start">    
+          <div class="padding center">
+            <h3>Anatomy &amp; Imaging - Sacroilliac</h3>
+            <p>Short introductory blurb about what will be covered in this section.</p>
+            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="../index.html">
+              <i class="zmdi zmdi-long-arrow-left"></i> Back to Table of Contents
+            </a>
+          </div>
+        </div> 
+
+        <div class="swiper-slide" data-hash="SacroiliacAnatomy">    
+          <div class="padding">
+            <h3>Sacroiliac Anatomy</h3>
+            <ul>
+              <div class="image-left">
+                <div class="mdl-card mdl-shadow--2dp demo-card-image">
+                  <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/1.jpg') center / cover;"
+                  href="images/1.jpg" 
+                        data-fancybox-group="gallery" 
+                        title="a) Illustration normal anatomy of the sacroiliac joints with overlying ligaments-Anterior view">
+                  </a>
+                  <i class="material-icons open-supporting-text">info_outline</i>
+                  <div class="mdl-card__supporting-text">
+                    a) Illustration normal anatomy of the sacroiliac joints with overlying ligaments-Anterior view
+                  </div>
+                </div>
+
+                <div class="mdl-card mdl-shadow--2dp demo-card-image">
+                  <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/2.jpg') center / cover;"
+                  href="images/2.jpg" 
+                        data-fancybox-group="gallery" 
+                        title="b) Illustration normal anatomy of the sacroiliac joints with overlying ligaments-Posterior view">
+                  </a>
+                  <i class="material-icons open-supporting-text">info_outline</i>
+                  <div class="mdl-card__supporting-text">
+                    b) Illustration normal anatomy of the sacroiliac joints with overlying ligaments-Posterior view
+                  </div>
+                </div>
+              
+                <div class="mdl-card mdl-shadow--2dp demo-card-image">
+                  <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/3.jpg') center / cover;"
+                      href="images/3.jpg" 
+                        data-fancybox-group="gallery" 
+                        title="c) Illustration normal anatomy of the right sacroiliac joint -axial cut through the joint demonstrating normal interdigitations of the articulation">
+                  </a>
+                  <i class="material-icons open-supporting-text">info_outline</i>
+                  <div class="mdl-card__supporting-text">
+                    c) Illustration normal anatomy of the right sacroiliac joint -axial cut through the... click image for more info
+                  </div>
+                </div>
+              </div>
+              <li>Traditionally, the SIJs were considered to consist of a smaller posterosuperior ligamentous compartment and a larger anteroinferior synovial compartment.</li>
+              <li>More recent research has stimulated a debate on whether the articulation is best classified as a symphysis rather than a synovial joint.  </li>
+              <li>The articular margins of the sacrum and iliac bones are irregular with interdigitations, which limit mobility and enhance the strength of these joints.  </li>
+              <li>The articular surface of the sacrum is C or L-shaped, opening dorsally. There are irregular bony pits, dorsal to the articular surface, at the site of ligamentous attachment, the dorsal syndesmosis.</li>
+              <li>The articular surface at the centre of the SIJs has hyaline cartilage with fibrocartilage only at the periphery.</li>
+              <li>The periphery of the cartilage, with the exception of the distal third of the iliac cartilage, blends with the stabilizing ligaments as in a symphysis and forms a wide margin of fibrocartilage.  </li>
+              <li>A small synovial recess exists at the ventral aspect of the distal third of the iliac aspect of the joint.
+              </li>
+              <li>The SIJ’s are probably therefore best described as a symphysis with characteristics of a synovial joint being restricted to the ventral aspect of the distal cartilaginous portion at the iliac side.</li>
+              <li>Under the age of 30 years, the SIJ’s are usually symmetric in appearance.</li>
+              <li>A higher prevalence of asymmetric non-uniform joint space narrowing and ill-defined subchondral sclerosis has been observed in women, obese and multiparous females than in age matched males, and individuals of normal weight and non-multiparous respectively.</li>
+              <li>The width of the normal SIJ varies from 2 to 5mm.</li>
+              <li>The normal SIJ can demonstrate considerable variability, particularly with increasing age.</li>
+              <li>Prominent sacral irregularities and marrow defects at the attachment of the interosseous ligaments, termed insertion pits, may be seen in normal subjects.</li>
+              <li><b>Multiple anatomical variants have been observed in patients undergoing pelvic CT for indications other than disease of the SIJ’s. These include:</b></li>
+                <ul>
+                  <li>Accessory joints (19%)</li> 
+                  <li>“Iliosacral complex” (6%)</li> 
+                  <li>Bipartite iliac bony plate (4%)</li> 
+                  <li>Crescent-like iliac bony plate (4%)</li> 
+                  <li>Semicircular defects at the sacral or iliac side (3%)</li>
+                  <li>Ossification centres (1%)</li>
+                </ul>
+              </ul>
+            
+            
+        </div> 
+      </div>
+
+        <div class="swiper-slide" data-hash="Radiograph">    
+          <div class="padding">
+            <h3>Radiograph</h3>
+            <ul>
+              <div class="image-left">
+                <div class="mdl-card mdl-shadow--2dp demo-card-image">
+                  <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/4a.jpg') center / cover;"
+                  href="images/4a.jpg" 
+                        data-fancybox-group="gallery-1" 
+                        title="Cor T1FS post gadolinium | Image demonstrating enhancement in the right entheseal compartment. One should be careful that apparent entheseal enhancement is not vascular, axial images may be helpful in this regard. Contrast enhancement is not routinely performed.">
+                  </a>
+                  <i class="material-icons open-supporting-text">info_outline</i>
+                  <div class="mdl-card__supporting-text">
+                    <strong>Cor T1FS post gadolinium</strong> Image demonstrating enhancement in the right... click image for more info
+                  </div>
+                </div>
+
+                <div class="mdl-card mdl-shadow--2dp demo-card-image">
+                  <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/4b.jpg') center / cover;"
+                      href="images/4b.jpg" 
+                        data-fancybox-group="gallery-1" 
+                        title="Cor T1 | Note also early joint space, mild subchondral sclerosis loss, erosions and post inflammatory fat accentuation (on T1)">
+                  </a>
+                  <i class="material-icons open-supporting-text">info_outline</i>
+                  <div class="mdl-card__supporting-text">
+                    <strong>Cor T1</strong> Note also early joint space, mild subchondral sclerosis loss... click image for more info
+                  </div>
+                </div>
+
+                <div class="mdl-card mdl-shadow--2dp demo-card-image">
+                  <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/5.jpg') center / cover;"
+                  href="images/5.jpg" 
+                        data-fancybox-group="gallery-1" 
+                        title="STIR in acute on chronic SII | On STIR there is bilateral subchondral high signal intensity, low on T1, in keeping with edema/osteitis">
+                  </a>
+                  <i class="material-icons open-supporting-text">info_outline</i>
+                  <div class="mdl-card__supporting-text">
+                    <strong>STIR in acute on chronic SII</strong> On STIR there is bilateral subchondral... click image for more info
+                  </div>
+                </div>
+              </div>
+              <li>Plain radiography has and continues to play an important role in the investigation of SII and is an integral part in the diagnosis of AS.</li>
+              <li>The anatomy of the sacroiliac joint, due to its oblique nature and overlap of the sacral and iliac components, has led to significant inter and intra observer variations particularly in the interpretation of early SII.</li>
+              <li>Radiographic projections include dedicated AP and bilateral oblique views. If the AP study is normal then the oblique views may not be required</li>
+              <li><i>Note that a dedicated AP of the lumbar spine often includes a diagnostic assessment of the SIJ and may not require any further radiographs.</i></li>
+              <li>Radiographs of the lumbar spine and SIJ incur a significant radiation dose (Single AP lumbar spine has a typical effective dose of up to 2.2mSV)</li>
+              <li>Some centres advocate a baseline AP of the pelvis. This allows for a combined assessment of the sacroiliac joints and the hip joints, the latter may be involved in up to 25% of patients with SpA. </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="swiper-slide" data-hash="MRI">    
+          <div class="padding">
+            <h3>MRI</h3>
+            <ul>
+                <li>MRI is the imaging gold standard for sacroiliitis.</li>
+                <li>MRI is non-ionizing, provides excellent anatomical detail and delineation of both acute and chronic changes of sacroiliitis.</li>
+                <li>We will briefly review the anatomy of the sacroiliac joints on MRI prior to reviewing pathological changes.</li>
+            </ul>
+            <h4>Coronal T1 SIJ (from anterior to posterior)</h4>
+            <ul>
+                <div class="image-left">
+                
+                <div class="mdl-card mdl-shadow--2dp demo-card-image">
+                  <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/7.jpg') center / cover;"
+                      href="images/7.jpg" 
+                        data-fancybox-group="gallery-2" 
+                        title="a) Coronal T1 SIJ (from anterior to posterior)">
+                  </a>
+                  <i class="material-icons open-supporting-text">info_outline</i>
+                  <div class="mdl-card__supporting-text">
+                    a) Coronal T1 SIJ (from anterior to posterior)
+                  </div>
+                </div>
+
+                <div class="mdl-card mdl-shadow--2dp demo-card-image">
+                  <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/8.jpg') center / cover;"
+                    href="images/8.jpg" 
+                        data-fancybox-group="gallery-2" 
+                        title="b) Coronal T1 SIJ (from anterior to posterior)">
+                  </a>
+                  <i class="material-icons open-supporting-text">info_outline</i>
+                  <div class="mdl-card__supporting-text">
+                    b) Coronal T1 SIJ (from anterior to posterior)
+                  </div>
+                </div>
+
+                <div class="mdl-card mdl-shadow--2dp demo-card-image">
+                  <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/9.jpg') center / cover;"
+                    href="images/9.jpg" 
+                        data-fancybox-group="gallery-2" 
+                        title="c) Coronal T1 SIJ (from anterior to posterior)">
+                  </a>
+                  <i class="material-icons open-supporting-text">info_outline</i>
+                  <div class="mdl-card__supporting-text">
+                    c) Coronal T1 SIJ (from anterior to posterior)
+                  </div>
+                </div>
+                
+              </div>
+                <li>On T1FS (T1 Fat Saturated) articular cartilage is of intermediate to high signal intensity and the altered grey scale of the T1FS sequence improves visualization of the cartilage and adjacent cortical bone.</li>
+                <li>Standard T1 sequences (without fat saturation) are, however, invaluable in assessing the subchondral bone marrow and, in particular, in differentiating between subchondral sclerosis and fat that may both appear as low signal on T1FS. </li>
+                <li>In general, the subchondral bone marrow has homogenous intermediate signal intensity on T1.</li>
+                <li>In adults, the subchondral bone may of heterogeneous signal due to non-uniform hemopoeitic marrow.</li>
+                <li>Assessing the marrow signal intensity at the level of the sacral foramina can serve as a baseline for the normal appearance of marrow in individual patients</li>
+                <li>Cartilage is well visualized as a zone of intermediate signal intensity on both T1 and T2 weighting bounded on either side by low signal intensity intact subchondral bone plate of the underlying sacrum or ilium.</li>
+                <li>The combined cartilage has a maximum thickness of 4 to 5mm and is slightly thinner anteriorly and inferiorly. It is not possible to differentiate hyaline and fibrous cartilage by signal intensity.</li>
+            </ul>
+             <h4>Coronal T2FS SIJ (from anterior to posterior)</h4>
+            <ul>
+              <div class="image-left">
+                <div class="mdl-card mdl-shadow--2dp demo-card-image">
+                  <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/10.jpg') center / cover;"
+                  href="images/10.jpg" 
+                        data-fancybox-group="gallery-2" 
+                        title="a) Coronal T2FS SIJ (from anterior to posterior)">
+                  </a>
+                  <i class="material-icons open-supporting-text">info_outline</i>
+                  <div class="mdl-card__supporting-text">
+                    a) Coronal T2FS SIJ (from anterior to posterior)
+                  </div>
+                </div>
+
+                <div class="mdl-card mdl-shadow--2dp demo-card-image">
+                  <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/11.jpg') center / cover;"
+                  href="images/11.jpg" 
+                        data-fancybox-group="gallery-2" 
+                        title="b)Coronal T2FS SIJ (from anterior to posterior)">
+                  </a>
+                  <i class="material-icons open-supporting-text">info_outline</i>
+                  <div class="mdl-card__supporting-text">
+                    b) Coronal T2FS SIJ (from anterior to posterior)
+                  </div>
+                </div>
+
+                <div class="mdl-card mdl-shadow--2dp demo-card-image">
+                  <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/12.jpg') center / cover;"
+                  href="images/12.jpg" 
+                        data-fancybox-group="gallery-2" 
+                        title="c) Coronal T2FS SIJ (from anterior to posterior)">
+                  </a>
+                  <i class="material-icons open-supporting-text">info_outline</i>
+                  <div class="mdl-card__supporting-text">
+                    c) Coronal T2FS SIJ (from anterior to posterior)
+                  </div>
+                </div>
+              </div>
+                <li>On T2FS (T2 Fat Saturated) or STIR imaging cartilage is intermediate to high signal intensity. Any fluid within the joint space will be high signal intensity, similar to CSF that can be seen in the lower thecal sac.</li>
+                <li>Subchondral bone plate is thin, regular and of low signal intensity</li>
+                <li>The subchondral marrow is low signal intensity, due to the suppression of the normal fat signal within normal marrow.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="swiper-slide" data-hash="CT">    
+          <div class="padding">
+            <h3>CT</h3>
+            <ul>
+              <div class="image-left"></div>
+              <li>CT provides excellent bone detail and is the gold standard in the assessment of erosions. </li>
+              <li>The joint space, subchondral bone plate, subchondral bone are clearly delineated.</li>
+              <li>CT can not detect bone marrow oedema and has low sensitivity for post inflammatory fat accentuation and joint effusions</li>
+              <li>CT incurs a significant radiation exposure and imaging is usually confined to those patients who are unable to undergo MRI and diagnosis/management options can not be satisfied with radiographs</li>
+            </ul>
+
+            <h4>Semicoronal CT Sacroiliac Joints</h4>
+
+            <div class="card-wrapper2">
+
+              <div class="grid-sizer"></div>
+
+              <div class="mdl-card mdl-shadow--2dp demo-card-image">
+                <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/13a.jpg') center / cover;"
+                href="images/13a.jpg" 
+                      data-fancybox-group="gallery-3" 
+                      title="Semicoronal CT Sacroiliac Joints">
+                </a>
+                <i class="material-icons open-supporting-text">info_outline</i>
+                <div class="mdl-card__supporting-text">
+                  Semicoronal CT Sacroiliac Joints
+                </div>
+              </div>
+
+              <div class="mdl-card mdl-shadow--2dp demo-card-image">
+                <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/13b.jpg') center / cover;"
+                href="images/13b.jpg" 
+                      data-fancybox-group="gallery-3" 
+                      title="Semicoronal CT Sacroiliac Joints">
+                </a>
+                <i class="material-icons open-supporting-text">info_outline</i>
+                <div class="mdl-card__supporting-text">
+                  Semicoronal CT Sacroiliac Joints
+                </div>
+              </div>
+
+                            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+                <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/14.jpg') center / cover;"
+                href="images/14.jpg" 
+                      data-fancybox-group="gallery-3" 
+                      title="A) localiser image sacrum, the scan planes are acquired from this image, the line transversing the image is in the true axial plane sacrum as demonstrated in b) &amp; c), d) and e) are true coronal through the sacroiliac joints and f) is a sagittal reconstruction (usually not required for sacroiliac disease but may be beneficial for other pathology including fractures assessment)">
+                </a>
+                <i class="material-icons open-supporting-text">info_outline</i>
+                <div class="mdl-card__supporting-text">
+                  A) localiser image sacrum, the scan planes are acquired from this image, the line transversing the image... click image for more info
+                </div>
+              </div>
+
+              <div class="mdl-card mdl-shadow--2dp demo-card-image">
+                <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/15.jpg') center / cover;"
+                href="images/15.jpg"
+                      data-fancybox-group="gallery-3" 
+                      title="B)">
+                </a>
+                <i class="material-icons open-supporting-text">info_outline</i>
+                <div class="mdl-card__supporting-text">
+                  B)
+                </div>
+              </div>
+
+              <div class="mdl-card mdl-shadow--2dp demo-card-image">
+                <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/16.jpg') center / cover;"
+                href="images/16.jpg"
+                      data-fancybox-group="gallery-3" 
+                      title="C)">
+                </a>
+                <i class="material-icons open-supporting-text">info_outline</i>
+                <div class="mdl-card__supporting-text">
+                  C)
+                </div>
+              </div>
+
+              <div class="mdl-card mdl-shadow--2dp demo-card-image">
+                <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/17.jpg') center / cover;" 
+                      href="images/17.jpg"
+                      data-fancybox-group="gallery-3" 
+                      title="D)">
+                </a>
+                <i class="material-icons open-supporting-text">info_outline</i>
+                <div class="mdl-card__supporting-text">
+                  D)
+                </div>
+              </div>
+
+              <div class="mdl-card mdl-shadow--2dp demo-card-image">
+                <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/18.jpg') center / cover;"
+                href="images/18.jpg"
+                      data-fancybox-group="gallery-3" 
+                      title="E)">
+                </a>
+                <i class="material-icons open-supporting-text">info_outline</i>
+                <div class="mdl-card__supporting-text">
+                  E)
+                </div>
+              </div>
+
+              <div class="mdl-card mdl-shadow--2dp demo-card-image">
+                <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/19.jpg') center / cover;"
+                href="images/19.jpg"
+                      data-fancybox-group="gallery-3" 
+                      title="F)">
+                </a>
+                <i class="material-icons open-supporting-text">info_outline</i>
+                <div class="mdl-card__supporting-text">
+                  F)
+                </div>
+              </div>
+
+
+              </div>
+          </div>
+        </div> 
+
+        <div class="swiper-slide end" data-hash="end">    
+          <div class="padding center">
+            <h3>Anatomy &amp; Imaging - Sacroiliac Complete</h3>
+            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="AnatomyImaging-spinal.html">
+              Continue to Anatomy &amp; Imaging - Spinal<i class="zmdi zmdi-long-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      <!--End of slides -->
+      </div><!-- Slide Wrapper end-->
+
+      <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div><!-- Swiper end-->
+        
+
+  </div>
+</main>
+</div>
+
+</body>
+
+<script>
+  $( document ).ready(function() {
+      var slideheight = $('.swiper-slide-active > .padding').height();
+      $('.swiper-slide').height(slideheight);
+  });
+
+
+    var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    hashnav:true,
+    keyboardControl:true,
+    
+    // Navigation arrows
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    
+  });
+    
+
+    mySwiper.on('slideChangeStart', function () {
+
+      var slideheight = $('.swiper-slide-active > .padding').height();
+      $('.swiper-slide').height(slideheight);
+
+    });
+
+
+    $('.sub-nav-item').on('click', function(e){
+      
+      mySwiper.slideTo($(this).data('index'), 1);
+
+      $('.mdl-layout__drawer').removeClass('is-visible');
+    });
+
+    $('.card-wrapper2').masonry({
+      columnWidth: '.grid-sizer',
+      itemSelector: '.mdl-card',
+      percentPosition: true
+    });
+
+    $(".fancybox-button").fancybox({
+      prevEffect    : 'none',
+      nextEffect    : 'none',
+      closeBtn    : false,
+      arrows :false,
+      helpers   : {
+        title : { type : 'inside' },
+        buttons : {}
+      }
+    });
+    
+</script>
+</html>

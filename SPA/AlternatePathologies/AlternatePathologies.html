@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SPA</title>
+
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue_grey-blue.min.css" /> 
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
+
+
+  <link rel="stylesheet" href="../js/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="../js/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  <link rel="stylesheet" href="../js/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="../js/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  <script type="text/javascript" src="../js/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/css/swiper.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.min.js"></script>
+
+   <link rel="stylesheet" href="../css/specific-css.css">
+
+
+</head>
+<body>
+  
+
+<!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+<div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
+  <header class="mdl-layout__header mdl-layout__header--scroll">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title"></span>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">SpA</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="../index.html">Table of Contents</a>
+      <a class="mdl-navigation__link" href="../overview/overview.html">Overview</a>
+      <a class="mdl-navigation__link" href="../AnatomyImaging/AnatomyImaging-sacroiliac.html">Anatomy &amp; Imaging - Sacroiliac</a>
+      <a class="mdl-navigation__link" href="../AnatomyImaging/AnatomyImaging-spinal.html">Anatomy &amp; Imaging - Spinal</a>
+      <a class="mdl-navigation__link" href="../ImagingAlgorithm/ImagingAlgorithm.html">Imaging Algorithm</a>
+      <a class="mdl-navigation__link" href="../DiagnosticSpA/DiagnosticSpA.html">Diagnosis SpA</a>
+
+      <a class="mdl-navigation__link" href="AlternatePathologies.html">Alternate Pathologies</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="1" href="AlternatePathologies.html#OsteitisCondensansIlia">Osteitis Condensans Ilia</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="2" href="AlternatePathologies.html#DegenerativeDiseaseSIJ">Degenerative Disease SIJ</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="5" href="AlternatePathologies.html#Infection">Infection</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="6" href="AlternatePathologies.html#Spondylodiscitis">Spondylodiscitis</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="7" href="AlternatePathologies.html#InsufficiencyFractures">Insufficiency Fractures</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="8" href="AlternatePathologies.html#DegenerativeDiscDisease">Degenerative Disc Disease</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="9" href="AlternatePathologies.html#TransitionalVertebra">Transitional Vertebra</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="10" href="AlternatePathologies.html#SpondylolisthesisSpondylolysis">Spondylolisthesis and Spondylolysis</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="11" href="AlternatePathologies.html#DISH">Diffuse Idiopathic Skeletal Hyperostosis</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="12" href="AlternatePathologies.html#SAPHO">SAPHO</a>
+        
+
+      <a class="mdl-navigation__link" href="../ImagingFindings/ImagingFindings-sacroiliac.html">Imaging Findings - Sacroiliac</a>
+      <a class="mdl-navigation__link" href="../ImagingFindings/ImagingFindings-spinal.html">Imaging Findings - Spinal</a>
+      <a class="mdl-navigation__link" href="../CaseStudies/CaseStudies.html">Case Studies</a>
+    </nav>
+  </div>
+
+<!-- Content Below -->
+
+<main class="mdl-layout__content dark-back">
+  <div class="page-content">
+      
+      <!-- Slider main container -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide" data-hash="start">    
+          <div class="padding center">
+            <h3>Alternate Pathologies</h3>
+            <p>Short introductory blurb about what will be covered in this section.</p>
+            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="../index.html">
+              <i class="zmdi zmdi-long-arrow-left"></i> Back to Table of Contents
+            </a>
+          </div>
+        </div> 
+
+        <div class="swiper-slide" data-hash="OsteitisCondensansIlia">    
+          <div class="padding">
+            <h3>Osteitis Condensans Ilia</h3>
+            <ul>
+            <li>Osteitis Condensans Ilia (OCI)  is a benign pathology presenting usually in young to middle aged adults with bilateral subchondral sclerosis related to the sacroiliac joints</li>
+            <li>It is thought to be a reactive change with bone remodelling with lamellar bone secondary to mechanical stress at the sacroiliac joints.</li>
+            <li>Patients may be symptomatic or it may be identified as an incidental finding on imaging. Symptoms, if present, are usually of a chronic mechanical low back pain. Inflammatory markers are negative and there is no association with HLA-B27.</li>
+            <li>Is more common than SpA affecting up to 2.5% of the population</li>
+            <li>Radiographs demonstrate subchondral sclerosis anteroinferiorly with a triangular configuration most pronounced within the ilium. </li>
+            <li>It is usually bilateral and symmetrical but unilateral involvement has been described. There is no joint space narrowing and no erosions.</li>
+            <li>CT demonstrates the same findings albeit in greater detail.</li>
+            <li>On MRI sclerosis is low signal intensity on both T1 and T2. There is no bone marrow oedema, erosions or post inflammatory fat accentuation.</li>
+            </ul>
+        
+          <p><b>a) &amp; b) Axial CT OSI in a 34y F with subchondral sclerosis without joint space loss or erosions c) Cor T1 & d) Cor T2FS MRI with bilateral subchondral ilac sclerois in keeping with OCI. Note joint space is maintained, there are no erosions and sclerosis is predominantly on the iliac aspects joints.</b></p>
+          <div class="card-wrapper2">
+
+            <div class="grid-sizer"></div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+              <a class="fancybox-button mdl-card__title mdl-card--expand" style="background: url('images/images.001.jpg') center / 130%;"
+                    href="images/images.001.jpg" 
+                    data-fancybox-group="gallery-2" 
+                    title="A)">
+              </a>
+              <i class="material-icons open-supporting-text">info_outline</i>
+              <div class="mdl-card__supporting-text">
+                A) 
+              </div>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+              <a class="fancybox-button mdl-card__title mdl-card--expand" style="background: url('images/images.002.jpg') center / 130%;"
+                  href="images/images.002.jpg" 
+                    data-fancybox-group="gallery-2" 
+                    title="B)">
+              </a>
+              <i class="material-icons open-supporting-text">info_outline</i>
+              <div class="mdl-card__supporting-text">
+                B)
+              </div>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+              <a class="fancybox-button mdl-card__title mdl-card--expand" style="background: url('images/images.003.jpg') center / 130%;" 
+                    href="images/images.003.jpg" 
+                    data-fancybox-group="gallery-2" 
+                    title="C)">
+              </a>
+              <i class="material-icons open-supporting-text">info_outline</i>
+              <div class="mdl-card__supporting-text">
+                C)
+              </div>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+              <a class="fancybox-button mdl-card__title mdl-card--expand" style="background: url('images/images.004.jpg') center / 130%;"
+                    href="images/images.004.jpg" 
+                    data-fancybox-group="gallery-2" 
+                    title="D)">
+              </a>
+              <i class="material-icons open-supporting-text">info_outline</i>
+              <div class="mdl-card__supporting-text">
+                D)
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+
+      <div class="swiper-slide" data-hash="DegenerativeDiseaseSIJ">    
+          <div class="padding">
+            <h3>Degenerative Disease Sacroiliac Joints</h3>
+            <ul>
+            <li> Osteoarthritis is a complex interaction of advancing age, genetic predisposition, mechanical stress, obesity, as well as metabolic and biochemical factors all of which may affect the degree, extent, and progression of disease.</li>
+            <li>It may be primary or secondary (previous trauma, inflammatory arthropathies etc)</li>
+            <li>Degenerative disease of the sacroiliac joints is common and increases with age.</li>
+            <li>Degenerative disease occurs at a younger age in women and is thought to be related to the increased stress across the joint in natural deliveries. Early changes are also noted in manual labourers.</li>
+            <li>Transitional vertebrae, lower lumbar degenerative disc disease, spondylolisthesis and spondylolysis may predispose due the altered dynamic across the sacroiliac joint</li>
+            </ul>
+
+        </div> 
+      </div>
+
+      <div class="swiper-slide" data-hash="DegenerativeDiseaseSIJ">    
+          <div class="padding">
+            <h3>Degenerative Disease Sacroiliac Joints</h3>
+            <ul>
+              <li> Key radiographic features of osteoarthritis include joint space narrowing, osteophytosis, altered bone contour, bone sclerosis and subchondral cysts formation. No erosions are present</li>
+              <li>Radiographic changes overlap with Grade 1 sacroiliitis (New York modified criteria)</li>
+              <li>CT is excellent at demonstrating bony architecture and changes of osteoarthritis including joint space loss, anterior osteophytosis, subchondral cysts and subchondral sclerosis. There will be absence of erosions.</li>
+              <li>MRI will demonstrate similar changes although axial imaging may not be acquired through the SIJ making assessment of anterior osteophytosis more challenging (often semi-coronal oblique images only acquired in patients been investigated for SpA with imaging whole spine and SIJ)</li>
+              <li>MRI will however demonstrate bone marrow oedema, not evident on x-ray or CT. Osteoarthritis may demonstrate subchondral bone marrow oedema, usually thin band of high signal intensity on T2.</li>
+              <li>There is overlap of bone marrow oedema pattern with sacroiliitis in SpA and bone marrow oedema can not be assessed in isolation.</li>
+            </ul>
+
+          <div class="card-wrapper2">
+
+          <div class="grid-sizer"></div>
+
+          <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="fancybox-button mdl-card__title mdl-card--expand" style="background: url('images/images.005.jpg') center / 130%;"
+                  href="images/images.005.jpg" 
+                  data-fancybox-group="gallery-3">
+            </a>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" data-hash="DegenerativeDiseaseSIJ">    
+        <div class="padding">
+          <h3>Degenerative Disease Sacroiliac Joints <span>(continued)</span></h3>
+            <ul>
+              <li>Erosions, subchondral post-inflammatory fat accentuation capsulitis, enthesitis and changes consistent with spondylitis are seen in SpA and not degenerative disease.</li>
+              <li>Exclude normal variants which may be a potential cause of degenerative disease.</li>
+              <li>In addition all imaging findings have to be reviewed in conjunction with the clinical context.</li>
+            </ul>
+
+          <div class="card-wrapper2">
+
+            <div class="grid-sizer"></div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+              <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.006.jpg') center / 130%;"
+                    href="images/images.006.jpg" 
+                    data-fancybox-group="gallery-4">
+              </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+              <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.007.jpg') center / 130%;"
+                    href="images/images.007.jpg" 
+                    data-fancybox-group="gallery-4">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" data-hash="Infection">    
+        <div class="padding">
+          <h3>Infection</h3>
+
+          <ul>
+            <li>The sacroiliac joints may become infected, septic arthritis. The underlying bone may also become infected, osteomyelitis. Periarticular soft tissue abscesses may develop</li>
+            <li>Septic arthritis is uncommon, is almost always unilateral, more common in young adults.</li>
+            <li>Symptoms initially are non specific and include lower back and posterior thigh pain before developing the classical symptoms of infection</li>
+            <li>Staph Aureus is the most common organism.</li>
+            <li>Radiographs are usually normal early in the course of disease. Early changes include joint space widening, periarticular osteopenia with progression to erosions and joint destruction. Normal radiographs do not exclude a septic arthritis and further imaging with CT or MRI (preferable) is required. </li>
+            <li>CT changes include widening of the joint cleft with erosions, thinning of the periarticular fatty tissue layer, increase in size of adjacent muscles and abscess formation. Review of the examination on soft tissue windows is essential lest soft tissue abnormalities be missed. CT however may appear normal in the early course of the disease. Therefore in the relevant clinical setting, more sensitive imaging modalities in the acute phase including MRI should be employed.</li>
+            <li>Anterior and/or posterior subperiosteal and infiltrations of juxta-articular muscle layers are characteristics of septic SII on MRI and could be used to differentiate septic arthritis from SII in spondyloarthropathy. </li>
+            <li>Fluoroscopic or CT guided joint aspiration can be performed to confirm the diagnosis and may be crucial in planning appropriate antimicrobial therapy.</li>
+          </ul>
+
+          <div class="card-wrapper2">
+
+            <div class="grid-sizer"></div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.008.jpg') center / 130%;" 
+                  href="images/images.008.jpg" 
+                  data-fancybox-group="gallery-5">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.009.jpg') center / 130%;" 
+                href="images/images.009.jpg" 
+                  data-fancybox-group="gallery-5">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.010.jpg') center / 130%;"
+             href="images/images.010.jpg" 
+                  data-fancybox-group="gallery-5">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.011.jpg') center / 130%;"
+            href="images/images.011.jpg" 
+                  data-fancybox-group="gallery-5">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.012.jpg') center / 130%;"
+            href="images/images.012.jpg" 
+                  data-fancybox-group="gallery-5">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.013.jpg') center / 130%;"
+            href="images/images.013.jpg" 
+                  data-fancybox-group="gallery-5">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.014.jpg') center / 130%;"
+            href="images/images.014.jpg"
+                  data-fancybox-group="gallery-5">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.015.jpg') center / 130%;"
+            href="images/images.015.jpg" 
+                  data-fancybox-group="gallery-5">
+            </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" data-hash="Spondylodiscitis">    
+        <div class="padding">
+        <h3>Spondylodiscitis</h3>
+            <ul>
+              <li>Spondylodiscitis is infection of the vertebra and intervertebral disc. Patients may present with non-specific back pain. Clinically there is little overlap with SpA and should be easily differentiated.</li>
+            </ul>
+
+          <div class="card-wrapper2">
+
+            <div class="grid-sizer"></div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.016.jpg') center / 130%;"
+            href="images/images.016.jpg" 
+                  data-fancybox-group="gallery-6">
+            </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" data-hash="InsufficiencyFractures">    
+        <div class="padding">
+        <h3>Insufficiency Fractures</h3>
+            <ul>
+              <li>These fractures most commonly occur in elderly females with osteoporosis and are easily differentiated from SpA.</li>
+              <li> The osteopenia makes assessment of plain X-rays difficult.</li>
+              <li>The diagnosis can be conﬁrmed by CT, which demonstrates patchy sclerosis, often with ﬁssure-like fractures and no associated soft tissue mass.</li>
+              <li>MRI will demonstrate similar findings. The fracture line  may be high or low signal intensity and is surrounding by mixed sclerosis and oedema.</li>
+            </ul>
+
+          <div class="card-wrapper2">
+
+            <div class="grid-sizer"></div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.017.jpg') center / 130%;"
+             href="images/images.017.jpg" 
+                  data-fancybox-group="gallery-7">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.018.jpg') center / 130%;"
+            href="images/images.018.jpg" 
+                  data-fancybox-group="gallery-7">
+            </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" data-hash="DegenerativeDiscDisease">    
+        <div class="padding">
+        <h3>Degenerative Disc Disease</h3>
+            <ul>
+              <li>Degenerative disc disease (DDD), intervertebral osteochondrosis, is one of the commonest causes of low back pain.</li>
+              <li>A clinical syndrome characterized by manifestations of disc degeneration and symptoms thought to be related to those changes.</li>
+              <li>Predisposing factors include age, genetics and axial loading. DDD may impact upon the adjacent nerves and be a source of symptoms. However DDD may also cause low back pain from release of cytokines and stimulate nociceptors. There may also be related facet joint disease.</li>
+              <li>DDD is present in the majority of imaged middle aged and older patients and may or may not be a source of symptoms and close clinical correlation is required.</li>
+              <li>Radiographs are limited in the assessment of DDD. Degenerative changes are common and non-specific.</li>
+              <li>Radiographs can be acquired in patients with red flags as the initial line of investigation to help localize pathology for a more detailed cross-sectional imaging study.</li>
+              <li>Vertebral body number, height and intervertebral disc space height should be assessed.</li>
+              <li>In DDD there is loss of intervertebral disc space height, associated reactive vertebral endplate sclerosis and multidirectional endplate osteophytes. Vacuum phenomena are collections of gas, predominantly nitrogen, and occur in sites of negative pressure within the nucleus pulposus</li>
+            </ul>
+            <h5>MRI</h5>
+            <ul>
+              <li>MRI is the non-invasive gold imaging standard in the imaging of DDD with excellent anatomical detail, soft tissue contrast and lack of radiation. MRI can assess the internal characteristic of the disc and adjacent marrow signal intensity. CT is less commonly used in imaging the lumbar spine due to radiation dose and less soft tissue contrast. It is not used in imaging of the cervical or thoracic spine for degenerative disease unless MRI is contra-indicated.</li>
+              <li>Intervertebral disc space height, vacuum phenomena, vertebral endplate osteophytes, erosions and sclerosis are assessed.</li>
+              <li>Disc bulge may be in many forms: a diffuse disc bulge, asymmetrical diffuse disc bulge, a focal protrusion, a broad based protrusion, an extrusion, an extrusion with migration with/out sequestration</li>
+            </ul>
+
+          <div class="card-wrapper2">
+
+            <div class="grid-sizer"></div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.020.jpg') center / 130%;"
+            href="images/images.020.jpg" 
+                  data-fancybox-group="gallery-8">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.021.jpg') center / 130%;"
+            href="images/images.021.jpg" 
+                  data-fancybox-group="gallery-8">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.022.jpg') center / 130%;"
+            href="images/images.022.jpg" 
+                  data-fancybox-group="gallery-8">
+            </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" data-hash="TransitionalVertebra">    
+        <div class="padding">
+        <h3>Transitional Vertebra</h3>
+            <ul>
+              <li>Transitional vertebrae at the lumbosacral junction are a common congenital anomaly</li>
+              <li>The upper sacral segment can become lumbarised and likewise the lowermost lumbar segment can become sacralised.</li>
+              <li>They may be associated with lower back pain, Bertolotti syndrome </li>
+              <li>In sacralisation of the lowermost lumbar vertebrae an elongated unilateral or bilateral transverse process is present which may or may not articulate with the sacrum or occasionally the ilium. This joint may also be fused.</li>
+              <li> There is increased degenerative changes noted in the opposite facet joint, and increased risk of DDD at the level above due to decreased range of motion at the level below.</li>
+              <li>In the case of lumbarisation of S1 the S1 vertebra is more square in appearance, there maybe a fully formed disc and usually has facet joints instead of the normal fusion at S1-2.</li>
+              <li>Identification of transitional vertebrae is important particularly in surgical patients so correct nomenclature is employed and surgery is performed at the correct level.
+              </li>
+              <li>CT is more sensitive in identifying transitional vertebrae due to wider field of view and ability to differentiate hypoplastic 12th ribs from prominent transverse processes. Identification of the iliolumbar ligament, arises from the transverse process of L5 is a useful landmark.</li>
+            </ul>
+            <h5>Castellvi Classification Lumbosacral Transitional Vertebrae</h5>
+            <ul>
+              <li>Type 1: forme fruste, Dysplastic transverse process, >19mm height</li>
+              <li>Type 2: incomplete, Enlarged transverse process with pseudoarthrosis with the adjacent sacral ala</li>
+              <li>Type 3: complete, Enlarged transverse process with complete fusion with the adjacent sacral ala</li>
+              <li>Type 4: mixed, Type 2 and type 3 on alternate sides</li>
+            </ul>
+
+          <div class="card-wrapper2">
+
+            <div class="grid-sizer"></div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.023.jpg') center / 130%;"
+            href="images/images.023.jpg" 
+                  data-fancybox-group="gallery-9">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.024.jpg') center / 130%;"
+            href="images/images.024.jpg" 
+                  data-fancybox-group="gallery-9">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.025.jpg') center / 130%;"
+            href="images/images.025.jpg" 
+                  data-fancybox-group="gallery-9">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.026.jpg') center / 130%;"
+            href="images/images.026.jpg" 
+                  data-fancybox-group="gallery-9">
+            </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" data-hash="SpondylolisthesisSpondylolysis">    
+        <div class="padding">
+        <h3>Spondylolisthesis &amp; Spondylolysis</h3>
+            <ul>
+            <li>Spondylolisthesis, from the Greek “a vertebra that slips”, indicates anterior or posterior translation, slippage, of a vertebra upon a vertebra above or below it.</li>
+            <li>Occurs in up to 4% of the population, commonest at the two lowermost lumbar levels.</li>
+            <li>It is divided into open or closed arch.</li>
+            <li>Retrolisthesis, posterior slippage, may occur, although less common, related to DDD. The cervical and lumbar spine are the most frequently involved.</li>
+            <li>In open arch there is bilateral spondylolysis, a defect in the pars interarticularis i.e. that portion bone between the superior and inferior articular facets. This is usually secondary to a stress fracture related to recurrent micro trauma rather than a single traumatic event.</li>
+            <li>In closed arch, degenerative spondylolisthesis, the pars is intact however there is instability at the facet joint usually related to degenerative change. The anterior and posterior elements of the vertebra remain connected and as such the posterior elements move forward and encroach upon the spinal canal and may cause a spinal canal and foraminal stenosis.</li>
+            <li>The lateral radiograph best demonstrates the spondylolisthesis. The degree of spondylolisthesis can be measured or graded, grades 1-4 with each grade equivalent to 25% of the AP diameter of the vertebra, i.e. grade 2 equates to 26-50%.</li>
+            <li> Anterior slippage of the posterior elements occurs in degenerative spondylolisthesis.  In spondylosis a bony defect in the pars is best visualized on the oblique radiograph. Instability can be assessed with flexion and extension views
+              <ul>
+                <li>CT demonstrates excellent bony detail of the pars and the facet joints. It can also assess any associated intervertebral disc disease.</li>
+                <li>MRI is less sensitive in assessing pars defect than CT. MRI is excellent however is assessing associated degenerative disc disease and neuroforaminal/canal stenosis. MRI can also demonstrate Modic endplate type 1 changes, which may relate to instability</li>
+              </ul>
+            </li>
+            </ul>
+
+          <div class="card-wrapper2">
+
+            <div class="grid-sizer"></div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.027.jpg') center / 130%;"
+            href="images/images.027.jpg" 
+                  data-fancybox-group="gallery-10">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.028.jpg') center / 130%;"
+            href="images/images.028.jpg" 
+                  data-fancybox-group="gallery-10">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.029.jpg') center / 130%;"
+            href="images/images.029.jpg" 
+                  data-fancybox-group="gallery-10">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.030.jpg') center / 130%;"
+             href="images/images.030.jpg" 
+                  data-fancybox-group="gallery-10">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.031.jpg') center / 130%;"
+             href="images/images.031.jpg" 
+                  data-fancybox-group="gallery-10">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.032.jpg') center / 130%;"
+              href="images/images.032.jpg" 
+                  data-fancybox-group="gallery-10">
+            </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" data-hash="DISH">    
+        <div class="padding">
+        <h3>Diffuse Idiopathic Skeletal Hyperostosis</h3>
+            <ul>
+              <li>DISH, also commonly known as Forestier Disease, is a common idiopathic skeletal disorder producing hyperostosis within the axial and appendicular skeleton. </li>
+              <li>It usually begins in middle age and is almost twice as common in men. </li>
+              <li>Diagnosis requires spinal involvement with anterior flowing ossification of the anterior longitudinal ligament over four contiguous vertebrae and not associated with degenerative disc disease at these levels and absent ankylosis of apophyseal or sacroiliac joints. The latter helps to excludes spondyloarthropathy. </li>
+              <li>It is slowly progressive and minor changes may be identified in middle age, which becomes more obvious as the patient ages.</li>
+              <li>The patient is often asymptomatic but may complain of stiffness and spinal restricted range of motion. Peripherally tendinopathy at tendinous insertion may be present.</li>
+              <li>DISH is most commonly diagnosed within the mid to lower thoracic spine, followed by the lower cervical spine.</li>
+              <li>Ossification or calcification of the anterior longitudinal ligament and paraspinal connective tissue occurs over at least four contiguous vertebrae, this is usually central or right lateral due to the inhibiting effect of pulsations from the thoracic aorta</li>
+              <li>The sacroiliac joints may demonstrate prominent anterior bridging osteophytosis without joint ankylosis or erosions.</li>
+            </ul>
+
+          <div class="card-wrapper2">
+
+            <div class="grid-sizer"></div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.033.jpg') center / 130%;"
+             href="images/images.033.jpg" 
+                  data-fancybox-group="gallery-11">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.034.jpg') center / 130%;"
+              href="images/images.034.jpg" 
+                  data-fancybox-group="gallery-11">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.035.jpg') center / 130%;"
+            href="images/images.035.jpg" 
+                  data-fancybox-group="gallery-11">
+            </a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide" data-hash="SAPHO">    
+        <div class="padding">
+        <h3>SAPHO</h3>
+            <ul>
+            <li>Synovitis, acne, pustulosis, hyperostosis and osteitis (SAPHO)</li>
+            <li>Within the spectrum of the seronegative arthritides ,characterized by sterile osteomyelitis</li>
+            <li>SAPHO syndrome can present at any age and is characterized by recurrent episodes of local sterile inflammation in any bone, but particularly the anterior chest wall including the sternoclavicular joint or the medial clavicle</li>
+            <li>In children, it most frequently affects the long bones and clavicles, while in adults, it particularly affects the anterior chest wall and axial spine.</li>
+            <li>It is often multifocal. The associated sacroiliitis is often unilateral and axial involvement may be indistinguishable from the spondyloarthropathies</li>
+            <li>Axial disease includes corner lesions on vertebral bodies, discitis, sclerosis adjacent to endplate erosions, paravertebral ossification, and destructive vertebral lesions (often resulting in bony collapse), along with sacroiliitis (usually unilateral with hyperostosis on the iliac side).</li>
+            <li>The medial third of the clavicle is the most typical site with hyperostosis, sclerosis and hypertrophy of the medial ends, followed by lateral extension as the disease progresses.</li>
+            </ul>
+
+          <div class="card-wrapper2">
+
+            <div class="grid-sizer"></div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.036.jpg') center / 130%;"
+             href="images/images.036.jpg" 
+                  data-fancybox-group="gallery-12">
+            </a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp demo-card-image">
+            <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/images.037.jpg') center / 130%;"
+             href="images/images.037.jpg" 
+                  data-fancybox-group="gallery-12">
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <div class="swiper-slide end" data-hash="end">    
+          <div class="padding center">
+            <h3>Alternate Pathologies Complete</h3>
+            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="../ImagingFindings/ImagingFindings-sacroiliac.html">
+              Continue to Imaging Findings - Sacroiliac<i class="zmdi zmdi-long-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      <!--End of slides -->
+      </div><!-- Slide Wrapper end-->
+
+      <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div><!-- Swiper end-->
+        
+
+  </div>
+</main>
+</div>
+
+</body>
+
+<script>
+  $( document ).ready(function() {
+      var slideheight = $('.swiper-slide-active > .padding').height();
+      $('.swiper-slide').height(slideheight);
+  });
+
+
+    var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    hashnav:true,
+    keyboardControl:true,
+    
+    // Navigation arrows
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    
+  });
+    
+
+    mySwiper.on('slideChangeStart', function () {
+
+      var slideheight = $('.swiper-slide-active > .padding').height();
+      $('.swiper-slide').height(slideheight);
+
+    });
+
+
+    $('.sub-nav-item').on('click', function(e){
+      
+      mySwiper.slideTo($(this).data('index'), 1);
+
+      $('.mdl-layout__drawer').removeClass('is-visible');
+    });
+
+    $('.card-wrapper2').masonry({
+      columnWidth: '.grid-sizer',
+      itemSelector: '.mdl-card',
+      percentPosition: true
+    });
+
+    $(".fancybox-button").fancybox({
+      prevEffect    : 'none',
+      nextEffect    : 'none',
+      closeBtn    : false,
+      arrows :false,
+      helpers   : {
+        title : { type : 'inside' },
+        buttons : {}
+      }
+    });
+    
+</script>
+</html>
