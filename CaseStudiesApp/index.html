@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
 
     <!-- MDL -->
-    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.blue_grey-red.min.css" /> 
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.blue_grey-red.min.css" />
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
@@ -17,40 +17,6 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/style.css">
-   
-
-    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <style type="text/css">
-        #wrapper {
-            width: 500px;
-            margin: 150px auto 0; 
-        }
-        /* Apply a pointer cursor and style the background upon hover to indicate <summary> is a clickable element. */
-        /* These styles can be applied regardless of whether the fallback is needed */
-        summary { cursor: pointer; }
-
-        /* The following styles are not really needed, since the jQuery script takes care of hiding/displaying the elements. */
-        /* However, we’re still gonna use CSS as well to prevent FOUC in browsers that understand these selectors. */
-        /* Remember: by default (and probably most of the time), the contents of the <details> element are hidden. */
-        .no-details details > * { display: none; }
-        /* This doesn’t work very well in Firefox 3.6.x */
-        /* .no-details details[open] > * { display: block; } */
-        /* The following doesn’t toggle correctly in WebKit:
-        .no-details details > summary:before { content: '► '; }
-        .no-details details[open] > summary:before { content: '▼ '; }
-        */
-        /* And yes, it should really be ::before, but that doesn’t work in IE8 */
-        .no-details details > summary:before { float: left; width: 30px; content: '► '; }
-        .no-details details.open > summary:before { content: '▼ '; }
-        /* For IE6 and IE7, who don’t support generated content, you could use padding-left + a background image instead */
-        /* I really couldn’t be bothered though. */
-        /*
-        .no-details details > summary { padding-left: 20px; background: url(img/arrow-sprite.png) no-repeat 0 0; }
-        .no-details details.open > summary { background-position: 0 -20px; }
-        */
-        /* Make sure summary remains visible */
-        .no-details details summary { display: block; }
-    </style>
 </head>
 
 <body>
@@ -78,7 +44,7 @@
         <article class="mdl-layout__content card-index" >
 
             <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect random-case-button" href="javascript:randomcase()">Random Case</a>
-            
+
             <div class="card">
                 <section class="header">
                     <h1>Section 1</h1>
@@ -195,17 +161,8 @@
         </article>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-    <script src="js/swiper.min.js"></script> 
+    <script src="js/swiper.min.js"></script>
     <script src="js/randomcase.js"></script>
-    <script src="jquery.details.js"></script>
-    <script>
-        $(function() {
-                // Add conditional classname based on support
-                $('html').addClass($.fn.details.support ? 'details' : 'no-details');
-                // Emulate <details> where necessary and enable open/close event handlers
-                $('details').details();
-            });
-    </script>
 
     <script>
 
