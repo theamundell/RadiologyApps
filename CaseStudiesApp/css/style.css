@@ -63,14 +63,6 @@ summary:focus {
 	margin: 150px auto 0;
 }
 
-
-/* Apply a pointer cursor and style the background upon hover to indicate <summary> is a clickable element. */
-/* These styles can be applied regardless of whether the fallback is needed */
-summary {
-	cursor: pointer;
-}
-
-
 article .diagnosis {
 	display: none;
 }
