@@ -1434,16 +1434,7 @@
     </div>
 
     <script src="js/swiper.min.js"></script>
-    <script src="jquery.details.js"></script>
     <script src="js/randomcase.js"></script>
-    <script>
-        $(function() {
-                        // Add conditional classname based on support
-                        $('html').addClass($.fn.details.support ? 'details' : 'no-details');
-                        // Emulate <details> where necessary and enable open/close event handlers
-                        $('details').details();
-                    });
-    </script>
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -1451,10 +1442,13 @@
                 closeBtn : false
             });
         });
-    </script>
 
+        $('button').click(function() {
+      		$('article #' + this.value).toggle('slow', function() {
+      			// Animation complete.
+      		});
+      	});
 
-    <script>
 
         var swiper = new Swiper('.swiper-container', {
             hashnav: true,
