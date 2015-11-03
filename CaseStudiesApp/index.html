@@ -57,7 +57,6 @@
                 </section>
 
                 <section class="toggle-open">
-                    <div class="close">close</div>
 
                     <a href="section1.html#1"> Sec 1.1 <!-- Achilles tendon thickening --></a>
                     <a href="section1.html#2">Sec 1.2 <!--Subchondral Insufficency fracture --></a>
@@ -86,7 +85,6 @@
                 </section>
 
                 <section class="toggle-open">
-                    <div class="close">close</div>
 
                     <a href="section2.html#1">Sec 2.1 <!-- Calcific tendinosis--></a>
                     <a href="section2.html#2">Sec 2.2 <!-- CPPD acute case --></a>
@@ -120,7 +118,6 @@
                 </section>
 
                 <section class="toggle-open">
-                    <div class="close">close</div>
 
                     <a href="section3.html#1">Sec 3.1 <!-- Early DISH --></a>
                     <a href="section3.html#2">Sec 3.2 <!-- Normal --></a>
@@ -146,7 +143,6 @@
                 </section>
 
                 <section class="toggle-open">
-                    <div class="close">close</div>
                     <a href="section4.html#1">Sec 4.1 <!-- Sharp Method --></a>
                     <a href="section4.html#2">Sec 4.2 <!-- Lupus Vasculopathy --></a>
                     <a href="section4.html#3">Sec 4.3 <!-- PAN CT  --></a>
@@ -180,11 +176,7 @@
         });
 
         $('.card section.header').click(function () {
-            $('.toggle-open').removeClass('open');
             $(this).siblings().toggleClass('open');
-        })
-        $('.close').click(function () {
-            $('.toggle-open').removeClass('open');
         })
     </script>
 </body>
