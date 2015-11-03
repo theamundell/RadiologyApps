@@ -141,7 +141,13 @@ ol ol li{
 
 }
 
+.swiper-button-prev div {
+	margin-left: 40px;
+}
 
+.swiper-button-next div {
+	margin-left: -40px;
+}
 
 
 
@@ -207,7 +213,7 @@ div.swiper-slide a.fancybox {
 .mdl-card__title-text {
 	margin: none;
 }
-.mdl-layout__header.mdl-layout__header--transparent.is-casting-shadow, 
+.mdl-layout__header.mdl-layout__header--transparent.is-casting-shadow,
 .mdl-layout__drawer-button{
 	z-index:0;
 }
