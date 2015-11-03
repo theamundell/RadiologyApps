@@ -6,7 +6,7 @@
 	<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"  name="viewport" >
 
     <!-- MDL -->
-    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.blue_grey-red.min.css" /> 
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.blue_grey-red.min.css" />
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
@@ -55,6 +55,7 @@
 
 
                     <div class="swiper-slide" data-hash="1">
+											<div class="padding">
                         <section class="header">
                             <h2>3.1 - Review the case and provide a diagnosis</h2>
                         </section>
@@ -63,10 +64,10 @@
                             <h3>Images</h3>
                             <p>Review these MRI images.</p>
 
-                            <table>
-                                <tr>
 
-                                    <td>
+
+
+
                                         <a class="fancybox" href="images/section3/3.1.1.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -78,9 +79,9 @@
 
                                             </div>
                                         </a>
-                                    </td>
 
-                                    <td>
+
+
                                         <a class="fancybox" href="images/section3/3.1.2.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -92,10 +93,10 @@
 
                                             </div>
                                         </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
+
+
+
+
                                         <a class="fancybox" href="images/section3/3.1.3.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -107,24 +108,6 @@
 
                                             </div>
                                         </a>
-                                    </td>
-
-                                    <td>
-                                        <a class="fancybox" href="images/section3/3.1.4.jpg">
-                                            <div class="mdl-card mdl-shadow--2dp">
-
-
-
-                                                <div class="mdl-card__title mdl-card--expand" style="background: url('images/section3/3.1.4.jpg') center/cover">
-                                                    <h5 class="mdl-card__title-text text">Annotated</h5>
-                                                </div>
-
-                                            </div>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </table>
-
 
                             <h3>Case description</h3>
 
@@ -143,10 +126,9 @@
                             </ul>
 
                             <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis 
-                                    </summary>
+															<button type="button" value='diagnosis-0'>Diagnosis</button>
+
+															<article class='diagnosis' id='diagnosis-0'>
 
                                     <p><b>Diagnosis: Diffuse Idiopathic Skeletal Hyperostosis (DISH)</b></p>
 
@@ -158,19 +140,27 @@
                                         </ul>
                                     </ul>
 
+																		<a class="fancybox" href="images/section3/3.1.4.jpg">
+																				<div class="mdl-card mdl-shadow--2dp">
+
+
+
+																						<div class="mdl-card__title mdl-card--expand" style="background: url('images/section3/3.1.4.jpg') center/cover">
+																								<h5 class="mdl-card__title-text text">Annotated</h5>
+																						</div>
+
+																				</div>
+																		</a>
+
                                     <h4>Reference</h4>
 
                                     <ul>
                                         <li><b>Ref: Chapter 6: Spondyloarthropathy</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-
-
-
-                                </details>
                             </article>
 
                         </section>
-
+											</div>
                     </div>
 
 
@@ -242,13 +232,15 @@
 
 
                     <div class="swiper-slide" data-hash="2">
+											<div class="padding">
+
                         <section class="header">
                             <h2>Case 3.2 - Review the case and provide a diagnosis</h2>
                         </section>
 
                         <section>
                             <p>Interpret this radiograph.</p>
-                            <a class="fancybox" href="images/section3/3.2.1.jpg">
+                            <a class="fancybox center-large-image" href="images/section3/3.2.1.jpg">
                                 <div class="mdl-card mdl-shadow--2dp">
 
 
@@ -271,11 +263,9 @@
 
                             </ul>
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+														<button type="button" value='diagnosis-1'>Diagnosis</button>
+
+														<article class='diagnosis' id='diagnosis-1'>
 
                                     <p><b>Radiograph:  Normal</b></p>
 
@@ -290,10 +280,9 @@
                                     <ul>
                                         <li><b>Ref: Chapter 2: Arthritis-A Diagnostic Approach, </b>O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-
-                                </details>
                             </article>
                         </section>
+											</div>
                     </div>
 
 
@@ -342,6 +331,8 @@
 
 
                     <div class="swiper-slide" data-hash="3">
+											<div class="padding">
+
                         <section class="header">
                             <h2>Case 3.3 - Review the case and provide a diagnosis</h2>
                         </section>
@@ -351,10 +342,10 @@
                             <h3>Images</h3>
                             <p>Interpret this radiograph.</p>
 
-                            <table>
-                                <tr>
-                                    <td>
-                                        <a class="fancybox" href="images/section3/3.3.1.jpg">
+
+
+
+                                        <a class="fancybox center-large-image" href="images/section3/3.3.1.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
 
@@ -365,23 +356,8 @@
 
                                             </div>
                                         </a>
-                                    </td>
-
-                                    <td>
-                                        <a class="fancybox" href="images/section3/3.3.2.jpg">
-                                            <div class="mdl-card mdl-shadow--2dp">
 
 
-
-                                                <div class="mdl-card__title mdl-card--expand" style="background: url('images/section3/3.3.2.jpg') center/cover">
-                                                    <h5 class="mdl-card__title-text text">Annotated</h5>
-                                                </div>
-
-                                            </div>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </table>
 
                             <h3>Case description</h3>
 
@@ -391,34 +367,44 @@
                                 <li>On examination he has a small shoulder effusion. His range of motion is limited in abduction, flexion, extension to less than 30 degrees in any direction. This is associated with crepitus on examination.</li>
                             </ul>
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+														<button type="button" value='diagnosis-2'>Diagnosis</button>
+
+														<article class='diagnosis' id='diagnosis-2'>
 
                                     <p><b>Diagnosis: Hydroxyapatite Deposition Disease (HADD) </b></p>
 
                                     <ul>
                                         <li>HADD is otherwise known as Milwaukee shoulder. </li>
                                         <li>The features in keeping with this diagnosis on this radiograph include:</li>
-                                        <ul>	
+                                        <ul>
                                             <li>Intra-articular cloud-like calcifications (dashed line) - note lack of cortex or trabecular pattern to suggest ossified bodies.</li>
                                             <li>Deformity and collapse of the humeral head (arrows). Prior trauma and neuropathic joint are in the differential diagnosis however the extensive intra-articular calcifications are more in keeping with crystal disease</li>
                                             <li>Joint distension (dashed arrow)</li>
 
                                         </ul>
-                                    </ul>  
+                                    </ul>
+
+																		<a class="fancybox" href="images/section3/3.3.2.jpg">
+																				<div class="mdl-card mdl-shadow--2dp">
+
+
+
+																						<div class="mdl-card__title mdl-card--expand" style="background: url('images/section3/3.3.2.jpg') center/cover">
+																								<h5 class="mdl-card__title-text text">Annotated</h5>
+																						</div>
+
+																				</div>
+																		</a>
 
                                     <h4>Reference</h4>
 
                                     <ul>
                                         <li><b>Ref: Chapter 8: Crystal Related Disease </b>O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-                                </details>
 
                             </article>
                         </section>
+											</div>
                     </div>
 
 
@@ -463,6 +449,8 @@
 
 
                     <div class="swiper-slide"data-hash="4">
+											<div class="padding">
+
                         <section class="header">
                             <h2>Case 3.4 - Review the case and provide a diagnosis</h2>
                         </section>
@@ -471,9 +459,9 @@
                             <h3>Images</h3>
                             <p>Interpret this radiograph.</p>
 
-                            <table>
-                                <tr>
-                                    <td>
+
+
+
                                         <a class="fancybox" href="images/section3/3.4.1.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -485,9 +473,9 @@
 
                                             </div>
                                         </a>
-                                    </td>
 
-                                    <td>
+
+
                                         <a class="fancybox" href="images/section3/3.4.2.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -499,11 +487,11 @@
 
                                             </div>
                                         </a>
-                                    </td>
-                                </tr>
-                                <tr>
 
-                                    <td>
+
+
+
+
                                         <a class="fancybox" href="images/section3/3.4.3.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -515,23 +503,7 @@
 
                                             </div>
                                         </a>
-                                    </td>
 
-                                    <td>
-                                        <a class="fancybox" href="images/section3/3.4.4.jpg">
-                                            <div class="mdl-card mdl-shadow--2dp">
-
-
-
-                                                <div class="mdl-card__title mdl-card--expand" style="background: url('images/section3/3.4.4.jpg') center/cover">
-                                                    <h5 class="mdl-card__title-text text">Annotated</h5>
-                                                </div>
-
-                                            </div>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </table>
 
                             <h3>Case description</h3>
 
@@ -548,35 +520,42 @@
 
                             </ul>
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+														<button type="button" value='diagnosis-3'>Diagnosis</button>
+
+														<article class='diagnosis' id='diagnosis-3'>
 
                                     <p><b>Diagnosis: Multicentric reticulohistiocytosis (MRH)</b></p>
 
                                     <ul>
                                         <li>The features in keeping with this diagnosis on radiographs include:</li>
 
-                                        <ul>	
+                                        <ul>
                                             <li>Well-circumscribed marginal erosions (arrow), tuft resorption (dashed arrow), soft tissue swelling at DIP’s. Normal MCP’s.</li>
                                             <li>Pertinent negatives include lack of periarticular osteopenia, periosteal reaction, joint space loss and osteophytes</li>
                                         </ul>
                                         <li>MRH can present as a paraneoplastic syndrome, as in this case.</li>
                                     </ul>
 
+																		<a class="fancybox" href="images/section3/3.4.4.jpg">
+																				<div class="mdl-card mdl-shadow--2dp">
+
+
+
+																						<div class="mdl-card__title mdl-card--expand" style="background: url('images/section3/3.4.4.jpg') center/cover">
+																								<h5 class="mdl-card__title-text text">Annotated</h5>
+																						</div>
+
+																				</div>
+																		</a>
+
                                     <h4>Reference</h4>
 
                                     <ul>
                                         <li><b>Ref: Chapter 9: Endocrine and Miscellaneous Arthropathies,</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-
-
-                                </details>
-
                             </article>
                         </section>
+											</div>
                     </div>
 
 
@@ -624,6 +603,8 @@
 
 
                     <div class="swiper-slide" data-hash="5">
+											<div class="padding">
+
                         <section class="header">
                             <h2>Case 3.5 - Review the case and provide a diagnosis</h2>
                         </section>
@@ -633,7 +614,7 @@
                             <h3>Image</h3>
                             <p>Review this radiograph.</p>
 
-                            <a class="fancybox" href="images/section3/3.5.1.jpg">
+                            <a class="fancybox center-large-image" href="images/section3/3.5.1.jpg">
                                 <div class="mdl-card mdl-shadow--2dp">
 
 
@@ -655,18 +636,16 @@
 
                             </ul>
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+														<button type="button" value='diagnosis-4'>Diagnosis</button>
+
+														<article class='diagnosis' id='diagnosis-4'>
 
                                     <p><b>Diagnosis: Acromegaly</b></p>
 
                                     <ul>
                                         <li>The findings suggestive of acromegaly include:</li>
 
-                                        <ul>	
+                                        <ul>
                                             <li>Spade-like hand</li>
                                             <li>Thickened soft tissues</li>
                                             <li>Prominent ungal tufts</li>
@@ -682,11 +661,9 @@
                                     <ul>
                                         <li><b>Ref: Chapter 9: Endocrine and Miscellaneous Arthropathies,</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-
-                                </details>
-
                             </article>
                         </section>
+											</div>
                     </div>
 
 
@@ -736,6 +713,8 @@
 
 
                     <div class="swiper-slide" data-hash="6">
+											<div class="padding">
+
                         <section class="header">
                             <h2>Case 3.6 - Review the case and provide a diagnosis</h2>
                         </section>
@@ -744,9 +723,9 @@
                             <h3>Images</h3>
                             <p>What is the incidental bony finding on this radiograph?</p>
 
-                            <table>
-                                <tr>
-                                    <td>
+
+
+
                                         <a class="fancybox" href="images/section3/3.6.1.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -758,9 +737,9 @@
 
                                             </div>
                                         </a>
-                                    </td>
 
-                                    <td>
+
+
                                         <a class="fancybox" href="images/section3/3.6.2.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -772,25 +751,9 @@
 
                                             </div>
                                         </a>
-                                    </td>
-                                </tr>
-                                <tr>
-
-                                    <td>
-                                        <a class="fancybox" href="images/section3/3.6.3.jpg">
-                                            <div class="mdl-card mdl-shadow--2dp">
 
 
 
-                                                <div class="mdl-card__title mdl-card--expand" style="background: url('images/section3/3.6.3.jpg') center/cover">
-                                                    <h5 class="mdl-card__title-text text">Annotated</h5>
-                                                </div>
-
-                                            </div>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </table>
                             <h3>Case description</h3>
 
                             <ul>
@@ -800,13 +763,11 @@
 
 
                             </ul>
-                            
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+
+														<button type="button" value='diagnosis-5'>Diagnosis</button>
+
+														<article class='diagnosis' id='diagnosis-5'>
 
                                     <p><b>Radiographic finding: “Rugger jersey spine”</b></p>
 
@@ -817,17 +778,26 @@
                                         <li>Also note the peritoneal dialysis catheter coiled in the pelvis, and surgical clips in the right iliac fossa in keeping with a renal transplant</li>
                                     </ul>
 
+																		<a class="fancybox" href="images/section3/3.6.3.jpg">
+																				<div class="mdl-card mdl-shadow--2dp">
+
+
+
+																						<div class="mdl-card__title mdl-card--expand" style="background: url('images/section3/3.6.3.jpg') center/cover">
+																								<h5 class="mdl-card__title-text text">Annotated</h5>
+																						</div>
+
+																				</div>
+																		</a>
+
                                     <h4>Reference</h4>
 
                                     <ul>
                                         <li><b>Ref: Chapter 9: Endocrine and Miscellaneous Arthropathies,</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-
-
-                                </details>
-
                             </article>
                         </section>
+											</div>
                     </div>
 
 
@@ -869,6 +839,8 @@
 
 
                     <div class="swiper-slide" data-hash="7">
+											<div class="padding">
+
                         <section class="header">
                             <h2>Case 3.7 - Review the case and provide a diagnosis</h2>
                         </section>
@@ -876,9 +848,9 @@
                         <section>
                             <h3>Images</h3>
 
-                            <table>
-                                <tr>
-                                    <td>
+
+
+
                                         <a class="fancybox" href="images/section3/3.7.1.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -890,8 +862,8 @@
 
                                             </div>
                                         </a>
-                                    </td>
-                                    <td>
+
+
                                         <a class="fancybox" href="images/section3/3.7.2.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -903,9 +875,9 @@
 
                                             </div>
                                         </a>
-                                    </td>
-                                </tr>
-                            </table>
+
+
+
                             <h3>Case description</h3>
 
                             <ul>
@@ -920,11 +892,9 @@
 
                             </ul>
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+														<button type="button" value='diagnosis-6'>Diagnosis</button>
+
+														<article class='diagnosis' id='diagnosis-6'>
 
                                     <p><b>Diagnosis: Degenerative changes of SI joints</b></p>
 
@@ -941,11 +911,9 @@
                                     <ul>
                                         <li><b>Ref: Chapter 6: Spondyloarthropathy,</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-
-                                </details>
-
                             </article>
                         </section>
+											</div>
                     </div>
 
 
@@ -991,6 +959,8 @@
 
 
                     <div class="swiper-slide" data-hash="8">
+											<div class="padding">
+
                         <section class="header">
                             <h2>Case 3.8 - Review the case and provide a diagnosis</h2>
                         </section>
@@ -998,10 +968,10 @@
                         <section>
                             <h3>Images</h3>
                             <p>Review these ultrasound images. What is the most likely diagnosis and cause for the patient’s symptoms?</p>
-                            
-                            <table>
-                                <tr>
-                                    <td>
+
+
+
+
                                         <a class="fancybox" href="images/section3/3.8.1.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -1013,8 +983,8 @@
 
                                             </div>
                                         </a>
-                                    </td>
-                                    <td>
+
+
 
                                         <a class="fancybox" href="images/section3/3.8.2.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
@@ -1027,9 +997,9 @@
 
                                             </div>
                                         </a>
-                                    </td>
-                                </tr>
-                            </table>
+
+
+
 
                             <h3>Case description</h3>
 
@@ -1043,11 +1013,9 @@
 
                             </ul>
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+														<button type="button" value='diagnosis-7'>Diagnosis</button>
+
+														<article class='diagnosis' id='diagnosis-7'>
 
                                     <p><b>Diagnosis: Quinolone-related Achilles tendinopathy</b></p>
 
@@ -1063,12 +1031,10 @@
                                     <ul>
                                         <li><b>Ref: Chapter 4: Image Analysis,</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-
-                                </details>
-
                             </article>
                         </section>
-                    </div>
+											</div>
+										</div>
 
 
 
@@ -1118,6 +1084,8 @@
 
 
                     <div class="swiper-slide" data-hash="9">
+											<div class="padding">
+
                         <section class="header">
                             <h2>Case 3.9 - Review the case and provide a diagnosis</h2>
                         </section>
@@ -1125,7 +1093,7 @@
                         <section>
                             <h3>Image</h3>
                             <p>Review the following radiograph. What is the main finding and the differential diagnosis for this finding?</p>
-                            <a class="fancybox" href="images/section3/3.9.1.jpg">
+                            <a class="fancybox center-large-image" href="images/section3/3.9.1.jpg">
                                 <div class="mdl-card mdl-shadow--2dp">
 
 
@@ -1150,11 +1118,9 @@
 
                             </ul>
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+														<button type="button" value='diagnosis-8'>Diagnosis</button>
+
+														<article class='diagnosis' id='diagnosis-8'>
 
                                     <p><b>Diagnosis: Unilateral sacroiliitis</b></p>
 
@@ -1169,13 +1135,10 @@
                                     <ul>
                                         <li><b>Ref: Chapter 6: Spondyloarthropathy,</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-
-
-                                </details>
-
                             </article>
                         </section>
-                    </div>
+											</div>
+										</div>
 
 
 
@@ -1221,6 +1184,8 @@
 
 
                     <div class="swiper-slide" data-hash="10">
+											<div class="padding">
+
                         <section class="header">
                             <h2>Case 3.10 - Review the case and provide a diagnosis</h2>
                         </section>
@@ -1228,9 +1193,9 @@
                         <section>
                             <h3>Images</h3>
                             <p>Review these MRI images. What is the most likely diagnosis?</p>
-                            <table>
-                                <tr>
-                                    <td>
+
+
+
                                         <a class="fancybox" href="images/section3/3.10.1.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -1242,8 +1207,8 @@
 
                                             </div>
                                         </a>
-                                    </td>
-                                    <td>
+
+
                                         <a class="fancybox" href="images/section3/3.10.4.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -1255,10 +1220,10 @@
 
                                             </div>
                                         </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
+
+
+
+
                                         <a class="fancybox" href="images/section3/3.10.2.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -1270,8 +1235,8 @@
 
                                             </div>
                                         </a>
-                                    </td>
-                                    <td>
+
+
                                         <a class="fancybox" href="images/section3/3.10.3.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -1283,9 +1248,9 @@
 
                                             </div>
                                         </a>
-                                    </td>
-                                </tr>
-                            </table>
+
+
+
                             <h3>Case description</h3>
 
                             <ul>
@@ -1298,11 +1263,9 @@
 
                             </ul>
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+														<button type="button" value='diagnosis-9'>Diagnosis</button>
+
+														<article class='diagnosis' id='diagnosis-9'>
 
                                     <p><b>The most likely diagnosis based on this patient’s MRI is relapsing seronegative symmetric synovitis with pitting edema (RS3PE). </b></p>
 
@@ -1323,10 +1286,9 @@
                                     <ul>
                                         <li><b>See Chapter 5 - Inflammatory Arthritides in Essential Imaging in Rheumatology,</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-
-                                </details>
                             </article>
                         </section>
+											</div>
                     </div>
 
 
@@ -1380,6 +1342,8 @@
 
 
                     <div class="swiper-slide" data-hash="11">
+											<div class="padding">
+
                         <section class="header">
                             <h2>Case 3.11 - Review the case and provide a diagnosis</h2>
                         </section>
@@ -1388,9 +1352,9 @@
                             <h3>Images</h3>
                             <p>Review the following images. What are the modalities, pertinent findings, and diagnosis?</p>
 
-                            <table>
-                                <tr>
-                                    <td>
+
+
+
                                         <a class="fancybox" href="images/section3/3.11.1.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -1402,8 +1366,8 @@
 
                                             </div>
                                         </a>
-                                    </td>
-                                    <td>
+
+
                                         <a class="fancybox" href="images/section3/3.11.2.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -1415,10 +1379,10 @@
 
                                             </div>
                                         </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
+
+
+
+
                                         <a class="fancybox" href="images/section3/3.11.3.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -1430,51 +1394,6 @@
 
                                             </div>
                                         </a>
-                                    </td>
-                                    <td>
-                                        <a class="fancybox" href="images/section3/3.11.4.jpg">
-                                            <div class="mdl-card mdl-shadow--2dp">
-
-
-
-                                                <div class="mdl-card__title mdl-card--expand" style="background: url('images/section3/3.11.4.jpg') center/cover">
-                                                    <h5 class="mdl-card__title-text text">Annotated</h5>
-                                                </div>
-
-                                            </div>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a class="fancybox" href="images/section3/3.11.6.jpg">
-                                            <div class="mdl-card mdl-shadow--2dp">
-
-
-
-                                                <div class="mdl-card__title mdl-card--expand" style="background: url('images/section3/3.11.6.jpg') center/cover">
-                                                    <h5 class="mdl-card__title-text text">Annotated</h5>
-                                                </div>
-
-                                            </div>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a class="fancybox" href="images/section3/3.11.5.jpg">
-                                            <div class="mdl-card mdl-shadow--2dp">
-
-
-
-                                                <div class="mdl-card__title mdl-card--expand" style="background: url('images/section3/3.11.5.jpg') center/cover">
-                                                    <h5 class="mdl-card__title-text text">Annotated</h5>
-                                                </div>
-
-                                            </div>
-                                        </a>
-                                    </td>
-                                </tr>
-                            </table>
-
 
 
                             <h3>Case description</h3>
@@ -1489,11 +1408,9 @@
 
                             </ul>
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+														<button type="button" value='diagnosis-10'>Diagnosis</button>
+
+														<article class='diagnosis' id='diagnosis-10'>
 
 
 
@@ -1505,10 +1422,48 @@
 
                                     </ul>
 
-                                </details>
+																		<a class="fancybox" href="images/section3/3.11.4.jpg">
+																				<div class="mdl-card mdl-shadow--2dp">
 
+
+
+																						<div class="mdl-card__title mdl-card--expand" style="background: url('images/section3/3.11.4.jpg') center/cover">
+																								<h5 class="mdl-card__title-text text">Annotated</h5>
+																						</div>
+
+																				</div>
+																		</a>
+
+
+
+
+																		<a class="fancybox" href="images/section3/3.11.6.jpg">
+																				<div class="mdl-card mdl-shadow--2dp">
+
+
+
+																						<div class="mdl-card__title mdl-card--expand" style="background: url('images/section3/3.11.6.jpg') center/cover">
+																								<h5 class="mdl-card__title-text text">Annotated</h5>
+																						</div>
+
+																				</div>
+																		</a>
+
+
+																		<a class="fancybox" href="images/section3/3.11.5.jpg">
+																				<div class="mdl-card mdl-shadow--2dp">
+
+
+
+																						<div class="mdl-card__title mdl-card--expand" style="background: url('images/section3/3.11.5.jpg') center/cover">
+																								<h5 class="mdl-card__title-text text">Annotated</h5>
+																						</div>
+
+																				</div>
+																		</a>
                             </article>
                         </section>
+											</div>
                     </div>
 
 
@@ -1557,6 +1512,8 @@
 
 
                     <div class="swiper-slide" data-hash="12">
+											<div class="padding">
+
                         <section class="header">
                             <h2>Case 3.12 - Review the case and provide a diagnosis</h2>
                         </section>
@@ -1565,9 +1522,9 @@
                             <h3>Images</h3>
                             <p>MRI</p>
 
-                            <table>
-                                <tr>
-                                    <td>
+
+
+
                                         <a class="fancybox" href="images/section3/3.12.1.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -1579,8 +1536,8 @@
 
                                             </div>
                                         </a>
-                                    </td>
-                                    <td>
+
+
                                         <a class="fancybox" href="images/section3/3.12.2.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -1592,10 +1549,10 @@
 
                                             </div>
                                         </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
+
+
+
+
                                         <a class="fancybox" href="images/section3/3.12.3.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -1607,8 +1564,8 @@
 
                                             </div>
                                         </a>
-                                    </td>
-                                    <td>
+
+
                                         <a class="fancybox" href="images/section3/3.12.4.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -1620,10 +1577,10 @@
 
                                             </div>
                                         </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
+
+
+
+
                                         <a class="fancybox" href="images/section3/3.12.5.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -1635,8 +1592,8 @@
 
                                             </div>
                                         </a>
-                                    </td>
-                                    <td>
+
+
                                         <a class="fancybox" href="images/section3/3.12.6.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -1648,9 +1605,9 @@
 
                                             </div>
                                         </a>
-                                    </td>
-                                </tr>
-                            </table>
+
+
+
                             <h3>Case description</h3>
 
                             <ul>
@@ -1662,11 +1619,9 @@
 
                             </ul>
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+														<button type="button" value='diagnosis-11'>Diagnosis</button>
+
+														<article class='diagnosis' id='diagnosis-11'>
 
 
 
@@ -1685,11 +1640,9 @@
                                     <ul>
                                         <li><b>See Chapter 13: Imaging in Musculoskeletal Infection,</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-
-                                </details>
-
                             </article>
                         </section>
+											</div>
                     </div>
 
 
@@ -1734,6 +1687,8 @@
 
 
                     <div class="swiper-slide" data-hash="13">
+											<div class="padding">
+
                         <section class="header">
                             <h2>Case 3.13 - Review the case and provide a diagnosis</h2>
                         </section>
@@ -1741,9 +1696,9 @@
                         <section>
                         <h3>Images</h3>
                         <p>Describe what you see in the following radiographs</p>
-                        <table>
-                            <tr>
-                                <td>
+
+
+
                                     <a class="fancybox" href="images/section3/3.13.1.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -1755,8 +1710,8 @@
 
                                             </div>
                                         </a>
-                                </td>
-                                <td>
+
+
                                     <a class="fancybox" href="images/section3/3.13.2.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -1768,10 +1723,10 @@
 
                                             </div>
                                         </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
+
+
+
+
                                     <a class="fancybox" href="images/section3/3.13.3.jpg">
                                             <div class="mdl-card mdl-shadow--2dp">
 
@@ -1783,9 +1738,9 @@
 
                                             </div>
                                         </a>
-                                </td>
-                            </tr>
-                        </table>
+
+
+
                             <h3>Case description</h3>
 
                             <ul>
@@ -1794,13 +1749,11 @@
                                 <li>Now presenting with worsening of left ankle and leg pain</li>
 
                             </ul>
-                            
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+
+														<button type="button" value='diagnosis-12'>Diagnosis</button>
+
+														<article class='diagnosis' id='diagnosis-12'>
 
 
 
@@ -1817,11 +1770,9 @@
                                     <ul>
                                         <li><b>See Chapter 5: Inflammatory Arthritides, in Essential Imaging in Rheumatology,</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-
-                                </details>
-
                             </article>
                         </section>
+											</div>
                     </div>
                 </div>
 
@@ -1838,26 +1789,21 @@
 </body>
 </html>
 
-<script src="jquery.details.js"></script>
 <script src="js/randomcase.js"></script>
-<script>
-    $(function() {
-                // Add conditional classname based on support
-                $('html').addClass($.fn.details.support ? 'details' : 'no-details');
-                // Emulate <details> where necessary and enable open/close event handlers
-                $('details').details();
-            });
-</script>
 <script src="js/swiper.min.js"></script>
 
 <script type="text/javascript">
-    $(document).ready(function() {
-        $(".fancybox").fancybox({
-            closeBtn : false
-        });
-    });
-</script>
-<script>
+	$(document).ready(function() {
+      $(".fancybox").fancybox({
+          closeBtn : false
+      });
+  });
+
+	$('button').click(function() {
+		$('article #' + this.value).toggle('slow', function() {
+			// Animation complete.
+		});
+	});
 
 	var swiper = new Swiper('.swiper-container', {
         hashnav: true,
@@ -1868,4 +1814,3 @@
         prevButton: '.swiper-button-prev',
     });
 </script>
-

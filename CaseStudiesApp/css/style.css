@@ -18,7 +18,7 @@ h2{
   color: white;
 }
 
-header, 
+header,
 footer{
 	background:#6C6C6C;
 	padding:40px 0px 10px;
@@ -45,84 +45,34 @@ footer nav{
 	margin:0px auto 40px;
 }
 
+/*
 
 
-/* COLLAPSIBLE MENU */
-summary::-webkit-details-marker {
-	/*color: #000000;*/
+COLLAPSIBLE MENU */
 
-	margin-right: 2px;
-}
 summary:focus {
 	outline-style: none;
-	
-}
-article > details > summary {
-	font-size: 30px;
-	/*text-decoration: underline;*/
-	margin-top: 18px;
-}
-details > p {
-	margin-left: 24px;
-}
-details details {
-	margin-left: 36px;
-}
-details details summary {
-	margin-top: 20px;
-	font-size: 24px;
 
 }
-
 
 /* END OF css for collapsible menu MENU */
 
 
 #wrapper {
 	width: 500px;
-	margin: 150px auto 0; 
+	margin: 150px auto 0;
 }
 
 
 /* Apply a pointer cursor and style the background upon hover to indicate <summary> is a clickable element. */
 /* These styles can be applied regardless of whether the fallback is needed */
-summary { 
-	cursor: pointer; 
+summary {
+	cursor: pointer;
 }
 
-/* The following styles are not really needed, since the jQuery script takes care of hiding/displaying the elements. */
-/* However, we’re still gonna use CSS as well to prevent FOUC in browsers that understand these selectors. */
-/* Remember: by default (and probably most of the time), the contents of the <details> element are hidden. */
-.no-details details > * { 
-	display: none; 
-}
 
-/* This doesn’t work very well in Firefox 3.6.x */
-/* .no-details details[open] > * { display: block; } */
-/* The following doesn’t toggle correctly in WebKit:
-.no-details details > summary:before { content: '► '; }
-.no-details details[open] > summary:before { content: '▼ '; }
-*/
-/* And yes, it should really be ::before, but that doesn’t work in IE8 */
-.no-details details > summary:before { 
-	float: left; 
-	width: 30px; 
-	content: '► '; 
-}
-
-.no-details details.open > summary:before { 
-	content: '▼ '; 
-}
-
-/* For IE6 and IE7, who don’t support generated content, you could use padding-left + a background image instead */
-/* I really couldn’t be bothered though. */
-/*
-.no-details details > summary { padding-left: 20px; background: url(img/arrow-sprite.png) no-repeat 0 0; }
-.no-details details.open > summary { background-position: 0 -20px; }
-*/
-/* Make sure summary remains visible */
-.no-details details summary { 
-	display: block; 
+article .diagnosis {
+	display: none;
 }
 
 
@@ -147,18 +97,6 @@ nav a:hover{
 	color:#fff;
 }
 
-details h4 {
-	padding-left: 2%;
-}
-
-details ul li {
-	color:#fff;
-}
-
-details ul li:hover {
-	color:#ccc;
-}
-
 .current{
 	font-style: italic;
 }
@@ -181,7 +119,7 @@ ol ol li{
 }
 .flex-container{
 	display: -webkit-flex;
-	display:flex; 
+	display:flex;
 	flex-wrap: wrap;
 	-webkit-justify-content: space-around;
 	justify-content:space-around;
@@ -252,9 +190,9 @@ ol ol li{
 
 .dark-back {
 	background:rgb(40,40,40);
-	color:rgb(245,245,245);	
+	color:rgb(245,245,245);
 }
-.dark-back h2, 
+.dark-back h2,
 .dark-back h3,
 .dark-back h4{
 	color:#fff;
@@ -323,7 +261,7 @@ section.header h2{
 	display:flex;
 	flex-wrap:wrap;
 	padding:10vh 10vw;
-	
+
 }
 .card-index .card{
 	background:#;
@@ -384,7 +322,7 @@ section.header h2{
 	opacity:1;
 }
 .card-index .header + section h2{
-	
+
 }
 .random-case-button{
 	position:absolute;
@@ -402,7 +340,7 @@ section.header h2{
 	flex-direction:column;
 	width:100%;
 	box-sizing:border-box;
-	
+
 }
 a.center-large-image{
 	margin:0 auto;

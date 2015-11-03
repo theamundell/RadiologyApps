@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
 
     <!-- MDL -->
-    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.blue_grey-red.min.css" /> 
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.blue_grey-red.min.css" />
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
@@ -75,6 +75,7 @@
 
 
                     <div class="swiper-slide" data-hash="1">
+                      <div class="padding">
                         <section class="header">
                             <h2>4.1 - Review the following image and provide a diagnosis</h2>
                         </section>
@@ -82,7 +83,7 @@
                         <section>
                             <h5>What do these radiographs demonstrate?</h5>
 
-                            <a class="fancybox" href="images/section4/4.1.1.jpg">
+                            <a class="fancybox center-large-image" href="images/section4/4.1.1.jpg">
                                 <div class="mdl-card mdl-shadow--2dp">
 
 
@@ -94,11 +95,9 @@
                                 </div>
                             </a>
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+                            <button type="button" value='diagnosis-0'>Diagnosis</button>
+
+                            <article class='diagnosis' id='diagnosis-0'>
 
                                     <ul>
                                         <li>
@@ -124,10 +123,10 @@
                                     <ul>
                                         <li><b>Ref: Appendix-Imaging Scoring Methods in Arthritis</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-
-                                </details>
                             </article>
                         </section>
+
+                      </div>
                     </div>
 
 
@@ -162,6 +161,8 @@
 
 
                     <div class="swiper-slide" data-hash="2">
+                      <div class="padding">
+
                         <section class="header">
                             <h2>4.2 - Review the following images and provide a diagnosis</h2>
                         </section>
@@ -170,7 +171,7 @@
                             <h5>29 F with history SLE presenting with psychosis. </h5>
                             <h5>What is this study, what are the findings and what is your diagnosis?</h5>
 
-                            <a class="fancybox" href="images/section4/4.2.1.jpg">
+                            <a class="fancybox center-large-image" href="images/section4/4.2.1.jpg">
                                 <div class="mdl-card mdl-shadow--2dp">
 
 
@@ -182,11 +183,9 @@
                                 </div>
                             </a>
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+                            <button type="button" value='diagnosis-1'>Diagnosis</button>
+
+                            <article class='diagnosis' id='diagnosis-1'>
 
                                     <ul>
                                         <li>Sagittal (right) and axial (left) T2 FLAIR sequences from an MRI head
@@ -203,10 +202,9 @@
                                             <ul>
                                                 <li><b>Ref: Chapter 7 Connective Tissue Disease</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                             </ul>
-
-                                        </details>
                                     </article>
                                 </section>
+                              </div>
                             </div>
 
 
@@ -241,6 +239,8 @@
 
 
                             <div class="swiper-slide" data-hash="3">
+                              <div class="padding">
+
                                 <section class="header">
                                     <h2>4.3 - Review the following images and provide a diagnosis</h2>
                                 </section>
@@ -279,11 +279,9 @@
                                         </tr>
                                     </table>
 
-                                    <article>
-                                        <details>
-                                            <summary>
-                                                Diagnosis
-                                            </summary>
+                                    <button type="button" value='diagnosis-2'>Diagnosis</button>
+
+                                    <article class='diagnosis' id='diagnosis-2'>
 
                                             <ul>
                                                 <li>Axial CT (right) in venous phase post-intravenous contrast demonstrates multiple bilateral renal infarcts, multiple peripheral wedge-shaped low attenuating foci in the kidneys representing posterior infarcts (arrowheads), and a mid-sagittal reconstructed image during arterial phase (left) demonstrating stenosis of the proximal celiac artery (arrow) and multifocal stenosis and wall irregularity of the SMA (arrowheads).</li>
@@ -295,10 +293,9 @@
                                             <ul>
                                                 <li><b>Ref: Chapter 7 Connective Tissue Disease</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                             </ul>
-
-                                        </details>
                                     </article>
                                 </section>
+                              </div>
                             </div>
 
 
@@ -337,6 +334,8 @@
 
 
                             <div class="swiper-slide" data-hash="4">
+                              <div class="padding">
+
                                 <section class="header">
                                     <h2>4.4 - Review the following images and provide a diagnosis</h2>
                                 </section>
@@ -404,11 +403,9 @@
                                         </tr>
                                     </table>
 
-                                    <article>
-                                        <details>
-                                            <summary>
-                                                Diagnosis
-                                            </summary>
+                                    <button type="button" value='diagnosis-3'>Diagnosis</button>
+
+                                    <article class='diagnosis' id='diagnosis-3'>
 
                                             <ul>
                                              <li><b>Diagnosis: Amyloid arthropathy</b></li>
@@ -421,10 +418,9 @@
                                          <ul>
                                             <li><b>Ref: Chapter 9 Endocrine and Miscellaneous Arthropathies</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                         </ul>
-
-                                    </details>
                                 </article>
                             </section>
+                          </div>
                         </div>
 
 
@@ -465,6 +461,8 @@
 
 
                         <div class="swiper-slide" data-hash="5">
+                          <div class="padding">
+
                             <section class="header">
                                 <h2>4.5 - Review the following images and provide a diagnosis</h2>
                             </section>
@@ -518,11 +516,9 @@
                                     </tr>
                                 </table>
 
-                                <article>
-                                    <details>
-                                        <summary>
-                                            Diagnosis
-                                        </summary>
+                                <button type="button" value='diagnosis-4'>Diagnosis</button>
+
+  															<article class='diagnosis' id='diagnosis-4'>
 
                                         <ul>
                                          <li><b>The finding is Eburnation (arrows)</b></li>
@@ -537,10 +533,9 @@
                                      <ul>
                                         <li><b>Ref: Chapter 10 Osteoarthritis</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-
-                                </details>
                             </article>
                         </section>
+                      </div>
                     </div>
 
 
@@ -578,6 +573,8 @@
 
 
                     <div class="swiper-slide" data-hash="6">
+                      <div class="padding">
+
                         <section class="header">
                             <h2>4.6 - Review the following images and provide a diagnosis</h2>
                         </section>
@@ -616,11 +613,9 @@
                                 </tr>
                             </table>
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+                            <button type="button" value='diagnosis-5'>Diagnosis</button>
+
+                            <article class='diagnosis' id='diagnosis-5'>
 
                                     <ul>
                                         <li>1) PA radiograph of hands demonstrating osteoporosis</li>
@@ -633,10 +628,9 @@
                                     <ul>
                                         <li><b>Ref: Chapter 11 Metabolic Bone Disease</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-
-                                </details>
                             </article>
                         </section>
+                      </div>
                     </div>
 
 
@@ -669,6 +663,8 @@
 
 
                     <div class="swiper-slide" data-hash="7">
+                      <div class="padding">
+
                         <section class="header">
                             <h2>4.7 - Review the following images and provide a diagnosis</h2>
                         </section>
@@ -677,7 +673,7 @@
                             <h5>55M with chronic renal insufficiency. </h5>
                             <h5>What is the study and what is the diagnosis?</h5>
 
-                            <a class="fancybox" href="images/section4/4.7.1.jpg">
+                            <a class="fancybox center-large-image" href="images/section4/4.7.1.jpg">
                                 <div class="mdl-card mdl-shadow--2dp">
 
 
@@ -691,11 +687,9 @@
 
 
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+                            <button type="button" value='diagnosis-6'>Diagnosis</button>
+
+                            <article class='diagnosis' id='diagnosis-6'>
 
                                     <ul>
                                         <li>The study is a lateral radiograph of the lumbar spine. </li>
@@ -710,9 +704,9 @@
                                         <li><b>Ref: Chapter 11 Metabolic Bone Disease</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
 
-                                </details>
                             </article>
                         </section>
+                      </div>
                     </div>
 
 
@@ -743,6 +737,8 @@
 
 
                     <div class="swiper-slide" data-hash="8">
+                      <div class="padding">
+
                         <section class="header">
                             <h2>4.8 - Review the following images and provide a diagnosis</h2>
                         </section>
@@ -751,7 +747,7 @@
                             <h5>52F on longterm treatment for osteoporosis. </h5>
                             <h5>What are the studies and what is the likely diagnosis?</h5>
 
-                            <a class="fancybox" href="images/section4/4.8.1.jpg">
+                            <a class="fancybox center-large-image" href="images/section4/4.8.1.jpg">
                                 <div class="mdl-card mdl-shadow--2dp">
 
 
@@ -765,11 +761,9 @@
 
 
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+                            <button type="button" value='diagnosis-7'>Diagnosis</button>
+
+                            <article class='diagnosis' id='diagnosis-7'>
 
                                     <ul>
                                         <li>a) AP coned radiograph of the left mid- and distal femur demonstrating an incomplete fracture, characterized by subtle irregular lucency of the lateral cortical margin of the femur with associated periosteal reaction (arrow) </li>
@@ -782,10 +776,9 @@
                                     <ul>
                                         <li><b>Ref: Chapter 11 Metabolic Bone Disease</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-
-                                </details>
                             </article>
                         </section>
+                      </div>
                     </div>
 
 
@@ -831,6 +824,8 @@
 
 
                     <div class="swiper-slide" data-hash="9">
+                      <div class="padding">
+
                         <section class="header">
                             <h2>4.9 - Review the following images and provide a diagnosis</h2>
                         </section>
@@ -839,7 +834,7 @@
                             <h5>46F with SLE with mild bilateral knee pain. </h5>
                             <h5>What is the study, findings and diagnosis?</h5>
 
-                            <a class="fancybox" href="images/section4/4.9.1.jpg">
+                            <a class="fancybox center-large-image" href="images/section4/4.9.1.jpg">
                                 <div class="mdl-card mdl-shadow--2dp">
 
 
@@ -853,11 +848,9 @@
 
 
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+                            <button type="button" value='diagnosis-8'>Diagnosis</button>
+
+                            <article class='diagnosis' id='diagnosis-8'>
 
                                     <ul>
                                         <li>MRI Knee sagittal T1 (a) and T2FS (b) demonstrating multiple intra-medullary lesions within the diametaphysis of the femur and tibia with serpiginous margins of low signal intensity on TI, and high on T2 with some lesions demonstrating the double line sign (outer low signal and inner line high signal intensity) (arrow), and normal central marrow signal (high fat signal on T1 and signal loss on the T2FS) (blue arrow).</li>
@@ -870,9 +863,9 @@
                                     <ul>
                                         <li><b>Ref: Chapter 12 Osteonecrosis</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-                                </details>
                             </article>
                         </section>
+                      </div>
                     </div>
 
 
@@ -903,6 +896,8 @@
 
 
                     <div class="swiper-slide" data-hash="10">
+                      <div class="padding">
+
                         <section class="header">
                             <h2>4.10 - Review the following images and provide a diagnosis</h2>
                         </section>
@@ -911,7 +906,7 @@
                             <h5>36M with well-controlled rheumatoid arthritis presenting with low back pain with left leg radicular symptoms. </h5>
                             <h5>What is the study, findings and diagnosis?</h5>
 
-                            <a class="fancybox" href="images/section4/4.10.1.jpg">
+                            <a class="fancybox center-large-image" href="images/section4/4.10.1.jpg">
                                 <div class="mdl-card mdl-shadow--2dp">
 
 
@@ -925,11 +920,9 @@
 
 
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+                            <button type="button" value='diagnosis-9'>Diagnosis</button>
+
+                            <article class='diagnosis' id='diagnosis-9'>
 
                                     <ul>
                                         <li>Axial T2FS MRI of the lumbar spine showing L4-5 (need sagittal image for reference to confirm position) demonstrating a focal protrusion (arrow), with base disc herniation wider than AP extension and involving less than 25% disc circumference. The protrusion indents the thecal sac, impinging the left L5 nerve root (arrowhead) and abutting without impinging the right L5 nerve root</li>
@@ -942,10 +935,9 @@
                                     <ul>
                                         <li><b>Ref: Chapter 15 Spine</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-
-                                </details>
                             </article>
                         </section>
+                      </div>
                     </div>
 
 
@@ -982,6 +974,8 @@
 
 
                     <div class="swiper-slide" data-hash="11">
+                      <div class="padding">
+
                         <section class="header">
                             <h2>4.11 - Review the following images and provide a diagnosis</h2>
                         </section>
@@ -990,7 +984,7 @@
                             <h5>76M with longstanding back pain with radicular symptoms with recent exacerbation of pain. </h5>
                             <h5>What is the study, findings and diagnosis?</h5>
 
-                            <a class="fancybox" href="images/section4/4.11.1.jpg">
+                            <a class="fancybox center-large-image" href="images/section4/4.11.1.jpg">
                                 <div class="mdl-card mdl-shadow--2dp">
 
 
@@ -1004,11 +998,9 @@
 
 
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+                            <button type="button" value='diagnosis-10'>Diagnosis</button>
+
+                            <article class='diagnosis' id='diagnosis-10'>
 
                                     <ul>
                                         <li>The study is a reformatted sagittal CT, bone windows.</li>
@@ -1027,10 +1019,9 @@
                                         <li><b>Ref: Chapter 15 Spine</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
 
-
-                                </details>
                             </article>
                         </section>
+                      </div>
                     </div>
 
 
@@ -1071,6 +1062,8 @@
 
 
                     <div class="swiper-slide" data-hash="12">
+                      <div class="padding">
+
                         <section class="header">
                             <h2>4.12 - Review the following images and provide a diagnosis</h2>
                         </section>
@@ -1079,7 +1072,7 @@
                             <h5>57M presenting with bilateral proximal lower limb weakness, skin thickening with discolouration and “hardening” of the distal right leg</h5>
                             <h5>What are the imaging modalities, findings, and diagnosis?</h5>
 
-                            <a class="fancybox" href="images/section4/4.12.1.jpg">
+                            <a class="fancybox center-large-image" href="images/section4/4.12.1.jpg">
                                 <div class="mdl-card mdl-shadow--2dp">
 
 
@@ -1093,11 +1086,9 @@
 
 
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+                            <button type="button" value='diagnosis-11'>Diagnosis</button>
+
+                            <article class='diagnosis' id='diagnosis-11'>
 
                                     <ul>
                                         <li>a) AP radiograph of the right distal tibia with sheet-like subcutaneous calcification (arrows) over the medial margin of the distal tibia </li>
@@ -1112,11 +1103,9 @@
                                     <ul>
                                         <li><b>Ref: Chapter 16 Soft Tissue calcification</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-
-
-                                </details>
                             </article>
                         </section>
+                      </div>
                     </div>
 
 
@@ -1157,6 +1146,8 @@
 
 
                     <div class="swiper-slide" data-hash="13">
+                      <div class="padding">
+
                         <section class="header">
                             <h2>4.13 - Review the following images and provide a diagnosis</h2>
                         </section>
@@ -1165,7 +1156,7 @@
                             <h5>18M presenting with multifocal soft tissue lobulated hard masses. There is family history of soft tissue masses.</h5>
                             <h5>What is the study, findings and diagnosis?</h5>
 
-                            <a class="fancybox" href="images/section4/4.13.1.jpg">
+                            <a class="fancybox center-large-image" href="images/section4/4.13.1.jpg">
                                 <div class="mdl-card mdl-shadow--2dp">
 
 
@@ -1179,11 +1170,9 @@
 
 
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+                            <button type="button" value='diagnosis-12'>Diagnosis</button>
+
+                            <article class='diagnosis' id='diagnosis-12'>
 
                                     <ul>
                                         <li>a) Lateral and b) AP radiographs elbow radiographs with dense lobulated calcification on the extensor aspect elbow. </li>
@@ -1197,10 +1186,9 @@
                                     <ul>
                                         <li><b>Ref: Chapter 16 Soft Tissue calcification</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-
-                                </details>
                             </article>
                         </section>
+                      </div>
                     </div>
 
 
@@ -1249,6 +1237,8 @@
 
 
                     <div class="swiper-slide" data-hash="14">
+                      <div class="padding">
+
                         <section class="header">
                             <h2>4.14 - Review the following images and provide a diagnosis</h2>
                         </section>
@@ -1257,7 +1247,7 @@
                             <h5>57F with recurrent hemarthrosis and joint pain.</h5>
                             <h5>What is the study, what are the salient findings and what is the diagnosis?</h5>
 
-                            <a class="fancybox" href="images/section4/4.14.1.jpg">
+                            <a class="fancybox center-large-image" href="images/section4/4.14.1.jpg">
                                 <div class="mdl-card mdl-shadow--2dp">
 
 
@@ -1271,11 +1261,9 @@
 
 
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+                            <button type="button" value='diagnosis-13'>Diagnosis</button>
+
+                            <article class='diagnosis' id='diagnosis-13'>
 
                                     <ul>
                                         <li>MRI Knee a) Axial T2 with marked regions of low signal intensity in the suprapatellar recess (arrows) </li>
@@ -1290,11 +1278,9 @@
                                     <ul>
                                         <li><b>Ref: Chapter 17 Bone and Synovial Tumors</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-
-
-                                </details>
                             </article>
                         </section>
+                      </div>
                     </div>
 
 
@@ -1326,6 +1312,8 @@
 
 
                     <div class="swiper-slide" data-hash="15">
+                      <div class="padding">
+
                         <section class="header">
                             <h2>4.15 - Review the following images and provide a diagnosis</h2>
                         </section>
@@ -1334,7 +1322,7 @@
                             <h5>86F presenting with enlarging left shoulder mass and decreased range of motion.</h5>
                             <h5>What are the studies, what are the salient findings and what is the most likely diagnosis?</h5>
 
-                            <a class="fancybox" href="images/section4/4.15.1.jpg">
+                            <a class="fancybox center-large-image" href="images/section4/4.15.1.jpg">
                                 <div class="mdl-card mdl-shadow--2dp">
 
 
@@ -1348,11 +1336,9 @@
 
 
 
-                            <article>
-                                <details>
-                                    <summary>
-                                        Diagnosis
-                                    </summary>
+                            <button type="button" value='diagnosis-14'>Diagnosis</button>
+
+                            <article class='diagnosis' id='diagnosis-14'>
 
                                     <ul>
                                         <li>a) AP radiograph demonstrates a large soft tissue mass with defined soft tissue margins, and heterogenous internal calcification, originating from the greater tuberosity of the left humerus with significant bone destruction and poorly defined bone margins </li>
@@ -1366,10 +1352,9 @@
                                     <ul>
                                         <li><b>Ref: Chapter 17 Bone and Synovial Tumors</b> O'Neill, JMD, Essential Imaging in Rheumatology. New York: Springer Science+Business Media; 2015</li>
                                     </ul>
-
-                                </details>
                             </article>
                         </section>
+                      </div>
                     </div>
 
 
@@ -1389,16 +1374,7 @@
     </div>
 
     <script src="js/swiper.min.js"></script>
-    <script src="jquery.details.js"></script>
     <script src="js/randomcase.js"></script>
-    <script>
-        $(function() {
-                        // Add conditional classname based on support
-                        $('html').addClass($.fn.details.support ? 'details' : 'no-details');
-                        // Emulate <details> where necessary and enable open/close event handlers
-                        $('details').details();
-                    });
-    </script> 
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -1406,10 +1382,13 @@
                 closeBtn : false
             });
         });
-    </script>
 
+        $('button').click(function() {
+      		$('article #' + this.value).toggle('slow', function() {
+      			// Animation complete.
+      		});
+      	});
 
-    <script>
 
         var swiper = new Swiper('.swiper-container', {
             hashnav: true,
