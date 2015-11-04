@@ -40,22 +40,22 @@
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="index.html">Index</a>
         <a class="mdl-navigation__link current" href="section1.html">Spot Cases - Section 1</a>
-          <a class="mdl-navigation__link sub-nav-item" data-hash="1" href="section1.html#1">Case 1.1</a>
-          <a class="mdl-navigation__link sub-nav-item" data-hash="2" href="section1.html#2">Case 1.2</a>
-          <a class="mdl-navigation__link sub-nav-item" data-hash="3" href="section1.html#3">Case 1.3</a>
-          <a class="mdl-navigation__link sub-nav-item" data-hash="4" href="section1.html#4">Case 1.4</a>
-          <a class="mdl-navigation__link sub-nav-item" data-hash="5" href="section1.html#5">Case 1.5</a>
-          <a class="mdl-navigation__link sub-nav-item" data-hash="6" href="section1.html#6">Case 1.6</a>
-          <a class="mdl-navigation__link sub-nav-item" data-hash="7" href="section1.html#7">Case 1.7</a>
-          <a class="mdl-navigation__link sub-nav-item" data-hash="8" href="section1.html#8">Case 1.8</a>
-          <a class="mdl-navigation__link sub-nav-item" data-hash="9" href="section1.html#9">Case 1.9</a>
-          <a class="mdl-navigation__link sub-nav-item" data-hash="10" href="section1.html#10">Case 1.10</a>
-          <a class="mdl-navigation__link sub-nav-item" data-hash="11" href="section1.html#11">Case 1.11</a>
-          <a class="mdl-navigation__link sub-nav-item" data-hash="12" href="section1.html#12">Case 1.12</a>
-          <a class="mdl-navigation__link sub-nav-item" data-hash="14" href="section1.html#14">Case 1.14</a>
-          <a class="mdl-navigation__link sub-nav-item" data-hash="15" href="section1.html#15">Case 1.15</a>
-          <a class="mdl-navigation__link sub-nav-item" data-hash="16" href="section1.html#16">Case 1.16</a>
-          <a class="mdl-navigation__link sub-nav-item" data-hash="17" href="section1.html#17">Case 1.17</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="1" href="section1.html#1">Case 1.1</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="2" href="section1.html#2">Case 1.2</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="3" href="section1.html#3">Case 1.3</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="4" href="section1.html#4">Case 1.4</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="5" href="section1.html#5">Case 1.5</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="6" href="section1.html#6">Case 1.6</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="7" href="section1.html#7">Case 1.7</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="8" href="section1.html#8">Case 1.8</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="9" href="section1.html#9">Case 1.9</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="10" href="section1.html#10">Case 1.10</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="11" href="section1.html#11">Case 1.11</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="12" href="section1.html#12">Case 1.12</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="14" href="section1.html#14">Case 1.14</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="15" href="section1.html#15">Case 1.15</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="16" href="section1.html#16">Case 1.16</a>
+          <a class="mdl-navigation__link sub-nav-item" data-index="17" href="section1.html#17">Case 1.17</a>
         <a class="mdl-navigation__link" href="section2.html">Extended Cases - Section 2</a>
         <a class="mdl-navigation__link" href="section3.html">Short Cases - Section 3</a>
         <a class="mdl-navigation__link" href="section4.html">Spot Cases 2 - Section 4</a>
@@ -971,12 +971,25 @@
     prevButton: '.swiper-button-prev',
   });
 
+  swiper.on('slideChangeStart', function () {
+
+      var slideheight = $('.swiper-slide-active > .padding').height();
+      $('.swiper-slide').height(slideheight);
+
+    });
+
   $('.sub-nav-item').on('click', function(e){
-      
+       console.log('I did a thing');
       swiper.slideTo($(this).data('index'), 1);
 
       $('.mdl-layout__drawer').removeClass('is-visible');
     });
+
+  $(window).resize(function(){
+    if ($(window).width() <= 800){  
+      // do something here
+    } 
+  });
   </script>
 </body>
 </html>
