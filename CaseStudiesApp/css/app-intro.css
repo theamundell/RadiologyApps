@@ -1,0 +1,105 @@
+.intro-animation{
+	position:absolute;
+	height:100vh;
+	width:100vw;
+	z-index: 10;
+	background:#000;
+	color:#fff;
+	text-align:center;
+	font-size:24px;
+	display:flex;
+	align-items:center;
+	opacity:1;
+}
+@keyframes fadeintro {
+    0% {opacity:1; z-index:10;}
+    80% {opacity:1; z-index:10;}
+    90% {opacity:0; z-index:10;}
+    100% {z-index:0;}
+ }
+ .intro-animation.start-animation{
+ 	opacity:0;
+ 	animation:fadeintro forwards;
+ 	animation-duration:4s;
+ 	animation-timing-function:linear;
+ }
+
+.intro-animation span{
+	color:#ff6060;
+}
+.intro-animation .content{
+ 	width:500px;
+ 	height:300px;
+ 	position:relative;
+ 	margin:0px auto;
+}
+.intro-animation .logowrapper{
+	position:absolute;
+	top:;
+	width:100%;
+	opacity:0;
+	right:50%;
+}
+/* The animation code */
+@keyframes logowrapper {
+    0% {right: 80%; opacity:0;}
+    50% {right: 80%; opacity:0;}
+    80% {opacity:1;}
+    100% {right: 0px;}
+}
+
+.intro-animation.start-animation .logowrapper{
+	right:0px;
+    animation: logowrapper forwards;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    opacity:1;
+}
+
+.intro-animation .logowrapper .logo{
+	border:3px solid;
+	display:inline-block;
+	padding:10px 30px;
+	font-weight:bold;
+	letter-spacing:1px;
+} 
+.intro-animation .full-text{
+	position:absolute;
+	top:0px;
+	width:100%;
+	opacity:0;
+}
+/* The animation code */
+@keyframes fulltext {
+    0% {opacity:0; top:0px;}
+    100% {opacity:1; top:85px;}
+}
+.intro-animation.start-animation .full-text{
+	animation: fulltext forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    opacity:1;
+    top:85px;
+}
+.intro-animation .app-title{
+	position:absolute;
+	top:146px;
+	width:100%;
+	opacity:0;
+	right:50%;
+}
+/* The animation code */
+@keyframes apptitle {
+	0% {right: 50%; opacity:0;}
+    80% {right: 50%; opacity:0;}
+    100% {right: 0px; opacity:1;}
+}
+
+.intro-animation.start-animation .app-title{
+	right:0px;
+    animation: apptitle forwards ;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    opacity:1;
+}
+
