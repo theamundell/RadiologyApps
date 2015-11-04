@@ -31,6 +31,12 @@
             </div>
             <div class="full-text"><span>E</span>ssiential Imaging Rhumetology</div>
             <div class="app-title"><span>E</span>xploring The Clinical Image</div>
+
+            <div class="enter-button-wrapper">
+                <div class="button">
+                    ENTER
+                </div>
+            </div>
         </div>
     </div>
 
@@ -194,7 +200,10 @@
         })
 
         $('.intro-animation').addClass('start-animation');
-        $('.intro-animation').delay(2000).addClass('app-title-animation');
+        
+        $('.enter-button-wrapper .button').click(function () {
+            $('.intro-animation').addClass('hide');
+        })
     </script>
 </body>
 </html>

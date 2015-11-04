@@ -6,23 +6,22 @@
 	background:#000;
 	color:#fff;
 	text-align:center;
-	font-size:24px;
+	font-size:30px;
 	display:flex;
 	align-items:center;
 	opacity:1;
 }
-@keyframes fadeintro {
-    0% {opacity:1; z-index:10;}
-    80% {opacity:1; z-index:10;}
-    90% {opacity:0; z-index:10;}
-    100% {z-index:0;}
- }
- .intro-animation.start-animation{
- 	opacity:0;
- 	animation:fadeintro forwards;
- 	animation-duration:4s;
- 	animation-timing-function:linear;
- }
+@keyframes hideintro{
+	0%{opacity: 1; z-index:10;}
+	99%{opacity: 0; z-index:10;}
+	100%{z-index: 0;}
+}
+.intro-animation.hide{
+	opacity:0px;
+	animation:hideintro forwards;
+	animation-duration:.5s;
+	animation-timing-function:ease-in;
+}
 
 .intro-animation span{
 	color:#ff6060;
@@ -103,3 +102,38 @@
     opacity:1;
 }
 
+.intro-animation .enter-button-wrapper{
+	position:absolute;
+	bottom:0px;
+	opacity:0;
+	width:100%;
+}
+
+/* The animation code */
+@keyframes button {
+	0% {opacity:0;}
+    80% {opacity:0;}
+    100% {opacity:1;}
+}
+.intro-animation.start-animation .enter-button-wrapper{
+	opacity:1px;
+	animation:button forwards;
+	animation-duration: 4s;
+	animation-timing-function: ease-in;
+}
+
+.enter-button-wrapper .button{
+	color:#000;
+	background:#ff6060;
+	display:inline-block;
+	padding:5px 20px;
+	font-size:20px;
+	cursor:pointer;
+	transition:All .25s;
+	border:3px solid #ff6060;
+}
+.enter-button-wrapper .button:hover{
+	background:#000;
+	color:#ff6060;
+	border:3px solid #ff6060;
+}
