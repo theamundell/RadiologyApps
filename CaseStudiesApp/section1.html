@@ -950,26 +950,36 @@
   <script src="js/randomcase.js"></script>
 
   <script type="text/javascript">
-  $(document).ready(function() {
-    $(".fancybox").fancybox({
-      closeBtn : false
+    $(document).ready(function() {
+      $(".fancybox").fancybox({
+        closeBtn : false
+      });
     });
-  });
 
-  $('button').click(function() {
-    $('article #' + this.value).toggle('slow', function() {
-      // Animation complete.
+    $('button').click(function() {
+      $('article #' + this.value).toggle('slow', function() {
+        // Animation complete.
+      });
     });
-  });
 
-  var swiper = new Swiper('.swiper-container', {
-    hashnav: true,
-    pagination: '.swiper-pagination',
-    paginationClickable: true,
-    keyboardControl: true,
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-  });
+    var swiper = new Swiper('.swiper-container', {
+      hashnav: true,
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      keyboardControl: true,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+    });
+
+    $('.mdl-layout__content').scroll(function() {
+      if ($('.mdl-layout__content').scrollTop() > 50) {
+        $('.swiper-button-prev').hide('slow');
+        $('.swiper-button-next').hide('slow');
+      } else {
+        $('.swiper-button-prev').show('slow');
+        $('.swiper-button-next').show('slow');
+      }
+    });
   </script>
 </body>
 </html>
