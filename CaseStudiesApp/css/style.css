@@ -379,10 +379,19 @@ a.center-large-image .mdl-card{
 }
 .two-images {
 	display:flex;
-	margin-bottom:30px;
-	
+	margin-bottom:30px;	
 }
 .two-images .mdl-card{
+	margin:20px;
+	border:1px solid #fff;
+}
+.three-images{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	margin-bottom:30px;
+}
+.three-images .mdl-card{
 	margin:20px;
 	border:1px solid #fff;
 }
