@@ -73,7 +73,7 @@
                 <a class="mdl-navigation__link" href="javascript:randomcase()">Random Case</a>
             </nav>
         </div>
-   
+
 
         <article class="mdl-layout__content card-index" >
 
@@ -207,8 +207,13 @@
             $(this).siblings().toggleClass('open');
         })
 
+        $('.card section.header').dblclick(function () {
+          var link = $($(this).siblings()[0]).find('a')[0].href;
+          location.href = link;
+        })
+
         $('.intro-animation').addClass('start-animation');
-        
+
         $('.enter-button-wrapper .button').click(function () {
             $('.intro-animation').addClass('hide');
         });
@@ -216,6 +221,7 @@
         $('.intro-animation .content').click(function () {
             $('.intro-animation').addClass('hide');
         });
+
     </script>
 </body>
 </html>
