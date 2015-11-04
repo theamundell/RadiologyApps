@@ -58,15 +58,18 @@ summary:focus {
 /* END OF css for collapsible menu MENU */
 
 .mdl-layout-title .logo{
-	border:2px solid;
+	border:3px solid;
 	display:inline-block;
 	padding:5px 20px;
 	font-weight:bold;
 	letter-spacing:1px;
-} 
+	z-index: 9;
+	position: relative;
+}
 .logo span{
 	color:#ff6060;
 }
+
 
 #wrapper {
 	width: 500px;
@@ -227,7 +230,13 @@ div.swiper-slide a.fancybox {
 }
 .mdl-layout__header.mdl-layout__header--transparent.is-casting-shadow,
 .mdl-layout__drawer-button{
-	z-index:0;
+	z-index:8;
+}
+.mdl-layout__obfuscator{
+	z-index: 10;
+}
+.mdl-layout__drawer.is-visible{
+	z-index: 11;
 }
 
 table {
@@ -269,23 +278,18 @@ section.header h2{
 	background:#000;
 }
 .card-index{
-	padding:10vh 10vw;
+	padding:10vh 1vw;
+	position:relative;
 }
 .card-index .card{
-	background:#;
 	width:100%;
-	margin:0 auto;
 	text-align:center;
 	cursor:pointer;
 	border:1px solid;
-	margin-bottom:30px;
 	transition:all .25s;
 	box-sizing:border-box;
 	max-width:500px;
-}
-.card-index .card:hover{
-	background:#fff;
-	color:#000;
+	margin:0 auto 30px;
 }
 .card-index section.header{
 	width:100%;
@@ -361,9 +365,41 @@ a.center-large-image{
 a.center-large-image .mdl-card{
 	width:100%;
 	height:400px;
-
 }
 
+@media (min-width:1024px){
+	.card-index{
+		max-height:600px;
+		padding:20px;
+		width:90%;
+		margin:40px auto 0px;
+	}
+	.card-index .card{
+		width:40%;
+		margin:0px 2%;
+		max-width:500px;
+		position:absolute;
+	}
+	.card.top-left{
+		top:0px;
+		left:0px;
+	}
+	.card.top-right{
+		top:0px;
+		right:0px;
+	}
+	.card.bottom-left{
+		bottom:0px;
+		left:0;
+	}
+	.card.bottom-right{
+		bottom:0px;
+		right:0px;
+	}
+}
+@media (max-width: 1024px){
+
+}
 @media (max-width:900px){
 	nav{
 		flex-wrap: wrap;
