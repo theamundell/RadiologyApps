@@ -980,14 +980,7 @@
         $('.swiper-button-next').show('slow');
       }
     });
-
-    swiper.on('slideChangeStart', function () {
-
-        var slideheight = $('.swiper-slide-active > .padding').height();
-        $('.swiper-slide').height(slideheight);
-
-      });
-
+    
     $('.sub-nav-item').on('click', function(e){
          console.log('I did a thing');
         swiper.slideTo($(this).data('index'), 1);
