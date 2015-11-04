@@ -184,7 +184,9 @@ ol ol li{
 	margin-right: 5%;
 }
 
-
+button{
+	color:#000;
+}
 
 .dark-back {
 	background:rgb(40,40,40);
