@@ -980,13 +980,11 @@
         $('.swiper-button-next').show('slow');
       }
     });
-    
-    $('.sub-nav-item').on('click', function(e){
-         console.log('I did a thing');
-        swiper.slideTo($(this).data('index'), 1);
 
-        $('.mdl-layout__drawer').removeClass('is-visible');
-      });
+    $('.sub-nav-item').on('click', function(e){
+      swiper.slideTo($(this).data('index'), 1);
+      $('.mdl-layout__drawer').removeClass('is-visible');
+    });
   </script>
 </body>
 </html>
