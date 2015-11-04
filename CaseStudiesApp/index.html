@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/app-intro.css">
+    <link rel="stylesheet" href="css/guide.css">
 </head>
 
 <body>
@@ -39,12 +40,19 @@
             </div>
         </div>
     </div>
+    <div class="guide">
+        <div class="guide-toggle"><i class="zmdi zmdi-help-outline"></i></div>
+    </div>
 
     <div class="demo-layout-transparent mdl-layout mdl-js-layout dark-back">
         <header class="mdl-layout__header mdl-layout__header--transparent">
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <span class="mdl-layout-title">Clinical Case Challange</span>
+                <span class="mdl-layout-title">
+                    <div class="logo">
+                        <span>E</span>SIMR
+                    </div>
+                </span>
                 <!-- Add spacer, to align navigation to the right -->
                   <div class="mdl-layout-spacer"></div>
                   <!-- Navigation -->
@@ -65,12 +73,11 @@
                 <a class="mdl-navigation__link" href="javascript:randomcase()">Random Case</a>
             </nav>
         </div>
+   
 
         <article class="mdl-layout__content card-index" >
 
-            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect random-case-button" href="javascript:randomcase()">Random Case</a>
-
-            <div class="card">
+            <div class="card top-left">
                 <section class="header">
                     <h1>Section 1</h1>
                     <h2>Spot cases</h2>
@@ -97,7 +104,7 @@
                 </section>
             </div>
 
-            <div class="card">
+            <div class="card top-right">
 
                 <section class="header">
                     <h1>Section 2</h1>
@@ -131,7 +138,7 @@
             </div>
 
 
-            <div class="card">
+            <div class="card bottom-left">
                 <section class="header">
                     <h1>Section 3</h1>
                     <h2>Short Cases</h2>
@@ -156,7 +163,7 @@
             </div>
 
 
-            <div class="card">
+            <div class="card bottom-right">
                 <section class="header">
                     <h1>Section 4</h1>
                     <h2>Spot Cases 2</h2>
@@ -179,6 +186,7 @@
                     <a href="section4.html#14">Sec 4.14 <!-- PVNS --></a>
                     <a href="section4.html#15">Sec 4.15 <!-- Chondrocarcinoma --></a>
                 </section>
+            </div>
         </article>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
@@ -203,7 +211,11 @@
         
         $('.enter-button-wrapper .button').click(function () {
             $('.intro-animation').addClass('hide');
-        })
+        });
+
+        $('.intro-animation .content').click(function () {
+            $('.intro-animation').addClass('hide');
+        });
     </script>
 </body>
 </html>
