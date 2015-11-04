@@ -60,6 +60,11 @@ summary:focus {
 }
 
 /* END OF css for collapsible menu MENU */
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link.mdl-navigation__link.sub-nav-item{
+	padding:0px 40px 10px 20px;
+	border-left:2px solid #e0e0e0;
+	margin-left:40px;
+}
 
 .mdl-layout-title .logo{
 	border:3px solid;
@@ -193,12 +198,12 @@ ol ol li{
 
 .swiper-button-prev {
 
-	margin-left: 5%;
+	margin-left: 2%;
 }
 
 .swiper-button-next {
 
-	margin-right: 5%;
+	margin-right: 2%;
 }
 
 button{
@@ -374,10 +379,19 @@ a.center-large-image .mdl-card{
 }
 .two-images {
 	display:flex;
-	margin-bottom:30px;
-	
+	margin-bottom:30px;	
 }
 .two-images .mdl-card{
+	margin:20px;
+	border:1px solid #fff;
+}
+.three-images{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	margin-bottom:30px;
+}
+.three-images .mdl-card{
 	margin:20px;
 	border:1px solid #fff;
 }
