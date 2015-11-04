@@ -57,6 +57,16 @@ summary:focus {
 
 /* END OF css for collapsible menu MENU */
 
+.mdl-layout-title .logo{
+	border:2px solid;
+	display:inline-block;
+	padding:5px 20px;
+	font-weight:bold;
+	letter-spacing:1px;
+} 
+.logo span{
+	color:#ff6060;
+}
 
 #wrapper {
 	width: 500px;
