@@ -60,6 +60,11 @@ summary:focus {
 }
 
 /* END OF css for collapsible menu MENU */
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link.mdl-navigation__link.sub-nav-item{
+	padding:0px 40px 10px 20px;
+	border-left:2px solid #e0e0e0;
+	margin-left:40px;
+}
 
 .mdl-layout-title .logo{
 	border:3px solid;

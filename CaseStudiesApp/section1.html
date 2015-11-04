@@ -970,6 +970,13 @@
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
   });
+
+  $('.sub-nav-item').on('click', function(e){
+      
+      swiper.slideTo($(this).data('index'), 1);
+
+      $('.mdl-layout__drawer').removeClass('is-visible');
+    });
   </script>
 </body>
 </html>
