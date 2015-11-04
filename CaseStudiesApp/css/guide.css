@@ -1,4 +1,20 @@
+.guide-wrapper{
+	display:none;
+}
+.guide-toggle{
+
+}
 .guide{
 	position: absolute;
-	display:none;
+	border:1px solid red;
+	z-index:12;
+	color:#fff;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background:#000;
+}
+.guide-content{
+	
 }
