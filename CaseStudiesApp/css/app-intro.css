@@ -18,8 +18,11 @@
 }
 .intro-animation.hide{
 	opacity:0px;
+	-webkit-animation:hideintro forwards;
 	animation:hideintro forwards;
+	-webkit-animation-duration:.5s;
 	animation-duration:.5s;
+	-webkit-animation-timing-function:ease-in;
 	animation-timing-function:ease-in;
 }
 
@@ -49,8 +52,11 @@
 
 .intro-animation.start-animation .logowrapper{
 	right:0px;
+	-webkit-animation: logowrapper forwards;
     animation: logowrapper forwards;
+    -webkit-animation-duration: 2s;
     animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     opacity:1;
 }
@@ -74,8 +80,11 @@
     100% {opacity:1; top:85px;}
 }
 .intro-animation.start-animation .full-text{
+	-webkit-animation: fulltext forwards;
 	animation: fulltext forwards;
-    animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     opacity:1;
     top:85px;
@@ -96,9 +105,9 @@
 
 .intro-animation.start-animation .app-title{
 	right:0px;
-    animation: apptitle forwards ;
-    animation-duration: 3s;
-    animation-timing-function: ease-in;
+    -webkit-animation: apptitle forwards ;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: ease-in;
     opacity:1;
 }
 
@@ -117,8 +126,11 @@
 }
 .intro-animation.start-animation .enter-button-wrapper{
 	opacity:1px;
+	-webkit-animation:button forwards;
 	animation:button forwards;
+	-webkit-animation-duration: 4s;
 	animation-duration: 4s;
+	-webkit-animation-timing-function: ease-in;
 	animation-timing-function: ease-in;
 }
 

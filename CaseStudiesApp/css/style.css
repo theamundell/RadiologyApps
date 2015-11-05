@@ -404,7 +404,7 @@ a.center-large-image .mdl-card{
 }
 @media (min-width:1024px){
 	.card-index{
-		max-height:600px;
+		max-height:550px;
 		padding:20px;
 		width:90%;
 		margin:40px auto 0px;
