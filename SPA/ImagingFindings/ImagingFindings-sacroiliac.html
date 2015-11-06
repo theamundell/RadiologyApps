@@ -635,28 +635,33 @@
     // Navigation arrows
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-    onReachEnd: function( swiper ) {
-      $(document).keydown(function(e) {
-        if(e.which === 39) {
-          window.location = "ImagingFindings-spinal.html";
+    onSlideChangeEnd: function( swiper ) {
+        if($('.swiper-slide-active').attr('data-hash') === 'start'){
+          $(document).keydown(function(e) {
+            if(e.which === 37) {
+              window.location = "../AlternatePathologies/AlternatePathologies.html";
+            }
+          } );
+        } else if ($('.swiper-slide-active').attr('data-hash') === 'end') {
+          $(document).keydown(function(e) {
+            if(e.which === 39) {
+              window.location = "ImagingFindings-spinal.html";
+            }
+          } );
         }
-      } );
-    },
+      },
 
-    onReachBeginning: function( swiper ) {
-      $(document).keydown(function(e) {
-        if(e.which === 37) {
-          window.location = "../AlternatePathologies/AlternatePathologies.html";
-        }
-      } );
-    },
+      onSlideChangeStart: function( swiper ) {
+        $(document).off("keydown");
+      },
 
-    onSlideChangeStart: function( swiper ) {
-      $(document).off("keydown");
-    },
+    });
 
-
-  });
+    $(document).keydown(function(e) {
+      if(e.which === 37) {
+        window.location = "../AlternatePathologies/AlternatePathologies.html";
+      }
+    } );
 
 
     mySwiper.on('slideChangeStart', function () {
