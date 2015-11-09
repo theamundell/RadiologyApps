@@ -21,7 +21,7 @@
   <script type="text/javascript" src="../js/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/css/swiper.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.0/js/swiper.min.js"></script>
 
    <link rel="stylesheet" href="../css/specific-css.css">
 
@@ -78,17 +78,8 @@
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide" data-hash="start">
-          <div class="padding center">
-            <h3>Imaging Findings</h3>
-            <p>Short introductory blurb about what will be covered in this section.</p>
-            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="../index.html">
-              <i class="zmdi zmdi-long-arrow-left"></i> Back to Table of Contents
-            </a>
-          </div>
-        </div>
 
-        <div class="swiper-slide" data-hash="OedemaOsteitis">
+        <div class="swiper-slide start" data-hash="OedemaOsteitis">
           <div class="padding">
             <h3>Oedema &amp; Osteitis</h3>
             <ul>
@@ -548,7 +539,7 @@
         </div>
       </div>
 
-      <div class="swiper-slide" data-hash="Ankylosis">
+      <div class="swiper-slide end" data-hash="Ankylosis">
           <div class="padding">
             <h3>Ankylosis</h3>
             <ul>
@@ -594,15 +585,6 @@
         </div>
       </div>
 
-        <div class="swiper-slide end" data-hash="end">
-          <div class="padding center">
-            <h3>Imaging Findings Complete</h3>
-            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="ImagingFindings-spinal.html">
-              Continue to Imaging Findings-Spinal<i class="zmdi zmdi-long-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-
       <!--End of slides -->
       </div><!-- Slide Wrapper end-->
 
@@ -626,42 +608,41 @@
 
 
     var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: false,
-    hashnav:true,
-    keyboardControl:true,
+      // Optional parameters
+      direction: 'horizontal',
+      loop: false,
+      hashnav:true,
+      keyboardControl:true,
 
-    // Navigation arrows
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-    onSlideChangeEnd: function( swiper ) {
-        if($('.swiper-slide-active').attr('data-hash') === 'start'){
-          $(document).keydown(function(e) {
-            if(e.which === 37) {
-              window.location = "../AlternatePathologies/AlternatePathologies.html";
-            }
-          } );
-        } else if ($('.swiper-slide-active').attr('data-hash') === 'end') {
+      // Navigation arrows
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+
+      onSlideNextEnd: function( swiper ) {
+        if ($('.swiper-slide-active').hasClass('end')) {
           $(document).keydown(function(e) {
             if(e.which === 39) {
               window.location = "ImagingFindings-spinal.html";
             }
-          } );
+          });
+        }
+      },
+
+      onSlidePrevEnd: function( swiper ) {
+        if($('.swiper-slide-active').hasClass('start')){
+          $(document).keydown(function(e) {
+            if(e.which === 37) {
+              window.location = "../AlternatePathologies/AlternatePathologies.html#SAPHO";
+            }
+          });
+
         }
       },
 
       onSlideChangeStart: function( swiper ) {
-        $(document).off("keydown");
-      },
-
-    });
-
-    $(document).keydown(function(e) {
-      if(e.which === 37) {
-        window.location = "../AlternatePathologies/AlternatePathologies.html";
+        $(document).off('keydown');
       }
-    } );
+    });
 
 
     mySwiper.on('slideChangeStart', function () {
