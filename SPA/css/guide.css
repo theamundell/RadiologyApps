@@ -1,0 +1,89 @@
+.guide-wrapper{
+	height:100%;
+	overflow:hidden;
+	background:#000;
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	right:0px;
+	left:0px;
+	z-index:1;
+	opacity:0;
+	transition:opacity .25s;
+}
+.guide-wrapper.show{
+	z-index:14;
+	opacity:1;
+	transition:opacity .25s;
+}
+.guide-toggle i{
+	color:#fff;
+	position:absolute;
+	bottom:10px;
+	left:10px;
+	z-index:3;
+	font-size:24px; 
+}
+.guide{
+	position: absolute;
+	z-index:12;
+	color:#fff;
+	top:100%;
+	left:0;
+	right:0;
+	bottom:0;
+	background:#000;
+	display:none;
+	opacity:0;
+}
+@keyframes showguide{
+	0%{display:none; opacity:0; top:100%;}
+	5%{display:block; top:100%;}
+	50%{opacity:0;}
+	100%{opacity:1; top:0px;}
+}
+.guide.show{
+	display:block;
+	opacity:1;
+	top:0px;
+	-webkit-animation:showguide forwards;
+	animation:showguide forwards;
+	-webkit-animation-duration:1s;
+	animation-duration:1s;
+	-webkit-animation-timing-function:ease-out;
+	animation-timing-function:ease-out;
+}
+@keyframes hideagain{
+	0%{opacity:1; top:0; display:block;}
+	95%{opacity:0; top:100%; display:block;}
+	100%{opacity:0; top:100%; display:none;}
+}
+.guide.show.hide-again{
+	top:100%;
+	opacity: 0;
+	display:none;
+	-webkit-animation:hideagain;
+	animation:hideagain;
+	-webkit-animation-duration:2s;
+	animation-duration:2s;
+	-webkit-animation-timing-function:ease-out;
+	animation-timing-function:ease-out;
+}
+.guide-content{
+	width:80vw;
+	height:80vh;
+	border:1px solid;
+	box-sizing:border-box;
+	margin:10vh auto;
+	padding:0px 30px;
+	position:relative;
+}
+.guide-content .close i{
+	position:absolute;
+	right:-10px;
+	top:-10px;
+	font-size:30px;
+	background:#000;
+	box-shadow:0px 0px 5px #000;
+	cursor:pointer;
+}
