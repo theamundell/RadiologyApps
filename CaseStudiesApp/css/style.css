@@ -407,6 +407,27 @@ a.center-large-image .mdl-card{
 	border:1px solid #fff;
 }
 
+.open-supporting-text{
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	padding:10px;
+	transition:opacity .25s;
+	transition:right .1s;
+}
+.open-supporting-text:hover{
+	opacity:0;
+	right:0px;
+	cursor:pointer;
+}
+.mdl-card__supporting-text{
+	display:none;
+}
+.open-supporting-text:hover + .mdl-card__supporting-text{
+	display:block;
+}
+
 .dark-back .reference-h4{
 	margin-top:30px;
 	font-weight:100;
