@@ -379,7 +379,7 @@ a.center-large-image .mdl-card{
 }
 .two-images {
 	display:flex;
-	margin-bottom:30px;	
+	margin-bottom:30px;
 }
 .two-images .mdl-card{
 	margin:20px;
@@ -395,11 +395,23 @@ a.center-large-image .mdl-card{
 	margin:20px;
 	border:1px solid #fff;
 }
+
+.four-images{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	margin-bottom:30px;
+}
+.four-images .mdl-card{
+	margin:20px;
+	border:1px solid #fff;
+}
+
 .dark-back .reference-h4{
 	margin-top:30px;
 	font-weight:100;
 	font-style:italic;
-	border-top:1px solid; 
+	border-top:1px solid;
 	padding-top:20px;
 }
 @media (min-width:1024px){
