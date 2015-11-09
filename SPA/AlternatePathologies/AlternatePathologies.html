@@ -24,6 +24,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.0/js/swiper.min.js"></script>
 
    <link rel="stylesheet" href="../css/specific-css.css">
+   <link rel="stylesheet" href="../css/case-studies.css">
 
 
 </head>
@@ -32,8 +33,8 @@
 
 <!-- Uses a header that scrolls with the text, rather than staying
   locked at the top -->
-<div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
-  <header class="mdl-layout__header mdl-layout__header--scroll">
+<div class="demo-layout-transparent mdl-layout mdl-js-layout dark-back">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
     <div class="mdl-layout__header-row">
       <!-- Title -->
       <span class="mdl-layout-title"></span>
@@ -50,16 +51,16 @@
       <a class="mdl-navigation__link" href="../DiagnosticSpA/DiagnosticSpA.html">Diagnosis SpA</a>
 
       <a class="mdl-navigation__link" href="AlternatePathologies.html">Alternate Pathologies</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="1" href="AlternatePathologies.html#OsteitisCondensansIlia">Osteitis Condensans Ilia</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="2" href="AlternatePathologies.html#DegenerativeDiseaseSIJ">Degenerative Disease SIJ</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="5" href="AlternatePathologies.html#Infection">Infection</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="6" href="AlternatePathologies.html#Spondylodiscitis">Spondylodiscitis</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="7" href="AlternatePathologies.html#InsufficiencyFractures">Insufficiency Fractures</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="8" href="AlternatePathologies.html#DegenerativeDiscDisease">Degenerative Disc Disease</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="9" href="AlternatePathologies.html#TransitionalVertebra">Transitional Vertebra</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="10" href="AlternatePathologies.html#SpondylolisthesisSpondylolysis">Spondylolisthesis and Spondylolysis</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="11" href="AlternatePathologies.html#DISH">Diffuse Idiopathic Skeletal Hyperostosis</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="12" href="AlternatePathologies.html#SAPHO">SAPHO</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="0" href="AlternatePathologies.html#OsteitisCondensansIlia">Osteitis Condensans Ilia</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="1" href="AlternatePathologies.html#DegenerativeDiseaseSIJ">Degenerative Disease SIJ</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="4" href="AlternatePathologies.html#Infection">Infection</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="5" href="AlternatePathologies.html#Spondylodiscitis">Spondylodiscitis</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="6" href="AlternatePathologies.html#InsufficiencyFractures">Insufficiency Fractures</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="7" href="AlternatePathologies.html#DegenerativeDiscDisease">Degenerative Disc Disease</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="8" href="AlternatePathologies.html#TransitionalVertebra">Transitional Vertebra</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="9" href="AlternatePathologies.html#SpondylolisthesisSpondylolysis">Spondylolisthesis and Spondylolysis</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="10" href="AlternatePathologies.html#DISH">Diffuse Idiopathic Skeletal Hyperostosis</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="11" href="AlternatePathologies.html#SAPHO">SAPHO</a>
 
 
       <a class="mdl-navigation__link" href="../ImagingFindings/ImagingFindings-sacroiliac.html">Imaging Findings - Sacroiliac</a>
@@ -602,6 +603,12 @@
             </a>
             </div>
           </div>
+
+          <br><br>
+
+          <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="../ImagingFindings/ImagingFindings-sacroiliac.html">
+            Continue to Imaging Findings - Sacroiliac<i class="zmdi zmdi-long-arrow-right"></i>
+          </a>
         </div>
       </div>
 
@@ -668,7 +675,6 @@
 
       var slideheight = $('.swiper-slide-active > .padding').height();
       $('.swiper-slide').height(slideheight);
-
     });
 
 
@@ -689,7 +695,7 @@
       prevEffect    : 'none',
       nextEffect    : 'none',
       closeBtn    : false,
-      arrows :true,
+      arrows :false,
       helpers   : {
         title : { type : 'inside' },
         buttons : {}

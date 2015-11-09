@@ -23,8 +23,8 @@
   <link rel="stylesheet" href="../css/swiper.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.min.js"></script>
 
-   <link rel="stylesheet" href="../css/specific-css.css">
-
+  <link rel="stylesheet" href="../css/specific-css.css">
+  <link rel="stylesheet" href="../css/case-studies.css">
 
 </head>
 <body>
@@ -32,8 +32,8 @@
 
 <!-- Uses a header that scrolls with the text, rather than staying
   locked at the top -->
-<div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
-  <header class="mdl-layout__header mdl-layout__header--scroll">
+<div class="demo-layout-transparent mdl-layout mdl-js-layout dark-back">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
     <div class="mdl-layout__header-row">
       <!-- Title -->
       <span class="mdl-layout-title"></span>
@@ -46,10 +46,10 @@
       <a class="mdl-navigation__link" href="../overview/overview.html">Overview</a>
 
       <a class="mdl-navigation__link" href="AnatomyImaging-sacroiliac.html">Anatomy &amp; Imaging - Sacroiliac</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="1" href="AnatomyImaging-sacroiliac.html#SacroiliacAnatomy">Sacroiliac Anatomy</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="2" href="AnatomyImaging-sacroiliac.html#Radiograph">Radiograph</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="3" href="AnatomyImaging-sacroiliac.html#MRI">MRI</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="4" href="AnatomyImaging-sacroiliac.html#CT">CT</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="0" href="AnatomyImaging-sacroiliac.html#SacroiliacAnatomy">Sacroiliac Anatomy</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="1" href="AnatomyImaging-sacroiliac.html#Radiograph">Radiograph</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="2" href="AnatomyImaging-sacroiliac.html#MRI">MRI</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="3" href="AnatomyImaging-sacroiliac.html#CT">CT</a>
 
       <a class="mdl-navigation__link" href="AnatomyImaging-spinal.html">Anatomy &amp; Imaging - Spinal</a>
       <a class="mdl-navigation__link" href="../ImagingAlgorithm/ImagingAlgorithm.html">Imaging Algorithm</a>
@@ -70,16 +70,6 @@
   <div class="swiper-container">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide" data-hash="start">    
-          <div class="padding center">
-            <h3>Anatomy &amp; Imaging - Sacroilliac</h3>
-            <p>Short introductory blurb about what will be covered in this section.</p>
-            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="../index.html">
-              <i class="zmdi zmdi-long-arrow-left"></i> Back to Table of Contents
-            </a>
-          </div>
-        </div> 
 
         <div class="swiper-slide" data-hash="SacroiliacAnatomy">    
           <div class="padding">
@@ -420,17 +410,14 @@
 
 
               </div>
+
+              <br><br>
+
+              <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="AnatomyImaging-spinal.html">
+                Continue to Anatomy &amp; Imaging - Spinal<i class="zmdi zmdi-long-arrow-right"></i>
+              </a>
           </div>
         </div> 
-
-        <div class="swiper-slide end" data-hash="end">    
-          <div class="padding center">
-            <h3>Anatomy &amp; Imaging - Sacroiliac Complete</h3>
-            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="AnatomyImaging-spinal.html">
-              Continue to Anatomy &amp; Imaging - Spinal<i class="zmdi zmdi-long-arrow-right"></i>
-            </a>
-          </div>
-        </div>
 
       <!--End of slides -->
       </div><!-- Slide Wrapper end-->
