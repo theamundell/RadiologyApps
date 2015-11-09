@@ -2,13 +2,26 @@
 	height:100%;
 	overflow:hidden;
 	background:#000;
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	right:0px;
+	left:0px;
+	z-index:1;
+	opacity:0;
+	transition:opacity .25s;
+}
+.guide-wrapper.show{
+	z-index:14;
+	opacity:1;
+	transition:opacity .25s;
 }
 .guide-toggle i{
 	color:#fff;
 	position:absolute;
 	bottom:10px;
 	left:10px;
-	z-index:1;
+	z-index:3;
 	font-size:24px; 
 }
 .guide{

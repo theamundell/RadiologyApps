@@ -40,8 +40,8 @@
             </div>
         </div>
     </div>
+    <div class="guide-toggle"><i class="zmdi zmdi-help-outline"></i></div>
     <div class="guide-wrapper">
-        <div class="guide-toggle"><i class="zmdi zmdi-help-outline"></i></div>
         <div class="guide">
             <div class="guide-content">
                 <div class="close"><i class="zmdi zmdi-close-circle-o"></i></div>
@@ -233,11 +233,12 @@
 
         $('.guide-toggle').click(function () {
             $('.guide').removeClass('hide-again');
-            $('.guide').removeClass('display-none');
             $('.guide').addClass('show');
+            $('.guide-wrapper').addClass('show');
         });
         $('.close').click(function () {
-            $('.guide').addClass('hide-again')
+            $('.guide').addClass('hide-again');
+            $('.guide-wrapper').removeClass('show');
         });
 
     </script>
