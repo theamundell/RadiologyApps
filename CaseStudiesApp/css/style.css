@@ -418,6 +418,7 @@ a.center-large-image .mdl-card{
 	position:absolute;
 	left:0px;
 	bottom:0px;
+	color: #F5F5F5;
 	background:#000;
 	padding:10px;
 	transition:opacity .25s;
