@@ -3,7 +3,7 @@
 body{
 	-webkit-font-smoothing:antialiased;
 }
-p, 
+p,
 li{
 	font-size:16px;
 	line-height:1.4
@@ -31,9 +31,9 @@ li{
 }
 .dark-back {
 	background:rgb(40,40,40);
-	color:rgb(245,245,245);	
+	color:rgb(245,245,245);
 }
-.dark-back h2, 
+.dark-back h2,
 .dark-back h3,
 .dark-back h4{
 	color:#fff;
@@ -130,7 +130,7 @@ a.no-color{
 .swiper-container {
     width: 100%;
     height: auto;
-} 
+}
 
 .swiper-slide{
 	display:flex;

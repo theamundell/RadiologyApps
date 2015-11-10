@@ -89,6 +89,32 @@ article .diagnosis {
 	display: none;
 }
 
+.diagnosis > ul > li {
+	list-style-type: none;
+}
+
+.diagnosis-button {
+	padding: 10px 15px;
+  background: #ff6060;
+  color: #000;
+	border-radius: 4px;
+	border: 1px solid #000;
+
+	-webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.diagnosis-button:hover, .diagnosis-button:active {
+  background: #000;
+	color: #ff6060;
+	border: 1px solid #ff6060;
+}
+
+.diagnosis-button:focus {
+  outline: none;
+}
+
 
 .imageframe {
 	background-color: #666666;
@@ -428,9 +454,6 @@ a.center-large-image .mdl-card{
 	display:block;
 }
 
-.diagnosis > ul > li {
-	list-style-type: none;
-}
 
 .dark-back .reference-h4{
 	margin-top:30px;
