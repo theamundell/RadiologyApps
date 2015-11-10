@@ -428,6 +428,10 @@ a.center-large-image .mdl-card{
 	display:block;
 }
 
+.diagnosis > ul > li {
+	list-style-type: none;
+}
+
 .dark-back .reference-h4{
 	margin-top:30px;
 	font-weight:100;
