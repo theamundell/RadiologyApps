@@ -403,32 +403,13 @@ a.center-large-image .mdl-card{
 	width:100%;
 	height:400px;
 }
-.two-images {
-	display:flex;
-	margin-bottom:30px;
-}
-.two-images .mdl-card{
-	margin:20px;
-	border:1px solid #fff;
-}
-.three-images{
+.two-images, .three-images, .four-images {
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:center;
 	margin-bottom:30px;
 }
-.three-images .mdl-card{
-	margin:20px;
-	border:1px solid #fff;
-}
-
-.four-images{
-	display:flex;
-	flex-wrap:wrap;
-	justify-content:center;
-	margin-bottom:30px;
-}
-.four-images .mdl-card{
+.two-images .mdl-card, .three-images .mdl-card, .four-images .mdl-card{
 	margin:20px;
 	border:1px solid #fff;
 }
