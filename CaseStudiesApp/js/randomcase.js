@@ -92,5 +92,5 @@ function randomcase(){
 		rand = Math.floor(Math.random()*randomcases.length);
 	}
 
-	window.location = randomcases[rand];
+	return randomcases[rand];
 }
