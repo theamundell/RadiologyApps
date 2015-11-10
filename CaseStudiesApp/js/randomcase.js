@@ -12,7 +12,7 @@ randomcases[8]="section1.html#9"
 randomcases[9]="section1.html#10"
 randomcases[10]="section1.html#11"
 randomcases[11]="section1.html#12"
-// randomcases[12]="section1.html#13"
+// randomcases[12]="section1.html#13"  // Case 12 doesn't exist for some reason.
 randomcases[13]="section1.html#14"
 randomcases[14]="section1.html#15"
 randomcases[15]="section1.html#16"
@@ -84,5 +84,13 @@ randomcases[65]="section4.html#15"
 
 
 function randomcase(){
-	window.location=randomcases[Math.floor(Math.random()*randomcases.length)];
+
+	var rand = Math.floor(Math.random()*randomcases.length);
+
+	// Make sure rand is not invalid; randomcases[12] does not exist.
+	while (rand === 12) {
+		rand = Math.floor(Math.random()*randomcases.length);
+	}
+
+	window.location = randomcases[rand];
 }
