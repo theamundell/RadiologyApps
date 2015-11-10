@@ -42,6 +42,19 @@
                 <a class="mdl-navigation__link" href="section1.html">Spot Cases - Section 1</a>
                 <a class="mdl-navigation__link" href="section2.html">Extended Cases - Section 2</a>
                 <a class="mdl-navigation__link current" href="section3.html">Short Cases - Section 3</a>
+									<a class="mdl-navigation__link sub-nav-item" data-index="1" href="section3.html#1">Case 3.1</a>
+									<a class="mdl-navigation__link sub-nav-item" data-index="2" href="section3.html#2">Case 3.2</a>
+									<a class="mdl-navigation__link sub-nav-item" data-index="3" href="section3.html#3">Case 3.3</a>
+									<a class="mdl-navigation__link sub-nav-item" data-index="4" href="section3.html#4">Case 3.4</a>
+									<a class="mdl-navigation__link sub-nav-item" data-index="5" href="section3.html#5">Case 3.5</a>
+									<a class="mdl-navigation__link sub-nav-item" data-index="6" href="section3.html#6">Case 3.6</a>
+									<a class="mdl-navigation__link sub-nav-item" data-index="7" href="section3.html#7">Case 3.7</a>
+									<a class="mdl-navigation__link sub-nav-item" data-index="8" href="section3.html#8">Case 3.8</a>
+									<a class="mdl-navigation__link sub-nav-item" data-index="9" href="section3.html#9">Case 3.9</a>
+									<a class="mdl-navigation__link sub-nav-item" data-index="10" href="section3.html#10">Case 3.10</a>
+									<a class="mdl-navigation__link sub-nav-item" data-index="11" href="section3.html#11">Case 3.11</a>
+									<a class="mdl-navigation__link sub-nav-item" data-index="12" href="section3.html#12">Case 3.12</a>
+									<a class="mdl-navigation__link sub-nav-item" data-index="13" href="section3.html#14">Case 3.13</a>
                 <a class="mdl-navigation__link" href="section4.html">Spot Cases 2 - Section 4</a>
                 <a class="mdl-navigation__link" href="javascript:randomcase()">Random Case</a>
             </nav>
@@ -1900,5 +1913,10 @@
 			$('.swiper-button-prev').show('slow');
 			$('.swiper-button-next').show('slow');
 		}
+	});
+
+	$('.sub-nav-item').on('click', function(e){
+		swiper.slideTo($(this).data('index') - 1, 1);
+		$('.mdl-layout__drawer').removeClass('is-visible');
 	});
 </script>
