@@ -426,6 +426,7 @@ a.center-large-image .mdl-card{
 	padding:10px;
 	transition:opacity .25s;
 	transition:right .1s;
+	z-index:1;
 }
 .open-supporting-text:hover{
 	opacity:0;
@@ -434,6 +435,15 @@ a.center-large-image .mdl-card{
 }
 .mdl-card__supporting-text{
 	display:none;
+	background:#fff;
+	position:absolute;
+	left:0;
+	bottom:0;
+	right:0;
+	padding:5px 10px 0px;
+	width:100%;
+	box-sizing:border-box;
+	z-index:0;
 }
 .open-supporting-text:hover + .mdl-card__supporting-text{
 	display:block;

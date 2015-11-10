@@ -20,14 +20,56 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/swiper.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/case-studies.css">
+	<link rel="stylesheet" href="css/app-intro.css">
+    <link rel="stylesheet" href="css/guide.css">
 </head>
 <body>
+
+	<div class="intro-animation">
+        <div class="content">
+            <div class="logowrapper">
+                <div class="logo">
+                    <span>E</span>SIMR
+                </div>
+            </div>
+            <div class="full-text"><span>E</span>ssiential Imaging Rhumetology</div>
+            <div class="app-title"><span>U</span>ncovering The <span>H</span>and <span>R</span>adiograph</div>
+
+            <div class="enter-button-wrapper">
+                <div class="button">
+                    ENTER
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="guide-toggle"><i class="zmdi zmdi-help-outline"></i></div>
+    <div class="guide-wrapper">
+        <div class="guide">
+            <div class="guide-content">
+                <div class="close"><i class="zmdi zmdi-close-circle-o"></i></div>
+                <h4>How to use this app</h4>
+                <hr>
+                <p>You are viewing the guide, empty right now, more to come.</p>
+                <ul>
+                    <li>you can add lists</li>
+                    <li>and some photos would be nice also</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
 	<div class="mdl-layout mdl-js-layout dark-back">
 		<header class="mdl-layout__header mdl-layout__header--transparent">
 
 			<div class="mdl-layout__header-row">
 				<!-- Title -->
-				<span class="mdl-layout-title">Introduction</span>
+				<span class="mdl-layout-title">
+                    <div class="logo">
+                        <span>E</span>SIMR
+                    </div>
+                </span>
 			</div>
 		</header>
 
@@ -115,10 +157,8 @@
 					
 				</div>
 
-				<div class="swiper-button-prev swiper-button-black"></div>
-	    		<div class="swiper-button-next swiper-button-black"></div>
-
-				<div class="swiper-pagination"></div>
+				<div class="swiper-button-prev"></div>
+	    		<div class="swiper-button-next"></div>
 			
 			</div>
 
@@ -141,5 +181,21 @@
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
     });
+
+        $('.intro-animation').addClass('start-animation');
+
+        $('.intro-animation').click(function () {
+            $('.intro-animation').addClass('hide');
+        });
+
+        $('.guide-toggle').click(function () {
+            $('.guide').removeClass('hide-again');
+            $('.guide').addClass('show');
+            $('.guide-wrapper').addClass('show');
+        });
+        $('.close').click(function () {
+            $('.guide').addClass('hide-again');
+            $('.guide-wrapper').removeClass('show');
+        });
 </script>
 

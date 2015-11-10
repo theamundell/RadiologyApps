@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/swiper.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/case-studies.css">
 </head>
 <body>
 	<div class="mdl-layout mdl-js-layout dark-back">
@@ -426,10 +427,8 @@
 
 					</div>
 
-					<div class="swiper-button-prev swiper-button-black"></div>
-					<div class="swiper-button-next swiper-button-black"></div>
-
-					<div class="swiper-pagination"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
 
 				</div>
 
@@ -445,20 +444,34 @@
 			$(".fancybox").fancybox({
 				closeBtn : false
 			});
-		});
-	</script>
-
-	<script>
+		}); 
+		
 		$( ".open-menu" ).click(function() {
 			$( this ).toggleClass( "closed" );
 		});
 
 		var swiper = new Swiper('.swiper-container', {
-			pagination: '.swiper-pagination',
-			paginationClickable: true,
-			keyboardControl: true,
-			nextButton: '.swiper-button-next',
-			prevButton: '.swiper-button-prev',
-		});
+	      hashnav: true,
+	      pagination: '.swiper-pagination',
+	      paginationClickable: true,
+	      keyboardControl: true,
+	      nextButton: '.swiper-button-next',
+	      prevButton: '.swiper-button-prev',
+	    });
+
+	    $('.mdl-layout__content').scroll(function() {
+	      if ($('.mdl-layout__content').scrollTop() > 50) {
+	        $('.swiper-button-prev').hide('slow');
+	        $('.swiper-button-next').hide('slow');
+	      } else {
+	        $('.swiper-button-prev').show('slow');
+	        $('.swiper-button-next').show('slow');
+	      }
+	    });
+
+	    $('.sub-nav-item').on('click', function(e){
+	      swiper.slideTo($(this).data('index') - 1, 1);
+	      $('.mdl-layout__drawer').removeClass('is-visible');
+	    });
 	</script>
 
