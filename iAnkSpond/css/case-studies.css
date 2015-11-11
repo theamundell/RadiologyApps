@@ -427,6 +427,7 @@ a.center-large-image .mdl-card{
 	transition:opacity .25s;
 	transition:right .1s;
 	z-index:1;
+	color:#fff;
 }
 .open-supporting-text:hover{
 	opacity:0;
