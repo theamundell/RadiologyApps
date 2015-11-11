@@ -239,6 +239,16 @@
       percentPosition: true
     });
 
+    $('.mdl-layout__content').scroll(function() {
+      if ($('.mdl-layout__content').scrollTop() > 50) {
+        $('.swiper-button-prev').hide('slow');
+        $('.swiper-button-next').hide('slow');
+      } else {
+        $('.swiper-button-prev').show('slow');
+        $('.swiper-button-next').show('slow');
+      }
+    });
+
     $(".fancybox-button").fancybox({
       prevEffect    : 'none',
       nextEffect    : 'none',

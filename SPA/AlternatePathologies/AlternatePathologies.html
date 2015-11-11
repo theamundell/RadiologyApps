@@ -644,30 +644,6 @@
       // Navigation arrows
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
-      onSlideNextEnd: function( swiper ) {
-        if ($('.swiper-slide-active').hasClass('end')) {
-          $(document).keydown(function(e) {
-            if(e.which === 39) {
-              window.location = "../ImagingFindings/ImagingFindings-sacroiliac.html";
-            }
-          });
-        }
-      },
-
-      onSlidePrevEnd: function( swiper ) {
-        if($('.swiper-slide-active').hasClass('start')){
-          $(document).keydown(function(e) {
-            if(e.which === 37) {
-              window.location = "../DiagnosticSpA/DiagnosticSpA.html";
-            }
-          });
-
-        }
-      },
-
-      onSlideChangeStart: function( swiper ) {
-        $(document).off('keydown');
-      }
     });
 
 
@@ -689,6 +665,16 @@
       columnWidth: '.grid-sizer',
       itemSelector: '.mdl-card',
       percentPosition: true
+    });
+
+    $('.mdl-layout__content').scroll(function() {
+      if ($('.mdl-layout__content').scrollTop() > 50) {
+        $('.swiper-button-prev').hide('slow');
+        $('.swiper-button-next').hide('slow');
+      } else {
+        $('.swiper-button-prev').show('slow');
+        $('.swiper-button-next').show('slow');
+      }
     });
 
     $(".fancybox-button").fancybox({

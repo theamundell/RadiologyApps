@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>SPA</title>
 
-	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.indigo-red.min.css" /> 
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.indigo-red.min.css" />
 	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="css/specific-css.css">
@@ -14,7 +14,7 @@
 
 </head>
 <body>
-	
+
 
 <!-- Uses a header that scrolls with the text, rather than staying
   locked at the top -->
@@ -109,7 +109,7 @@
 			    <h2 class="mdl-card__title-text">CT</h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
-			    CT provides excellent bone detail and is the gold standard in the assessment of erosions. 
+			    CT provides excellent bone detail and is the gold standard in the assessment of erosions.
 			  </div>
 			  <div class="mdl-card__actions mdl-card--border">
 			    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="AnatomyImaging-sacroiliac.html#CT-panel">
@@ -174,7 +174,7 @@
 			    <h2 class="mdl-card__title-text">CT</h2>
 			  </div>
 			  <div class="mdl-card__supporting-text">
-			    CT of the whole spine is not performed for SpA given the extended field of view and subsequent large radiation exposure. 
+			    CT of the whole spine is not performed for SpA given the extended field of view and subsequent large radiation exposure.
 			  </div>
 			  <div class="mdl-card__actions mdl-card--border">
 			    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="AnatomyImaging-spinal.html#demographicas-panel">
@@ -196,6 +196,16 @@
 	  columnWidth: '.grid-sizer',
 	  itemSelector: '.mdl-card',
 	  percentPosition: true
+	});
+
+	$('.mdl-layout__content').scroll(function() {
+		if ($('.mdl-layout__content').scrollTop() > 50) {
+			$('.swiper-button-prev').hide('slow');
+			$('.swiper-button-next').hide('slow');
+		} else {
+			$('.swiper-button-prev').show('slow');
+			$('.swiper-button-next').show('slow');
+		}
 	});
 </script>
 </html>

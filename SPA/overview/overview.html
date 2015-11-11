@@ -4,23 +4,23 @@
   <meta charset="UTF-8">
   <title>SPA</title>
 
-  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue_grey-blue.min.css" /> 
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue_grey-blue.min.css" />
   <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  
+
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
-  
+
   <link rel="stylesheet" href="../css/swiper.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.min.js"></script>
-  
+
 
   <link rel="stylesheet" href="../css/specific-css.css">
   <link rel="stylesheet" href="../css/case-studies.css">
 
 </head>
 <body>
-  
+
 
 <!-- Uses a header that scrolls with the text, rather than staying
   locked at the top -->
@@ -30,7 +30,7 @@
       <!-- Title -->
       <span class="mdl-layout-title">Overview</span>
     </div>
-      
+
   </header>
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">SpA</span>
@@ -111,8 +111,8 @@
                 <li><b>Anterior uveitis</b> occurs in up to 1/3 patients, presents with pain, redness and photophobia. Usually unilateral and may be recurrent.</li>
                 <li>With Ankylosing Spondylitis as the model for SpA, the time from initial symptom presentation to final diagnosis can be up to 9 years (symptoms often relapse and remit, may be low grade, often thought to be related to muscular strain injuries/degenerative disease by patients/clinicians all of which contribute to a significant delay in diagnosis)</li>
                 <li>Delay in diagnosis has negative implications for the patient's well-being</li>
-                <li>Treatment with anti-TNF agents is most effective earlier in the course of the disease before structural changes occur.</li>   
-            </ul> 
+                <li>Treatment with anti-TNF agents is most effective earlier in the course of the disease before structural changes occur.</li>
+            </ul>
           </div>
         </div>
 
@@ -138,7 +138,7 @@
             <ul>
               <li>Varies between ethnic populations (Highest in European ancestry, 1.4%)</li>
               <li>Overall prevalence in the United States of SpA is as high as 1.3%, 0.2% - 0.5% for ankylosing spondylitis</li>
-                
+
               <ul>
                 <li>0.05% for psoriatic arthritis</li>
                 <li>0.065% for enteropathic peripheral arthritis</li>
@@ -148,7 +148,7 @@
           </div>
         </div>
 
-        <div class="swiper-slide predispositions" data-hash="predispositions">    
+        <div class="swiper-slide predispositions" data-hash="predispositions">
           <div class="padding">
             <h3>Predispositions</h3>
             <ul>
@@ -162,21 +162,21 @@
               <li>12% risk of developing AS in HLA-B27 positive primary relatives of patient with AS</li>
               <li>Theorized that HLA-B27 positive patients with SpA have interacted with an environmental factor/s, likely infectious, causing an inflammatory response at the cartilage-bone interface</li>
               <li>Other genetic predispositions include ERAP1, endoplasmic reticulum aminopeptidase 1, interlukin 1 and 23.</li>
-            </ul>  
+            </ul>
             <br><br>
             <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="../AnatomyImaging/AnatomyImaging-sacroiliac.html">
               Continue to Anatomy and Imaging <i class="zmdi zmdi-long-arrow-right"></i>
             </a>
           </div>
-        </div> 
-        
+        </div>
+
 
     </div>
 
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-    
+
 </div>
 
   </div>
@@ -194,19 +194,29 @@
     loop: false,
     hashnav:true,
     keyboardControl:true,
-    
+
     // Navigation arrows
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-    
+
+  });
+  
+  $('.sub-nav-item').on('click', function(e){
+
+    mySwiper.slideTo($(this).data('index'), 1);
+
+    $('.mdl-layout__drawer').removeClass('is-visible');
   });
 
-    $('.sub-nav-item').on('click', function(e){
-      
-      mySwiper.slideTo($(this).data('index'), 1);
+  $('.mdl-layout__content').scroll(function() {
+    if ($('.mdl-layout__content').scrollTop() > 50) {
+      $('.swiper-button-prev').hide('slow');
+      $('.swiper-button-next').hide('slow');
+    } else {
+      $('.swiper-button-prev').show('slow');
+      $('.swiper-button-next').show('slow');
+    }
+  });
 
-      $('.mdl-layout__drawer').removeClass('is-visible');
-    });
-    
 </script>
 </html>
