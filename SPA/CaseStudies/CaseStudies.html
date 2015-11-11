@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case Studies</title>
+
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue_grey-blue.min.css" />
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
+
+
+  <link rel="stylesheet" href="../js/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="../js/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  <link rel="stylesheet" href="../js/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="../js/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+  <script type="text/javascript" src="../js/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+  <link rel="stylesheet" href="../css/swiper.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.min.js"></script>
+
+  <link rel="stylesheet" href="../css/specific-css.css">
+  <link rel="stylesheet" href="../css/case-studies.css">
+
+</head>
+<body>
+
+
+<!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+<div class="demo-layout-transparent mdl-layout mdl-js-layout dark-back">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Case Studies</span>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">SpA</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="../index.html">Table of Contents</a>
+      <a class="mdl-navigation__link" href="../overview/overview.html">Overview</a>
+      <a class="mdl-navigation__link" href="../AnatomyImaging/AnatomyImaging-sacroiliac.html">Anatomy &amp; Imaging - Sacroiliac</a>
+      <a class="mdl-navigation__link" href="../AnatomyImaging/AnatomyImaging-spinal.html">Anatomy &amp; Imaging - Spinal</a>
+      <a class="mdl-navigation__link" href="../ImagingAlgorithm/ImagingAlgorithm.html">Imaging Algorithm</a>
+      <a class="mdl-navigation__link" href="DiagnosticSpA.html">Diagnosis SpA</a>
+      <a class="mdl-navigation__link" href="../AlternatePathologies/AlternatePathologies.html">Alternate Pathologies</a>
+      <a class="mdl-navigation__link" href="../ImagingFindings/ImagingFindings-sacroiliac.html">Imaging Findings - Sacroiliac</a>
+      <a class="mdl-navigation__link" href="../ImagingFindings/ImagingFindings-spinal.html">Imaging Findings - Spinal</a>
+      <a class="mdl-navigation__link current" href="../CaseStudies/CaseStudies.html">Case Studies</a>
+    </nav>
+  </div>
+
+<!-- Content Below -->
+
+<main class="mdl-layout__content dark-back">
+  <div class="page-content">
+
+      <!-- Slider main container -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide" data-hash="DiagnosticCriteria">
+        <div class="padding">
+          <section class="header">
+              <h2><span class="orange">No content yet.</span></h2>
+          </section>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div><!-- Swiper end-->
+
+
+  </div>
+</main>
+</div>
+
+</body>
+
+<script>
+  $( document ).ready(function() {
+      var slideheight = $('.swiper-slide-active > .padding').height();
+      $('.swiper-slide').height(slideheight);
+  });
+
+
+    var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    hashnav:true,
+    keyboardControl:true,
+
+    // Navigation arrows
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+
+  });
+
+
+    mySwiper.on('slideChangeStart', function () {
+
+      var slideheight = $('.swiper-slide-active > .padding').height();
+      $('.swiper-slide').height(slideheight);
+
+    });
+
+
+    $('.sub-nav-item').on('click', function(e){
+
+      mySwiper.slideTo($(this).data('index'), 1);
+
+      $('.mdl-layout__drawer').removeClass('is-visible');
+    });
+
+    $('.card-wrapper2').masonry({
+      columnWidth: '.grid-sizer',
+      itemSelector: '.mdl-card',
+      percentPosition: true
+    });
+
+    $('.mdl-layout__content').scroll(function() {
+      if ($('.mdl-layout__content').scrollTop() > 50) {
+        $('.swiper-button-prev').hide('slow');
+        $('.swiper-button-next').hide('slow');
+      } else {
+        $('.swiper-button-prev').show('slow');
+        $('.swiper-button-next').show('slow');
+      }
+    });
+
+    $(".fancybox-button").fancybox({
+      prevEffect    : 'none',
+      nextEffect    : 'none',
+      closeBtn    : false,
+      arrows :false,
+      helpers   : {
+        title : { type : 'inside' },
+        buttons : {}
+      }
+    });
+
+</script>
+</html>
