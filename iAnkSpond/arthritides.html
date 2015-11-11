@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>The Arthitides</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+	<!-- MDL -->
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue_grey-blue.min.css" />
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- FancyBox -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+
+</head>
+<body>
+	<div class="mdl-layout mdl-js-layout dark-back">
+		<header class="mdl-layout__header mdl-layout__header--transparent">
+
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title">The Arthitides</span>
+			</div>
+		</header>
+
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Table of Contents</span>
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link" href="introduction.html">Introduction</a>
+				<a class="mdl-navigation__link" href="radiographicbasics.html">Radiographic Basics</a>
+				<a class="mdl-navigation__link" href="imaginganatomy.html">Imaging Anatomy</a>
+				<a class="mdl-navigation__link" href="imagingfeatures.html" class="current">Imaging Features</a>
+				<a class="mdl-navigation__link" class="mdl-navigation__link" href="approach.html">Radiographic Interpretation</a>
+				<a class="mdl-navigation__link" href="diagnosis.html">Clinical Diagnosis</a>
+				<a class="mdl-navigation__link current" href="arthritides.html">The Arthitides</a>
+				<a class="mdl-navigation__link" href="cases.html">Cases</a>
+			</nav>
+		</div>
+
+		<article class="mdl-layout__content">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+
+            <section class="header">
+              <h2>No Content Yet.</h2>
+            </section>
+          </div>
+				</div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+
+				<div class="swiper-pagination"></div>
+
+			</div>
+
+		</article>
+	</div>
+</body>
+</html>
+
+<script src="js/swiper.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+
+<script>
+
+	var swiper = new Swiper('.swiper-container', {
+		hashnav: true,
+		pagination: '.swiper-pagination',
+		paginationClickable: true,
+		keyboardControl: true,
+		nextButton: '.swiper-button-next',
+		prevButton: '.swiper-button-prev',
+	});
+
+	$('.sub-nav-item').on('click', function(e){
+
+		swiper.slideTo($(this).data('index'), 1);
+
+		$('.mdl-layout__drawer').removeClass('is-visible');
+	});
+</script>
