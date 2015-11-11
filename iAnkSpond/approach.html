@@ -41,6 +41,17 @@
 				<a class="mdl-navigation__link" href="imaginganatomy.html">Imaging Anatomy</a>
 				<a class="mdl-navigation__link" href="imagingfeatures.html" class="current">Imaging Features</a>
 				<a class="mdl-navigation__link current" class="mdl-navigation__link" href="approach.html">Radiographic Interpretation</a>
+					<a class="mdl-navigation__link sub-nav-item" data-index="1" href="approach.html#jabs1">JABS</a>
+					<a class="mdl-navigation__link sub-nav-item" data-index="3" href="approach.html#joint">J-Joints</a>
+					<a class="mdl-navigation__link sub-nav-item" data-index="4" href="approach.html#align">A-Alignment</a>
+					<a class="mdl-navigation__link sub-nav-item" data-index="5" href="approach.html#bone">B-Bone</a>
+					<a class="mdl-navigation__link sub-nav-item" data-index="6" href="approach.html#soft">S-Soft Tissues</a>
+					<a class="mdl-navigation__link sub-nav-item" data-index="7" href="approach.html#osteo">Osteoarthritis</a>
+					<a class="mdl-navigation__link sub-nav-item" data-index="8" href="approach.html#rheumatoid">Rheumatoid Arthritis</a>
+					<a class="mdl-navigation__link sub-nav-item" data-index="9" href="approach.html#seronegative">Seronegative Arthritis</a>
+					<a class="mdl-navigation__link sub-nav-item" data-index="10" href="approach.html#crystalline">Crystalline Arthritis</a>
+					<a class="mdl-navigation__link sub-nav-item" data-index="11" href="approach.html#CTD">Connective Tissue Disorders</a>
+
 				<a class="mdl-navigation__link" href="diagnosis.html">Clinical Diagnosis</a>
 				<a class="mdl-navigation__link" href="arthritides.html">The Arthitides</a>
 				<a class="mdl-navigation__link" href="cases.html">Cases</a>
@@ -97,7 +108,7 @@
 						</div>
 					</div>
 
-					<div class="swiper-slide" data-hash="jjoint">
+					<div class="swiper-slide" data-hash="joint">
 						<div class="padding">
 							<section class="header">
 								<h2>J-Joint</h2>
@@ -121,7 +132,7 @@
 						</div>
 					</div>
 
-					<div class="swiper-slide" data-hash="aalign">
+					<div class="swiper-slide" data-hash="align">
 						<div class="padding">
 							<section class="header">
 								<h2>A-Alignment</h2>
@@ -147,7 +158,7 @@
 					<div class="swiper-slide" data-hash="bone">
 						<div class="padding">
 							<section class="header">
-								<h2>Bone</h2>
+								<h2>B-Bone</h2>
 							</section>
 							<section>
 
@@ -172,7 +183,7 @@
 
 
 
-					<div class="swiper-slide" data-hash="ssoft">
+					<div class="swiper-slide" data-hash="soft">
 						<div class="padding">
 							<section class="header">
 								<h2>S-Soft Tissues</h2>
@@ -311,7 +322,7 @@
 
 
 
-					<div class="swiper-slide">
+					<div class="swiper-slide" data-hash="seronegative">
 						<div class="padding">
 							<section class="header">
 								<h2>Seronegative Arthritis (Ankylosing Spondylitis, Reactive Arthritis, Psoriatic Arthritis, Enteropathic Arthritis)</h2>
@@ -409,7 +420,7 @@
 
 
 
-					<div class="swiper-slide">
+					<div class="swiper-slide" data-hash="CTD">
 						<div class="padding">
 							<section class="header">
 								<h2>Connective Tissue Disorders (SLE/ Scleroderma/Polymyositis/ Dermatomyositis/Sjogren’s)</h2>
@@ -476,5 +487,10 @@
 		keyboardControl: true,
 		nextButton: '.swiper-button-next',
 		prevButton: '.swiper-button-prev',
+	});
+
+	$('.sub-nav-item').on('click', function(e){
+		swiper.slideTo($(this).data('index') - 1, 1);
+		$('.mdl-layout__drawer').removeClass('is-visible');
 	});
 </script>
