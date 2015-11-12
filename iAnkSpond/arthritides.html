@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>The Arthitides</title>
 
@@ -23,6 +24,7 @@
 	<link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 
 </head>
+
 <body>
 	<div class="mdl-layout mdl-js-layout dark-back">
 		<header class="mdl-layout__header mdl-layout__header--transparent">
@@ -56,9 +58,9 @@
 							<section class="header">
 								<h2>No content yet.</h2>
 							</section>
-            </div>
-          </div>
-        </div>
+						</div>
+					</div>
+				</div>
 
 				<div class="swiper-button-prev"></div>
 				<div class="swiper-button-next"></div>
@@ -70,11 +72,11 @@
 		</article>
 	</div>
 </body>
+
 </html>
 
 <script src="js/swiper.min.js"></script>
 <script>
-
 	var swiper = new Swiper('.swiper-container', {
 		hashnav: true,
 		pagination: '.swiper-pagination',
@@ -84,7 +86,7 @@
 		prevButton: '.swiper-button-prev',
 	});
 
-	$('.sub-nav-item').on('click', function(e){
+	$('.sub-nav-item').on('click', function(e) {
 
 		swiper.slideTo($(this).data('index'), 1);
 

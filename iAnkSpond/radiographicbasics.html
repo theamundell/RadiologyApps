@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Radiographic Basics</title>
 
@@ -22,6 +23,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/case-studies.css">
 </head>
+
 <body>
 	<div class="mdl-layout mdl-js-layout dark-back">
 		<header class="mdl-layout__header mdl-layout__header--transparent">
@@ -132,24 +134,24 @@
 									<li>Include entire hand and distal 2-3cm of the radius</li>
 									<li>Centered to the third MCPJ (metacarpophalangeal joint)</li>
 									<li>Excellent for assessment of joint spaces, bone density, soft tissue swelling and non-reducible subluxation/deformities.</li>
-								<ul>
+									<ul>
 							</section>
 							<section class="two-images">
 
-									<a class="fancybox" href="images/radiographicbasics/pa1.jpg">
-										<div class="mdl-card mdl-shadow--2dp">
-											<div class="mdl-card__title mdl-card--expand" style="background: url('images/radiographicbasics/pa1.jpg') center/cover">
-												<h5 class="mdl-card__title-text"></h5>
-											</div>
+								<a class="fancybox" href="images/radiographicbasics/pa1.jpg">
+									<div class="mdl-card mdl-shadow--2dp">
+										<div class="mdl-card__title mdl-card--expand" style="background: url('images/radiographicbasics/pa1.jpg') center/cover">
+											<h5 class="mdl-card__title-text"></h5>
 										</div>
-									</a>
-									<a class="fancybox" href="images/radiographicbasics/pa2.jpg">
-										<div class="mdl-card mdl-shadow--2dp">
-											<div class="mdl-card__title mdl-card--expand" style="background: url('images/radiographicbasics/pa2.jpg') center/cover">
-												<h5 class="mdl-card__title-text"></h5>
-											</div>
+									</div>
+								</a>
+								<a class="fancybox" href="images/radiographicbasics/pa2.jpg">
+									<div class="mdl-card mdl-shadow--2dp">
+										<div class="mdl-card__title mdl-card--expand" style="background: url('images/radiographicbasics/pa2.jpg') center/cover">
+											<h5 class="mdl-card__title-text"></h5>
 										</div>
-									</a>
+									</div>
+								</a>
 							</section>
 						</div>
 					</div>
@@ -164,7 +166,7 @@
 							<section>
 								<ul>
 									<li>Hands are obliqued 45 degrees, AP projection and centred between the hands at the level of the MCPJs</li>
-									<li>This projection is optimal for seeing early erosions at the MCP joints, especially at radial  margins of 2nd to 5th MCPJs, pisotriquetral joint and the 3-5th carpo-metacarpal joints.</li>
+									<li>This projection is optimal for seeing early erosions at the MCP joints, especially at radial margins of 2nd to 5th MCPJs, pisotriquetral joint and the 3-5th carpo-metacarpal joints.</li>
 
 
 								</ul>
@@ -191,7 +193,7 @@
 										</div>
 
 									</div>
-									</a>
+								</a>
 
 							</section>
 						</div>
@@ -209,17 +211,17 @@
 									<li>The wrist may be imaged separately from the hand.</li>
 									<li>Usually performed for localized pathology including fractures, infection, SLAC wrist etc.</li>
 									<li>Views include:
-									<ul>
-										<br>
-										<li>PA</li>
-										<li>PA Internal Oblique</li>
-										<li>PA External Oblique</li>
-										<li>Lateral</li>
-										<li>Carpal Tunnel</li>
-										<li>Scaphoid views</li>
+										<ul>
+											<br>
+											<li>PA</li>
+											<li>PA Internal Oblique</li>
+											<li>PA External Oblique</li>
+											<li>Lateral</li>
+											<li>Carpal Tunnel</li>
+											<li>Scaphoid views</li>
 
 									</li>
-								</ul>
+									</ul>
 							</section>
 
 
@@ -303,7 +305,7 @@
 									<li>Tomosynthesis will likely play a significant role in the future in the detection of erosive disease in rheumatology.</li>
 								</ul>
 							</section>
-								
+
 							<a class="fancybox center-large-image" href="images/radiographicbasics/tomodiagram.jpg">
 								<div class="mdl-card mdl-shadow--2dp">
 
@@ -320,7 +322,7 @@
 								</div>
 							</a>
 
-						
+
 
 							<section class="header">
 								<h2>PA radiograph of the right hand demonstrates degenerative changes in this patient with CPPD arthropathy and rheumatoid arthritis</h2>
@@ -393,6 +395,7 @@
 		</article>
 	</div>
 </body>
+
 </html>
 
 <script src="js/swiper.min.js"></script>
@@ -402,31 +405,31 @@
 		$(".fancybox").fancybox();
 	});
 
-	$( ".open-menu" ).click(function() {
-		$( this ).toggleClass( "closed" );
+	$(".open-menu").click(function() {
+		$(this).toggleClass("closed");
 	});
 
 	var swiper = new Swiper('.swiper-container', {
-      hashnav: true,
-      pagination: '.swiper-pagination',
-      paginationClickable: true,
-      keyboardControl: true,
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-    });
+		hashnav: true,
+		pagination: '.swiper-pagination',
+		paginationClickable: true,
+		keyboardControl: true,
+		nextButton: '.swiper-button-next',
+		prevButton: '.swiper-button-prev',
+	});
 
-    $('.mdl-layout__content').scroll(function() {
-      if ($('.mdl-layout__content').scrollTop() > 50) {
-        $('.swiper-button-prev').hide('slow');
-        $('.swiper-button-next').hide('slow');
-      } else {
-        $('.swiper-button-prev').show('slow');
-        $('.swiper-button-next').show('slow');
-      }
-    });
+	$('.mdl-layout__content').scroll(function() {
+		if ($('.mdl-layout__content').scrollTop() > 50) {
+			$('.swiper-button-prev').hide('slow');
+			$('.swiper-button-next').hide('slow');
+		} else {
+			$('.swiper-button-prev').show('slow');
+			$('.swiper-button-next').show('slow');
+		}
+	});
 
-    $('.sub-nav-item').on('click', function(e){
-      swiper.slideTo($(this).data('index') - 1, 1);
-      $('.mdl-layout__drawer').removeClass('is-visible');
-    });
+	$('.sub-nav-item').on('click', function(e) {
+		swiper.slideTo($(this).data('index') - 1, 1);
+		$('.mdl-layout__drawer').removeClass('is-visible');
+	});
 </script>

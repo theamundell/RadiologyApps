@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Case Studies</title>
@@ -27,79 +28,83 @@
   <link rel="stylesheet" href="../css/case-studies.css">
 
 </head>
+
 <body>
 
 
-<!-- Uses a header that scrolls with the text, rather than staying
+  <!-- Uses a header that scrolls with the text, rather than staying
   locked at the top -->
-<div class="demo-layout-transparent mdl-layout mdl-js-layout dark-back">
-  <header class="mdl-layout__header mdl-layout__header--transparent">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">Case Studies</span>
-    </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">SpA</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="../index.html">Table of Contents</a>
-      <a class="mdl-navigation__link" href="../overview/overview.html">Overview</a>
-      <a class="mdl-navigation__link" href="../AnatomyImaging/AnatomyImaging-sacroiliac.html">Anatomy &amp; Imaging - Sacroiliac</a>
-      <a class="mdl-navigation__link" href="../AnatomyImaging/AnatomyImaging-spinal.html">Anatomy &amp; Imaging - Spinal</a>
-      <a class="mdl-navigation__link" href="../ImagingAlgorithm/ImagingAlgorithm.html">Imaging Algorithm</a>
-      <a class="mdl-navigation__link" href="DiagnosticSpA.html">Diagnosis SpA</a>
-      <a class="mdl-navigation__link" href="../AlternatePathologies/AlternatePathologies.html">Alternate Pathologies</a>
-      <a class="mdl-navigation__link" href="../ImagingFindings/ImagingFindings-sacroiliac.html">Imaging Findings - Sacroiliac</a>
-      <a class="mdl-navigation__link" href="../ImagingFindings/ImagingFindings-spinal.html">Imaging Findings - Spinal</a>
-      <a class="mdl-navigation__link current" href="../CaseStudies/CaseStudies.html">Case Studies</a>
-    </nav>
-  </div>
-
-<!-- Content Below -->
-
-<main class="mdl-layout__content dark-back">
-  <div class="page-content">
-
-      <!-- Slider main container -->
-  <div class="swiper-container">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-
-      <div class="swiper-slide" data-hash="DiagnosticCriteria">
-        <div class="padding">
-          <section class="header">
-              <h2><span class="orange">No content yet.</span></h2>
-          </section>
-        </div>
+  <div class="demo-layout-transparent mdl-layout mdl-js-layout dark-back">
+    <header class="mdl-layout__header mdl-layout__header--transparent">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Case Studies</span>
       </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">SpA</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="../index.html">Table of Contents</a>
+        <a class="mdl-navigation__link" href="../overview/overview.html">Overview</a>
+        <a class="mdl-navigation__link" href="../AnatomyImaging/AnatomyImaging-sacroiliac.html">Anatomy &amp; Imaging - Sacroiliac</a>
+        <a class="mdl-navigation__link" href="../AnatomyImaging/AnatomyImaging-spinal.html">Anatomy &amp; Imaging - Spinal</a>
+        <a class="mdl-navigation__link" href="../ImagingAlgorithm/ImagingAlgorithm.html">Imaging Algorithm</a>
+        <a class="mdl-navigation__link" href="DiagnosticSpA.html">Diagnosis SpA</a>
+        <a class="mdl-navigation__link" href="../AlternatePathologies/AlternatePathologies.html">Alternate Pathologies</a>
+        <a class="mdl-navigation__link" href="../ImagingFindings/ImagingFindings-sacroiliac.html">Imaging Findings - Sacroiliac</a>
+        <a class="mdl-navigation__link" href="../ImagingFindings/ImagingFindings-spinal.html">Imaging Findings - Spinal</a>
+        <a class="mdl-navigation__link current" href="../CaseStudies/CaseStudies.html">Case Studies</a>
+      </nav>
     </div>
 
+    <!-- Content Below -->
 
-      <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div><!-- Swiper end-->
+    <main class="mdl-layout__content dark-back">
+      <div class="page-content">
+
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide" data-hash="DiagnosticCriteria">
+              <div class="padding">
+                <section class="header">
+                  <h2>
+                    <span class="orange">No content yet.</span>
+                  </h2>
+                </section>
+              </div>
+            </div>
+          </div>
 
 
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <!-- Swiper end-->
+
+
+      </div>
+    </main>
   </div>
-</main>
-</div>
 
 </body>
 
 <script>
-  $( document ).ready(function() {
-      var slideheight = $('.swiper-slide-active > .padding').height();
-      $('.swiper-slide').height(slideheight);
+  $(document).ready(function() {
+    var slideheight = $('.swiper-slide-active > .padding').height();
+    $('.swiper-slide').height(slideheight);
   });
 
 
-    var mySwiper = new Swiper ('.swiper-container', {
+  var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: false,
-    hashnav:true,
-    keyboardControl:true,
+    hashnav: true,
+    keyboardControl: true,
 
     // Navigation arrows
     nextButton: '.swiper-button-next',
@@ -108,47 +113,49 @@
   });
 
 
-    mySwiper.on('slideChangeStart', function () {
+  mySwiper.on('slideChangeStart', function() {
 
-      var slideheight = $('.swiper-slide-active > .padding').height();
-      $('.swiper-slide').height(slideheight);
+    var slideheight = $('.swiper-slide-active > .padding').height();
+    $('.swiper-slide').height(slideheight);
 
-    });
+  });
 
 
-    $('.sub-nav-item').on('click', function(e){
+  $('.sub-nav-item').on('click', function(e) {
 
-      mySwiper.slideTo($(this).data('index'), 1);
+    mySwiper.slideTo($(this).data('index'), 1);
 
-      $('.mdl-layout__drawer').removeClass('is-visible');
-    });
+    $('.mdl-layout__drawer').removeClass('is-visible');
+  });
 
-    $('.card-wrapper2').masonry({
-      columnWidth: '.grid-sizer',
-      itemSelector: '.mdl-card',
-      percentPosition: true
-    });
+  $('.card-wrapper2').masonry({
+    columnWidth: '.grid-sizer',
+    itemSelector: '.mdl-card',
+    percentPosition: true
+  });
 
-    $('.mdl-layout__content').scroll(function() {
-      if ($('.mdl-layout__content').scrollTop() > 50) {
-        $('.swiper-button-prev').hide('slow');
-        $('.swiper-button-next').hide('slow');
-      } else {
-        $('.swiper-button-prev').show('slow');
-        $('.swiper-button-next').show('slow');
-      }
-    });
+  $('.mdl-layout__content').scroll(function() {
+    if ($('.mdl-layout__content').scrollTop() > 50) {
+      $('.swiper-button-prev').hide('slow');
+      $('.swiper-button-next').hide('slow');
+    } else {
+      $('.swiper-button-prev').show('slow');
+      $('.swiper-button-next').show('slow');
+    }
+  });
 
-    $(".fancybox-button").fancybox({
-      prevEffect    : 'none',
-      nextEffect    : 'none',
-      closeBtn    : false,
-      arrows :false,
-      helpers   : {
-        title : { type : 'inside' },
-        buttons : {}
-      }
-    });
-
+  $(".fancybox-button").fancybox({
+    prevEffect: 'none',
+    nextEffect: 'none',
+    closeBtn: false,
+    arrows: false,
+    helpers: {
+      title: {
+        type: 'inside'
+      },
+      buttons: {}
+    }
+  });
 </script>
+
 </html>
