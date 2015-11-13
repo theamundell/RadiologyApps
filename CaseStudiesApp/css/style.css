@@ -85,7 +85,7 @@ summary:focus {
 	margin: 150px auto 0;
 }
 
-article .diagnosis {
+.hidden-section, article .diagnosis {
 	display: none;
 }
 
@@ -93,7 +93,7 @@ article .diagnosis {
 	list-style-type: none;
 }
 
-.diagnosis-button {
+.reveal-button, .diagnosis-button {
 	padding: 10px 15px;
   background: #ff6060;
   color: #000;
@@ -105,13 +105,13 @@ article .diagnosis {
   transition-duration: 0.2s;
 }
 
-.diagnosis-button:hover, .diagnosis-button:active {
+.reveal-button:hover, .reveal-button:active, .diagnosis-button:hover, .diagnosis-button:active {
   background: #000;
 	color: #ff6060;
 	border: 1px solid #ff6060;
 }
 
-.diagnosis-button:focus {
+.reveal-button:focus, .diagnosis-button:focus {
   outline: none;
 }
 
@@ -411,7 +411,7 @@ a.center-large-image .mdl-card{
 	max-width:700px;
 	margin:0 auto;
 }
-.two-images .mdl-card, 
+.two-images .mdl-card,
 .three-images .mdl-card{
 	margin:10px 1%;
 	border:1px solid #fff;
@@ -513,12 +513,12 @@ a.center-large-image .mdl-card{
 	.two-images .mdl-card{
 		width:100%;
 		margin:20px auto;
-		float:none; 
+		float:none;
 	}
 	.three-images .mdl-card{
 		width:100%;
 		margin:20px auto;
-		float:none; 
+		float:none;
 	}
 	section.header h2{
 		line-height:1.4
