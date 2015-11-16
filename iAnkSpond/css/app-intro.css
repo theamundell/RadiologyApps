@@ -37,7 +37,6 @@
 }
 .intro-animation .logowrapper{
 	position:absolute;
-	top:;
 	width:100%;
 	opacity:0;
 	right:50%;
@@ -67,7 +66,7 @@
 	padding:10px 30px;
 	font-weight:bold;
 	letter-spacing:1px;
-} 
+}
 .intro-animation .full-text{
 	position:absolute;
 	top:0px;
