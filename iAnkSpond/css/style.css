@@ -12,7 +12,7 @@ h2{
 	border-bottom:1px solid #f4f4f4
 }
 
-header, 
+header,
 footer{
 	background:#6C6C6C;
 	padding:40px 0px 10px;
@@ -58,7 +58,7 @@ summary::-webkit-details-marker {
 }
 summary:focus {
 	outline-style: none;
-	
+
 }
 article > details > summary {
 	font-size: 30px;
@@ -93,21 +93,21 @@ END OF css for collapsible menu MENU
 
 #wrapper {
 	width: 500px;
-	margin: 150px auto 0; 
+	margin: 150px auto 0;
 }
 
 
 /* Apply a pointer cursor and style the background upon hover to indicate <summary> is a clickable element. */
 /* These styles can be applied regardless of whether the fallback is needed */
-summary { 
-	cursor: pointer; 
+summary {
+	cursor: pointer;
 }
 
 /* The following styles are not really needed, since the jQuery script takes care of hiding/displaying the elements. */
 /* However, we’re still gonna use CSS as well to prevent FOUC in browsers that understand these selectors. */
 /* Remember: by default (and probably most of the time), the contents of the <details> element are hidden. */
-.no-details details > * { 
-	display: none; 
+.no-details details > * {
+	display: none;
 }
 
 /* This doesn’t work very well in Firefox 3.6.x */
@@ -117,14 +117,14 @@ summary {
 .no-details details[open] > summary:before { content: '▼ '; }
 */
 /* And yes, it should really be ::before, but that doesn’t work in IE8 */
-.no-details details > summary:before { 
-	float: left; 
-	width: 30px; 
-	content: '► '; 
+.no-details details > summary:before {
+	float: left;
+	width: 30px;
+	content: '► ';
 }
 
-.no-details details.open > summary:before { 
-	content: '▼ '; 
+.no-details details.open > summary:before {
+	content: '▼ ';
 }
 
 /* For IE6 and IE7, who don’t support generated content, you could use padding-left + a background image instead */
@@ -134,8 +134,8 @@ summary {
 .no-details details.open > summary { background-position: 0 -20px; }
 */
 /* Make sure summary remains visible */
-.no-details details summary { 
-	display: block; 
+.no-details details summary {
+	display: block;
 }
 
 
@@ -203,7 +203,7 @@ ol ol li{
 }
 .flex-container{
 	display: -webkit-flex;
-	display:flex; 
+	display:flex;
 	flex-wrap: wrap;
 	-webkit-justify-content: space-around;
 	justify-content:space-around;
@@ -278,9 +278,9 @@ ol ol li{
 
 .dark-back {
 	background:rgb(40,40,40);
-	color:rgb(245,245,245);	
+	color:rgb(245,245,245);
 }
-.dark-back h2, 
+.dark-back h2,
 .dark-back h3,
 .dark-back h4{
 	color:#fff;
@@ -407,8 +407,6 @@ section.header h2{
 	margin-left:40px;
 }
 
-
-
-
-
-	
+.mdl-layout__container {
+	z-index: 1;
+}
