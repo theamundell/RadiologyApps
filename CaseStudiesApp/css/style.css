@@ -399,8 +399,12 @@ section.header h2{
 
 }
 
+.padding > * {
+	margin-top: 20px !important;
+}
+
 .padding p, .padding h5, .padding h4{
-	margin: auto
+	margin: auto;
 }
 
 a.center-large-image{
