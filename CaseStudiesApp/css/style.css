@@ -89,7 +89,7 @@ summary:focus {
 	margin: 150px auto 0;
 }
 
-.hidden-section, article .diagnosis {
+article .diagnosis {
 	display: none;
 }
 
