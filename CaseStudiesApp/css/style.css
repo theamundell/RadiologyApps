@@ -300,6 +300,8 @@ section{
 	margin:0 auto;
 	padding:0 20px;
 }
+
+
 section.header{
 	/*background:#f4f4f4;*/
 	max-width:100%;
@@ -396,6 +398,11 @@ section.header h2{
 	box-sizing:border-box;
 
 }
+
+.padding p, .padding h5, .padding h4{
+	margin: auto
+}
+
 a.center-large-image{
 	margin:0 auto;
 	display:block;
