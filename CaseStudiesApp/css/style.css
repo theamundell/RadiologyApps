@@ -98,6 +98,7 @@ summary:focus {
 }
 
 .reveal-button, .diagnosis-button {
+	margin: auto;
 	padding: 10px 15px;
   background: #ff6060;
   color: #000;
