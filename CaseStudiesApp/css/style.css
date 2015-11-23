@@ -227,16 +227,17 @@ ol ol li{
 
 .swiper-button-prev {
 
-	margin-left: 2%;
+	margin-left: 3%;
 }
 
 .swiper-button-next {
 
-	margin-right: 2%;
+	margin-right: 3%;
 }
 
 .index-button {
-	text-align: right;
+	/*margin-right: 50%;*/
+	text-align: center;
 }
 
 .index-button a {
