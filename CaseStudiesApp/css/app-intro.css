@@ -1,3 +1,10 @@
+body{
+	-webkit-transform: translate3d(0, 0, 0);
+}
+*{
+	-webkit-backface-visibility: hidden;
+}
+
 .intro-animation{
 	position:absolute;
 	height:100vh;
@@ -10,20 +17,23 @@
 	display:flex;
 	align-items:center;
 	opacity:1;
+	-webkit-filter: opacity(0.99999);
 }
 @keyframes hideintro{
-	0%{opacity: 1; z-index:10;}
-	99%{opacity: 0; z-index:10;}
-	100%{z-index: 0;}
+	0%{opacity: 1; z-index:10; -webkit-filter: opacity(0.99999);}
+	99%{opacity: 0; z-index:10; -webkit-filter: opacity(0);}
+	100%{z-index: 0; -webkit-filter: opacity(0);}
 }
 .intro-animation.hide{
 	opacity:0px;
+	z-index: 0;
 	-webkit-animation:hideintro forwards;
 	animation:hideintro forwards;
 	-webkit-animation-duration:.5s;
 	animation-duration:.5s;
 	-webkit-animation-timing-function:ease-in;
 	animation-timing-function:ease-in;
+	-webkit-filter: opacity(0);
 }
 
 .intro-animation span{
@@ -59,6 +69,7 @@
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     opacity:1;
+    -webkit-backface-visibility: hidden;
 }
 
 .intro-animation .logowrapper .logo{
@@ -88,6 +99,7 @@
     animation-timing-function: ease-in;
     opacity:1;
     top:85px;
+    -webkit-backface-visibility: hidden;
 }
 .intro-animation .app-title{
 	position:absolute;
@@ -109,6 +121,7 @@
     -webkit-animation-duration: 3s;
     -webkit-animation-timing-function: ease-in;
     opacity:1;
+    -webkit-backface-visibility: hidden;
 }
 
 .intro-animation .enter-button-wrapper{
@@ -132,6 +145,7 @@
 	animation-duration: 4s;
 	-webkit-animation-timing-function: ease-in;
 	animation-timing-function: ease-in;
+	-webkit-backface-visibility: hidden;
 }
 
 .enter-button-wrapper .button{
