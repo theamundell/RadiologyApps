@@ -202,8 +202,6 @@ ol ol li{
 	margin-left: -40px;
 }
 
-
-
 .swiper-slide .image-blocktwo{
 	margin:20px 0px;
 }
@@ -235,6 +233,18 @@ ol ol li{
 .swiper-button-next {
 
 	margin-right: 2%;
+}
+
+.index-button {
+	text-align: right;
+}
+
+.index-button a {
+	text-decoration: none;
+}
+
+.swiper-button-no-image {
+	background-image: none;
 }
 
 button{
