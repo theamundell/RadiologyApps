@@ -342,6 +342,7 @@ section.header h2{
 	box-sizing:border-box;
 	max-width:500px;
 	margin:0 auto 30px;
+	transition:all .25s;
 }
 .card-index section.header{
 	width:100%;
@@ -365,9 +366,9 @@ section.header h2{
 .card-index .header + section{
 	height:0px;
 	overflow:hidden;
-	transition:opacity .5s;
-	opacity:0;/* display:none
- */
+	transition:all .5s;
+	opacity:0;
+	border-top:1px solid #000;
 }
 .card-index .header + section a{
 	display:block;
@@ -376,13 +377,7 @@ section.header h2{
 	color:#ff6060;
 	font-size:16px;
 }
-.card-index .header + section .close{
-	text-align:left;
-	margin-left:20px;
-	margin-bottom:10px;
-	text-decoration:underline;
-	font-weight:bold;
-}
+
 .card-index .header + section.open{
 	padding:10px 0px 20px;
 	border-top:1px solid;
