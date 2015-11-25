@@ -73,7 +73,7 @@
         <div class="mdl-layout-spacer"></div>
         <!-- Navigation -->
         <nav class="mdl-navigation">
-          <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect random-case-button js-randomcase" href="javascript:randomcase()">Random Case</a>
+          <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect random-case-button" href="random.html">Random Cases Mode</a>
         </nav>
       </div>
     </header>
@@ -86,7 +86,7 @@
         <a class="mdl-navigation__link" href="section2.html">Section 2</a>
         <a class="mdl-navigation__link" href="section3.html">Section 3</a>
         <a class="mdl-navigation__link" href="section4.html">Section 4</a>
-        <a class="mdl-navigation__link js-randomcase" href="javascript:randomcase()">Random Case</a>
+        <a class="mdl-navigation__link" href="random.html">Random Cases Mode</a>
       </nav>
     </div>
 
@@ -241,12 +241,6 @@
     $('.close').click(function() {
       $('.guide').addClass('hide-again');
       $('.guide-wrapper').removeClass('show');
-    });
-
-    $('.js-randomcase').on('click', function(event) {
-      event.preventDefault();
-
-      window.location = randomcase();
     });
   </script>
 </body>

@@ -3,7 +3,7 @@ import SimpleHTTPServer
 import time
 from os import curdir
 
-FILE = 'section1.html'
+FILE = 'index.html'
 HOST_NAME = 'localhost'
 PORT_NUMBER = 3000
 
@@ -20,6 +20,9 @@ class Handler(SimpleHTTPServer.SimpleHTTPRequestHandler):
             	sendReply = True
             if self.path.endswith(".jpg"):
             	mimetype='image/jpg'
+            	sendReply = True
+            if self.path.endswith(".png"):
+            	mimetype='image/png'
             	sendReply = True
             if self.path.endswith(".ico"):
             	mimetype='image/x-icon'

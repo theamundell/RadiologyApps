@@ -67,7 +67,7 @@
         <a class="mdl-navigation__link sub-nav-item" data-index="13" href="section4.html#14">Case 4.13</a>
         <a class="mdl-navigation__link sub-nav-item" data-index="14" href="section4.html#15">Case 4.14</a>
         <a class="mdl-navigation__link sub-nav-item" data-index="15" href="section4.html#16">Case 4.15</a>
-        <a class="mdl-navigation__link js-randomcase" href="javascript:randomcase()">Random Case</a>
+        <a class="mdl-navigation__link" href="random.html">Random Cases Mode</a>
       </nav>
     </div>
 
@@ -1320,18 +1320,6 @@
     $('.sub-nav-item').on('click', function(e) {
       swiper.slideTo($(this).data('index') - 1, 1);
       $('.mdl-layout__drawer').removeClass('is-visible');
-    });
-
-    $('.js-randomcase').on('click', function(event) {
-      event.preventDefault();
-      var newCase = randomcase();
-
-      if (newCase.split('#')[0] === "section4.html") {
-        $('a[href="' + newCase + '"]').click();
-      } else {
-        window.location = newCase;
-      }
-
     });
   </script>
 </body>

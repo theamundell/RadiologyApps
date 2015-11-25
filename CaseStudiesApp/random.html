@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-  <title>Section 4</title>
+  <title>Random Cases</title>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
 
@@ -24,6 +24,8 @@
   <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
   <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 
+  <script type="text/javascript" src="js/ajaxrequest.js"></script>
+
 
 </head>
 
@@ -40,7 +42,7 @@
         </span>
         <!-- Add spacer, to align navigation to the right -->
         <div class="mdl-layout-spacer"></div>
-        <span class="mdl-layout-title">Spot Cases 2 - Section 4</span>
+        <span class="mdl-layout-title">Random Cases Mode</span>
       </div>
     </header>
 
@@ -51,23 +53,8 @@
         <a class="mdl-navigation__link" href="section1.html">Spot Cases - Section 1</a>
         <a class="mdl-navigation__link" href="section2.html">Extended Cases - Section 2</a>
         <a class="mdl-navigation__link" href="section3.html">Short Cases - Section 3</a>
-        <a class="mdl-navigation__link current" href="section4.html">Spot Cases 2 - Section 4</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="1" href="section4.html#1">Case 4.1</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="2" href="section4.html#2">Case 4.2</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="3" href="section4.html#3">Case 4.3</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="4" href="section4.html#4">Case 4.4</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="5" href="section4.html#5">Case 4.5</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="6" href="section4.html#6">Case 4.6</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="7" href="section4.html#7">Case 4.7</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="8" href="section4.html#8">Case 4.8</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="9" href="section4.html#9">Case 4.9</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="10" href="section4.html#10">Case 4.10</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="11" href="section4.html#11">Case 4.11</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="12" href="section4.html#12">Case 4.12</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="13" href="section4.html#14">Case 4.13</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="14" href="section4.html#15">Case 4.14</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="15" href="section4.html#16">Case 4.15</a>
-        <a class="mdl-navigation__link js-randomcase" href="javascript:randomcase()">Random Case</a>
+        <a class="mdl-navigation__link" href="section4.html">Spot Cases 2 - Section 4</a>
+        <a class="mdl-navigation__link current" href="random.html">Random Cases Mode</a>
       </nav>
     </div>
 
@@ -101,15 +88,18 @@
 
   <script type="text/javascript">
     $(document).ready(function() {
+      getRandom();
+      getRandom();
+      getRandom();
+      getRandom();
+      getRandom();
+
       $(".fancybox").fancybox();
-      if(!swiper.isEnd) {
-        $('.index-button').hide();
-      }
+      $('.index-button').hide();
     });
 
-    $('button').click(function() {
+    $(document).on('click', 'button', function() {
       $('article #' + this.value).toggle('slow', function() {
-        // Animation complete.
       });
     });
 
@@ -142,23 +132,6 @@
         $('.swiper-button-prev').show('slow');
         $('.swiper-button-next').show('slow');
       }
-    });
-
-    $('.sub-nav-item').on('click', function(e) {
-      swiper.slideTo($(this).data('index') - 1, 1);
-      $('.mdl-layout__drawer').removeClass('is-visible');
-    });
-
-    $('.js-randomcase').on('click', function(event) {
-      event.preventDefault();
-      var newCase = randomcase();
-
-      if (newCase.split('#')[0] === "section4.html") {
-        $('a[href="' + newCase + '"]').click();
-      } else {
-        window.location = newCase;
-      }
-
     });
   </script>
 </body>
