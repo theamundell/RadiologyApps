@@ -383,13 +383,12 @@ a.center-large-image .mdl-card{
 }
 .two-images,
 .three-images{
-	margin-bottom:30px;
+	margin:0px auto 30px;
 	width:100%;
 	box-sizing:border-box;
 	max-width:700px;
-	margin:0 auto;
 }
-.two-images .mdl-card, 
+.two-images .mdl-card,
 .three-images .mdl-card{
 	margin:10px 1%;
 	border:1px solid #fff;
@@ -406,17 +405,6 @@ a.center-large-image .mdl-card{
 .three-images a:last-child .mdl-card{
 	float:none;
 	margin:auto;
-}
-
-.four-images{
-	display:flex;
-	flex-wrap:wrap;
-	justify-content:center;
-	margin-bottom:30px;
-}
-.four-images .mdl-card{
-	margin:20px;
-	border:1px solid #fff;
 }
 
 .dark-back .reference-h4{
