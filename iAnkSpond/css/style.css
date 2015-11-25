@@ -366,6 +366,20 @@ section.header h2{
 	box-sizing:border-box;
 }
 
+.buy-it-on {
+		margin:0 auto;
+		display:block;
+		text-align:center; 
+}
+.buy-it-on li{
+	display:inline-block;
+	width:35%;
+}
+.buy-it-on li img{
+	width:70%;
+	max-width: 250px;
+}
+
 @media (max-width:900px){
 	nav{
 		flex-wrap: wrap;
@@ -382,6 +396,14 @@ section.header h2{
 		width:47%;
 	}
 }
+
+@media (max-width:600px){
+	.buy-it-on li{
+		display:inline-block;
+		width:100%;
+	}
+}
+
 @media (max-width:530px){
 /*	header .open-menu i{
 		color:#fff;
