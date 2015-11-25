@@ -9,7 +9,18 @@ body{
 h2{
 	font-size:28px;
 	padding: 20px 0 30px;
-	border-bottom:1px solid #f4f4f4
+	border-bottom:1px solid #f4f4f4;
+	line-height: 1.6
+}
+
+h2 span.subheader{
+	margin-top:0px;
+	font-size:24px;	                                                                                                                                                                                                                                 
+}
+h2.subheader{
+	font-size:24px;
+	padding:10px 0px 10px;	
+	line-height: 1.5;
 }
 
 header,
@@ -340,6 +351,7 @@ section{
 	max-width:1024px;
 	margin:0 auto;
 	padding:0 20px;
+	width:100%;
 }
 section.header{
 	/*background:#f4f4f4;*/
@@ -353,6 +365,20 @@ section.header h2{
 	display:block;
 	border-bottom: none;
 	box-sizing:border-box;
+}
+
+.buy-it-on {
+		margin:0 auto;
+		display:block;
+		text-align:center; 
+}
+.buy-it-on li{
+	display:inline-block;
+	width:35%;
+}
+.buy-it-on li img{
+	width:70%;
+	max-width: 250px;
 }
 
 @media (max-width:900px){
@@ -371,6 +397,14 @@ section.header h2{
 		width:47%;
 	}
 }
+
+@media (max-width:600px){
+	.buy-it-on li{
+		display:inline-block;
+		width:100%;
+	}
+}
+
 @media (max-width:530px){
 /*	header .open-menu i{
 		color:#fff;
