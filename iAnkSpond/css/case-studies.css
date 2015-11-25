@@ -445,6 +445,9 @@ a.center-large-image .mdl-card{
 .open-supporting-text:hover + .mdl-card__supporting-text{
 	display:block;
 }
+.fancybox-title-float-wrap .child {
+	white-space: wrap;
+}
 @media (min-width:1024px){
 	.card-index{
 		max-height:550px;
