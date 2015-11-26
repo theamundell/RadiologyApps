@@ -103,9 +103,8 @@
       }
     });
 
-    $('button').click(function() {
+    $(document).on('click', 'button', function() {
       $('article #' + this.value).toggle('slow', function() {
-        // Animation complete.
       });
     });
 
