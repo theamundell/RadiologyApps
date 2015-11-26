@@ -445,8 +445,20 @@ a.center-large-image .mdl-card{
 .open-supporting-text:hover + .mdl-card__supporting-text{
 	display:block;
 }
-.fancybox-title-float-wrap .child {
-	white-space: wrap;
+
+li.has-image{
+	margin-top:20px;
+	border:1px solid rgba(255,255,255,.2);
+	padding:0px 20px 20px;
+	box-sizing:border-box;
+}
+.image-left{
+	float:left;
+	margin-right:10px;
+}
+.image-right{
+	float:right;
+	display:inline-block;
 }
 @media (min-width:1024px){
 	.card-index{
