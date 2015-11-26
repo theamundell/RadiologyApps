@@ -99,6 +99,7 @@ function sendAJAX(url) {
 		}).done( function ( returned_data ){
 			$('#append-to').append(returned_data);
 			swiper.init();
+			$('.hidden-section').hide();
 		}).fail( function( data ) {
 			console.log( "An error occurred during AJAX request." );
 		});
