@@ -76,7 +76,7 @@ section4[12] = 'cases/section4/4-13.html'
 section4[13] = 'cases/section4/4-14.html'
 section4[14] = 'cases/section4/4-15.html'
 
-!function loadCases (section) {
+function loadCases (section) {
   var a = parseInt(window.location.hash.split('#')[1]);
   switch(section) {
     case 1:
@@ -91,27 +91,27 @@ section4[14] = 'cases/section4/4-15.html'
     case 2:
       for(var i = 0; i < section2.length; i++) {
         if(i == a){
-          sendAJAX(section1[i], i);
+          sendAJAX(section2[i], i);
         } else {
-          sendAJAX(section1[i]);
+          sendAJAX(section2[i]);
         }
       }
       break;
     case 3:
       for(var i = 0; i < section3.length; i++) {
         if(i == a){
-          sendAJAX(section1[i], i);
+          sendAJAX(section3[i], i);
         } else {
-          sendAJAX(section1[i]);
+          sendAJAX(section3[i]);
         }
       }
       break;
     case 4:
       for(var i = 0; i < section4.length; i++) {
         if(i == a){
-          sendAJAX(section1[i], i);
+          sendAJAX(section4[i], i);
         } else {
-          sendAJAX(section1[i]);
+          sendAJAX(section4[i]);
         }
       }
       break;
@@ -119,7 +119,7 @@ section4[14] = 'cases/section4/4-15.html'
       console.log('Could not find section.');
 
   }
-}(1)
+}
 
 function sendAJAX(url, hash) {
   if (url) {
