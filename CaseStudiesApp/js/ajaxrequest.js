@@ -98,6 +98,7 @@ function sendAJAX(url) {
 			method: 'GET'
 		}).done( function ( returned_data ){
 			$('#append-to').append(returned_data);
+			swiper.init();
 		}).fail( function( data ) {
 			console.log( "An error occurred during AJAX request." );
 		});
