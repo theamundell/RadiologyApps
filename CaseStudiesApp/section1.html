@@ -24,7 +24,6 @@
   <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 
   <script type="text/javascript" src="js/section-cases.js"></script>
-  <script type="text/javascript">loadCases(1)</script>
 </head>
 
 <body>
@@ -101,6 +100,9 @@
 
 
   <script type="text/javascript">
+    // Loads the swiper slides into .swiper-wrapper div.
+    loadCases(1);
+
     $(document).ready(function() {
       $(".fancybox").fancybox();
 
@@ -111,7 +113,7 @@
       var hash = parseInt(window.location.hash.split('#')[1]);
       // swiper.slideTo($('a[href$="#' + hash + '"]').data('index') - 1, 1);
     });
-    
+
     $(document).on('click', 'button', function() {
       $('article #' + this.value).toggle('slow', function() {
       });

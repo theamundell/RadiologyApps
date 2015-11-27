@@ -25,7 +25,6 @@
   <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 
   <script type="text/javascript" src="js/section-cases.js"></script>
-  <script type="text/javascript">loadCases(4)</script>
 </head>
 
 <body>
@@ -96,6 +95,10 @@
 
 
   <script type="text/javascript">
+
+    // Loads the swiper slides into .swiper-wrapper div.
+    loadCases(4);
+    
     $(document).ready(function() {
       $(".fancybox").fancybox();
       if(!swiper.isEnd) {
