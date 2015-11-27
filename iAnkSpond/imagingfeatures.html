@@ -193,7 +193,7 @@
 								<ul>
 									<li><b>Erosion location can be helpful to decipher the underlying pathology e.g.</b>
 										<ol>
-											<li>central e.g. erosive OA, psoriatic arthritis. 
+											<li>central e.g. erosive OA, psoriatic arthritis.
 												<ol>
 													<li class="clearfix has-image">
 														<a class="fancybox image-left" rel="examples" href="images/erosions/erosion1.jpg" data-fancybox-group="erosions">
@@ -209,7 +209,7 @@
 														</a>
 
 														Central erosions may be a component of the “seagull” pattern characteristic of erosive osteoarthritis whereby a central erosions occurs with marginal osteophytes and joint space loss.</li>
-														
+
 													<li class="clearfix has-image">
 														<a class="fancybox image-left" rel="examples" href="images/erosions/erosion2.jpg" data-fancybox-group="erosions">
 															<div class="mdl-card mdl-shadow--2dp">
@@ -437,12 +437,12 @@
 										<h5 class="mdl-card__title-text"></h5>
 									</div>
 									<div class="mdl-card__supporting-text">
-										
+
 									</div>
 								</div>
 							</a>
 
-							
+
 						</div>
 					</div>
 
@@ -995,7 +995,7 @@
 									<li>In dislocation there is no remaining contact between the articular surfaces.</li>
 									<li>There are variable deformities that are seen in rheumatoid arthritis, secondary to joint laxity/ligamentous and tendinous disruption, including:
 										<ol>
-											
+
 											<li>Ulnar sided deviation, commonest at the MCPJs.</li>
 											<li>Swan neck deformity- hyperextension at PIPJ and flexion at the DIPJ</li>
 											<li>Boutonnière deformity- hyperflexion at the PIPJ and extension at the DIPJ</li>
@@ -1140,7 +1140,15 @@
 				</div>
 
 				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
+				<div class="swiper-button-next" id="button-next">
+          <div class="next-case-button"></div>
+          <div class="index-button">
+            <a href="introduction.html">
+              <p>Back to Index</p>
+              <i class="material-icons">home</i>
+            </a>
+          </div>
+        </div>
 
 				<div class="swiper-pagination"></div>
 
@@ -1163,6 +1171,10 @@
 		        }
 		    }
 		});
+
+		if(!swiper.isEnd) {
+			$('.index-button').hide();
+		}
 	});
 
 	var swiper = new Swiper('.swiper-container', {
@@ -1170,8 +1182,19 @@
 		pagination: '.swiper-pagination',
 		paginationClickable: true,
 		keyboardControl: true,
-		nextButton: '.swiper-button-next',
+		nextButton: '.next-case-button',
 		prevButton: '.swiper-button-prev',
+		onSlideChangeStart: function(swiper) {
+			if(swiper.isEnd) {
+				$('.next-case-button').hide('slow');
+				$('.swiper-button-next').addClass('swiper-button-no-image');
+				$('.index-button').show('slow');
+			} else {
+				$('.next-case-button').show('slow');
+				$('.swiper-button-next').removeClass('swiper-button-no-image');
+				$('.index-button').hide('slow');
+			}
+		}
 	});
 
 	$('.mdl-layout__content').scroll(function() {

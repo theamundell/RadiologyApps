@@ -158,7 +158,7 @@
 								</div>
 							</a>
 
-							
+
 							<section class="header">
 								<h2><span class="orange">Bones of the Hand</span></h2>
 							</section>
@@ -181,7 +181,7 @@
 								</a>
 
 							</section>
-							
+
 							<section class="header">
 								<h2><span class="orange">Test Youself</span></h2>
 							</section>
@@ -223,7 +223,15 @@
 				</div>
 
 				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
+				<div class="swiper-button-next" id="button-next">
+          <div class="next-case-button"></div>
+          <div class="index-button">
+            <a href="introduction.html">
+              <p>Back to Index</p>
+              <i class="material-icons">home</i>
+            </a>
+          </div>
+        </div>
 			</div>
 
 		</article>
@@ -237,6 +245,10 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		$(".fancybox").fancybox();
+
+		if(!swiper.isEnd) {
+			$('.index-button').hide();
+		}
 	});
 
 	var swiper = new Swiper('.swiper-container', {
@@ -244,8 +256,19 @@
 		pagination: '.swiper-pagination',
 		paginationClickable: true,
 		keyboardControl: true,
-		nextButton: '.swiper-button-next',
+		nextButton: '.next-case-button',
 		prevButton: '.swiper-button-prev',
+		onSlideChangeStart: function(swiper) {
+			if(swiper.isEnd) {
+				$('.next-case-button').hide('slow');
+				$('.swiper-button-next').addClass('swiper-button-no-image');
+				$('.index-button').show('slow');
+			} else {
+				$('.next-case-button').show('slow');
+				$('.swiper-button-next').removeClass('swiper-button-no-image');
+				$('.index-button').hide('slow');
+			}
+		}
 	});
 
 	$('.mdl-layout__content').scroll(function() {

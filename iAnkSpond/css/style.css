@@ -15,11 +15,11 @@ h2{
 
 h2 span.subheader{
 	margin-top:0px;
-	font-size:24px;	                                                                                                                                                                                                                                 
+	font-size:24px;
 }
 h2.subheader{
 	font-size:24px;
-	padding:10px 0px 10px;	
+	padding:10px 0px 10px;
 	line-height: 1.5;
 }
 
@@ -285,7 +285,19 @@ ol ol li{
 	margin-right: 5%;
 }
 
+.index-button {
+	/*margin-right: 50%;*/
+	text-align: center;
+}
 
+.index-button a {
+	text-decoration: none;
+	color: #ff6060;
+}
+
+.swiper-button-no-image {
+	background-image: none;
+}
 
 .dark-back {
 	background:rgb(40,40,40);
@@ -370,7 +382,7 @@ section.header h2{
 .buy-it-on {
 		margin:0 auto;
 		display:block;
-		text-align:center; 
+		text-align:center;
 }
 .buy-it-on li{
 	display:inline-block;
