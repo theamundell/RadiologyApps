@@ -77,42 +77,25 @@ section4[13] = 'cases/section4/4-14.html'
 section4[14] = 'cases/section4/4-15.html'
 
 function loadCases (section) {
-  var a = parseInt(window.location.hash.split('#')[1]);
   switch(section) {
     case 1:
       for(var i = 0; i < section1.length; i++) {
-        if(i == a){
-          sendAJAX(section1[i], i);
-        } else {
-          sendAJAX(section1[i]);
-        }
+        sendAJAX(section1[i]);
       }
       break;
     case 2:
       for(var i = 0; i < section2.length; i++) {
-        if(i == a){
-          sendAJAX(section2[i], i);
-        } else {
-          sendAJAX(section2[i]);
-        }
+        sendAJAX(section2[i]);
       }
       break;
     case 3:
       for(var i = 0; i < section3.length; i++) {
-        if(i == a){
-          sendAJAX(section3[i], i);
-        } else {
-          sendAJAX(section3[i]);
-        }
+        sendAJAX(section3[i]);
       }
       break;
     case 4:
       for(var i = 0; i < section4.length; i++) {
-        if(i == a){
-          sendAJAX(section4[i], i);
-        } else {
-          sendAJAX(section4[i]);
-        }
+        sendAJAX(section4[i]);
       }
       break;
     default:
@@ -121,16 +104,17 @@ function loadCases (section) {
   }
 }
 
-function sendAJAX(url, hash) {
+function sendAJAX(url) {
   if (url) {
     $.ajax({
       url: url,
+      async: false,
       // data : data,
       contentType: "text/html",
       method: 'GET'
     }).done(function(returned_data) {
       $('.swiper-wrapper').append(returned_data);
-      swiper.init();
+      // swiper.init();
       if(url.substring(0, 14) == 'cases/section2') {
         $('.hidden-section').hide();
       }
