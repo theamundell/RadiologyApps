@@ -1,0 +1,458 @@
+
+
+body{
+	-webkit-font-smoothing:antialiased;
+	font-family: 'Lato', sans-serif;
+}
+
+
+h2{
+	font-size:28px;
+	padding: 20px 0 30px;
+	border-bottom:1px solid #f4f4f4;
+	line-height: 1.6
+}
+
+h2 span.subheader{
+	margin-top:0px;
+	font-size:24px;
+}
+h2.subheader{
+	font-size:24px;
+	padding:10px 0px 10px;
+	line-height: 1.5;
+}
+
+header,
+footer{
+	background:#6C6C6C;
+	padding:40px 0px 10px;
+}
+footer{
+	margin-top:40px
+}
+nav{
+	max-width:1024px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	margin:0 auto;
+	transition:all .5s;
+	height:auto;
+	color: #828282;
+	background:#FAFAFA;
+}
+footer nav{
+	margin:0px auto 40px;
+}
+
+
+
+/*
+
+
+COLLAPSIBLE MENU
+
+
+
+
+
+*/
+summary::-webkit-details-marker {
+	/*color: #000000;*/
+
+	margin-right: 2px;
+}
+summary:focus {
+	outline-style: none;
+
+}
+article > details > summary {
+	font-size: 30px;
+	/*text-decoration: underline;*/
+	margin-top: 18px;
+}
+details > p {
+	margin-left: 24px;
+}
+details details {
+	margin-left: 36px;
+}
+details details summary {
+	margin-top: 20px;
+	font-size: 24px;
+
+}
+
+
+
+/*
+
+
+END OF css for collapsible menu MENU
+
+
+
+
+
+*/
+
+
+#wrapper {
+	width: 500px;
+	margin: 150px auto 0;
+}
+
+
+/* Apply a pointer cursor and style the background upon hover to indicate <summary> is a clickable element. */
+/* These styles can be applied regardless of whether the fallback is needed */
+summary {
+	cursor: pointer;
+}
+
+/* The following styles are not really needed, since the jQuery script takes care of hiding/displaying the elements. */
+/* However, we’re still gonna use CSS as well to prevent FOUC in browsers that understand these selectors. */
+/* Remember: by default (and probably most of the time), the contents of the <details> element are hidden. */
+.no-details details > * {
+	display: none;
+}
+
+/* This doesn’t work very well in Firefox 3.6.x */
+/* .no-details details[open] > * { display: block; } */
+/* The following doesn’t toggle correctly in WebKit:
+.no-details details > summary:before { content: '► '; }
+.no-details details[open] > summary:before { content: '▼ '; }
+*/
+/* And yes, it should really be ::before, but that doesn’t work in IE8 */
+.no-details details > summary:before {
+	float: left;
+	width: 30px;
+	content: '► ';
+}
+
+.no-details details.open > summary:before {
+	content: '▼ ';
+}
+
+/* For IE6 and IE7, who don’t support generated content, you could use padding-left + a background image instead */
+/* I really couldn’t be bothered though. */
+/*
+.no-details details > summary { padding-left: 20px; background: url(img/arrow-sprite.png) no-repeat 0 0; }
+.no-details details.open > summary { background-position: 0 -20px; }
+*/
+/* Make sure summary remains visible */
+.no-details details summary {
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+.imageframe {
+	background-color: #666666;
+}
+
+
+
+section article summary {
+
+	text-decoration: none;
+}
+
+nav a{
+	color:#ccc;
+	font-weight:100;
+	font-size: 20px;
+	text-decoration:none;
+	letter-spacing:.5px;
+	padding-bottom:5px;
+}
+nav a:hover{
+	color:#fff;
+}
+
+details h4 {
+	padding-left: 2%;
+}
+
+details ul li {
+	color:#fff;
+}
+
+details ul li:hover {
+	color:#ccc;
+}
+
+.current{
+	font-style: italic;
+}
+header h1{
+	max-width:1024px;
+	padding:20px;
+	margin:30px auto 0;
+	color:#fff;
+}
+.swiper-slide{
+	padding: 20px 0px 20px;
+	box-sizing:border-box;
+}
+li{
+	line-height:1.5;
+	margin-bottom:15px;
+}
+ol ol li{
+	list-style-type: lower-alpha;
+}
+.flex-container{
+	display: -webkit-flex;
+	display:flex;
+	flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	justify-content:space-around;
+
+}
+.swiper-slide .image-block{
+	margin:30px 0px;
+	float: left;
+
+}
+.swiper-slide .image-block img{
+	max-width:100%;
+
+}
+.swiper-slide .image-block{
+
+	box-sizing:border-box;
+}
+.swiper-slide .image-block .text{
+	margin-left:2%;
+	margin-right:2%;
+}
+.swiper-slide .image-block{
+	width:31%;
+	float:left;
+	clear: right;
+
+}
+
+.swiper-pagination {
+	border-bottom: none !important;
+}
+
+
+
+
+
+.swiper-slide .image-blocktwo{
+	margin:20px 0px;
+}
+.swiper-slide .image-blocktwo img{
+	max-width:100%;
+}
+.swiper-slide .image-blocktwo{
+	/*border-bottom:1px solid #d1d1d1;*/
+	border-right:1px solid #d1d1d1;
+	border-left:1px solid #d1d1d1;
+	box-sizing:border-box;
+}
+.swiper-slide .image-blocktwo .text{
+	margin-left:2%;
+	margin-right:2%;
+}
+
+
+.swiper-slide .image-blocktwo{
+	width:50%;
+	float:left;
+}
+
+.swiper-button-prev {
+
+	margin-left: 5%;
+}
+
+.swiper-button-next {
+
+	margin-right: 5%;
+}
+
+.index-button {
+	/*margin-right: 50%;*/
+	text-align: center;
+}
+
+.index-button a {
+	text-decoration: none;
+	color: #ff6060;
+}
+
+.swiper-button-no-image {
+	background-image: none;
+}
+
+.dark-back {
+	background:rgb(40,40,40);
+	color:rgb(245,245,245);
+}
+.dark-back h2,
+.dark-back h3,
+.dark-back h4{
+	color:#fff;
+	margin:10px 0;
+}
+.dark-back h3 span{
+	font-weight:100;
+	font-size:24px;
+}
+
+div.swiper-slide a.fancybox {
+	text-decoration: none;
+
+}
+
+.mdl-card .mdl-card__title {
+	height: 176px;
+	color: #fff;
+}
+
+.mdl-card__title-text {
+	margin: none;
+
+}
+
+table {
+	/*border: none;*/
+	/*width: 100%;*/
+	margin: auto;
+}
+
+td {
+	padding: 0px 40px;
+}
+
+tr {
+
+	padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section{
+	max-width:1024px;
+	margin:0 auto;
+	padding:0 20px;
+	width:100%;
+}
+section.header{
+	/*background:#f4f4f4;*/
+	max-width:100%;
+	padding-top: 20px;
+}
+section.header h2{
+	text-align: center;
+	max-width:1024px;
+	margin: auto;
+	display:block;
+	border-bottom: none;
+	box-sizing:border-box;
+}
+
+.buy-it-on {
+		margin:0 auto;
+		display:block;
+		text-align:center;
+}
+.buy-it-on li{
+	display:inline-block;
+	width:35%;
+}
+.buy-it-on li img{
+	width:70%;
+	max-width: 250px;
+}
+
+@media (max-width:900px){
+	nav{
+		flex-wrap: wrap;
+		justify-content:center;
+	}
+	nav a{
+		margin-left:20px;
+		margin-bottom:10px;
+	}
+	header h1{
+		margin-top:20px;
+	}
+	.swiper-slide .image-block{
+		width:47%;
+	}
+}
+
+@media (max-width:600px){
+	.buy-it-on li{
+		display:inline-block;
+		width:100%;
+	}
+}
+
+@media (max-width:530px){
+/*	header .open-menu i{
+		color:#fff;
+	}
+	header .open-menu.closed + nav{
+		display:none;
+		}*/
+		header nav{
+			margin-top:10px;
+			display:block
+		}
+		header nav a{
+			margin-left:0;
+			padding:10px 20px;
+			margin-bottom:0;
+			display:block;
+			width:100%;
+		}
+	}
+	@media (max-width:430px){
+		.swiper-slide .image-block{
+			width:100%;
+		}
+		h2{
+			font-size:22px;
+		}
+	}
+
+
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link.mdl-navigation__link.sub-nav-item{
+	padding:0px 40px 10px 20px;
+	border-left:2px solid #e0e0e0;
+	margin-left:40px;
+}
+
+.mdl-layout__container {
+	z-index: 1;
+}
