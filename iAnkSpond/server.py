@@ -3,7 +3,7 @@ import SimpleHTTPServer
 import time
 from os import curdir
 
-FILE = 'introduction.html'
+FILE = 'index.html'
 HOST_NAME = 'localhost'
 PORT_NUMBER = 3000
 
