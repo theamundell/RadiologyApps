@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>iAnkSpond</title>
+
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue_grey-blue.min.css" />
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" href="css/specific-css.css">
+	<link rel="stylesheet" href="css/case-studies.css">
+
+	<link rel="stylesheet" href="css/app-intro.css">
+	<link rel="stylesheet" href="css/guide.css">
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
+
+</head>
+
+<body>
+	<div class="intro-animation">
+		<div class="content">
+			<div class="logowrapper">
+				<div class="logo">
+					<span>E</span>SIMR
+				</div>
+			</div>
+			<div class="full-text">
+				<span>E</span>ssiential Imaging Rhumetology</div>
+			<div class="app-title">
+				<span>U</span>ncovering The
+				<span>H</span>and
+				<span>R</span>adiograph</div>
+
+			<div class="enter-button-wrapper">
+				<div class="button">
+					Click to enter
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="guide-toggle"><i class="zmdi zmdi-help-outline"></i></div>
+	<div class="guide-wrapper">
+		<div class="guide">
+			<div class="guide-content">
+				<div class="close"><i class="zmdi zmdi-close-circle-o"></i></div>
+				<h4>How to use this app</h4>
+				<hr>
+				<p>You are viewing the guide, empty right now, more to come.</p>
+				<ul>
+					<li>you can add lists</li>
+					<li>and some photos would be nice also</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Uses a header that scrolls with the text, rather than staying
+  locked at the top -->
+	<div class="demo-layout-transparent mdl-layout mdl-js-layout dark-back">
+		<header class="mdl-layout__header mdl-layout__header--transparent">
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title">
+					<div class="logo">
+						<span>E</span>SIMR
+					</div>
+				</span>
+
+			</div>
+		</header>
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Table of Contents</span>
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link current" href="index.html">Index</a>
+				<a class="mdl-navigation__link" href="introduction.html">Introduction</a>
+				<a class="mdl-navigation__link" href="radiographicbasics.html">Radiographic Basics</a>
+				<a class="mdl-navigation__link" href="imaginganatomy.html">Imaging Anatomy</a>
+				<a class="mdl-navigation__link" href="imagingfeatures.html" class="current">Imaging Features</a>
+				<a class="mdl-navigation__link" href="approach.html">Radiographic Interpretation</a>
+				<a class="mdl-navigation__link" href="diagnosis.html">Clinical Diagnosis</a>
+				<a class="mdl-navigation__link" href="arthritides.html">The Arthitides</a>
+				<a class="mdl-navigation__link" href="cases.html">Cases</a>
+			</nav>
+		</div>
+
+		<!-- Content Below -->
+		<div class="demo-layout-transparent mdl-layout mdl-js-layout dark-back">
+			<article class="mdl-layout__content card-index">
+
+				<div class="card">
+					<section class="header">
+						<a href="introduction.html">
+							<h1>Introduction</h1>
+						</a>
+					</section>
+				</div>
+
+				<div class="card">
+					<section class="header">
+						<a href="radiographicbasics.html">
+							<h1>Radiographic Basics</h1>
+						</a>
+					</section>
+				</div>
+
+				<div class="card">
+					<section class="header">
+						<a href="imaginganatomy.html">
+							<h1>Imaging Anatomy</h1>
+						</a>
+					</section>
+				</div>
+
+				<div class="card">
+					<section class="header">
+						<a href="imagingfeatures.html">
+							<h1>Imaging Features</h1>
+						</a>
+					</section>
+				</div>
+
+				<div class="card">
+					<section class="header">
+						<a href="approach.html">
+							<h1>Radiographic Interpretation</h1>
+						</a>
+					</section>
+				</div>
+
+				<div class="card">
+					<section class="header">
+						<a href="diagnosis.html">
+							<h1>Clinical Diagnosis</h1>
+						</a>
+					</section>
+				</div>
+
+
+				<div class="card">
+					<section class="header">
+						<a href="arthritides.html">
+							<h1>The Arthitides</h1>
+						</a>
+					</section>
+				</div>
+
+				<div class="card">
+					<section class="header">
+						<a href="cases.html">
+							<h1>Cases</h1>
+						</a>
+					</section>
+				</div>
+			</article>
+		</div>
+	</div>
+
+</body>
+
+<script>
+	$('.card-wrapper').masonry({
+		columnWidth: '.grid-sizer',
+		itemSelector: '.mdl-card',
+		percentPosition: true
+	});
+
+	$('.intro-animation').addClass('start-animation');
+
+	$('.intro-animation').click(function() {
+		$('.intro-animation').addClass('hide');
+	});
+
+	$('.guide-toggle').click(function() {
+		$('.guide').removeClass('hide-again');
+		$('.guide').addClass('show');
+		$('.guide-wrapper').addClass('show');
+	});
+	$('.close').click(function() {
+		$('.guide').addClass('hide-again');
+		$('.guide-wrapper').removeClass('show');
+	});
+</script>
+
+</html>
