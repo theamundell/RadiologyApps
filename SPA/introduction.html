@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
 
   <!-- Styling -->
-  <link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/swiper.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/case-studies.css">
@@ -203,9 +202,8 @@
           <div class="swiper-button-next" id="button-next">
             <div class="next-case-button"></div>
             <div class="index-button">
-              <a href="index.html">
-                <p>Back to Index</p>
-                <i class="material-icons">home</i>
+              <a href="overview/overview.html">
+                <p>Continue<i class="zmdi zmdi-long-arrow-right"></i></p>
               </a>
             </div>
           </div>
@@ -278,19 +276,6 @@
     } else {
       $('.swiper-button-prev').show('slow');
       $('.swiper-button-next').show('slow');
-    }
-  });
-
-  $(".fancybox-button").fancybox({
-    prevEffect: 'none',
-    nextEffect: 'none',
-    closeBtn: false,
-    arrows: false,
-    helpers: {
-      title: {
-        type: 'inside'
-      },
-      buttons: {}
     }
   });
 </script>
