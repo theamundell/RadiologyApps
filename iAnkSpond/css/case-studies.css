@@ -460,34 +460,19 @@ li.has-image{
 	float:right;
 	display:inline-block;
 }
+.iankspond-index.card-index .card h1{
+	margin:0px auto 20px;
+	line-height:1.5;
+}
+.iankspond-index.card-index .card a{
+	color:#fff;
+	text-decoration:none;
+}
 @media (min-width:1024px){
-	.card-index{
-		max-height:550px;
-		padding:20px;
-		width:90%;
-		margin:40px auto 0px;
-	}
 	.card-index .card{
-		width:40%;
-		margin:0px 2%;
-		max-width:500px;
-		position:absolute;
-	}
-	.card.top-left{
-		top:0px;
-		left:0px;
-	}
-	.card.top-right{
-		top:0px;
-		right:0px;
-	}
-	.card.bottom-left{
-		bottom:0px;
-		left:0;
-	}
-	.card.bottom-right{
-		bottom:0px;
-		right:0px;
+		width:45%;
+		float:left;
+		margin:20px 2.5%;
 	}
 }
 @media (max-width: 1024px){
@@ -513,12 +498,12 @@ li.has-image{
 	.two-images .mdl-card{
 		width:100%;
 		margin:20px auto;
-		float:none; 
+		float:none;
 	}
 	.three-images .mdl-card{
 		width:100%;
 		margin:20px auto;
-		float:none; 
+		float:none;
 	}
 	section.header h2{
 		line-height:1.4
