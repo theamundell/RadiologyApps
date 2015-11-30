@@ -5,7 +5,7 @@ from os import curdir
 
 FILE = 'index.html'
 HOST_NAME = 'localhost'
-PORT_NUMBER = 3000
+PORT_NUMBER = 8080
 
 class Handler(SimpleHTTPServer.SimpleHTTPRequestHandler):
 
