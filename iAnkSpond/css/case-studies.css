@@ -470,9 +470,10 @@ li.has-image{
 }
 @media (min-width:1024px){
 	.card-index .card{
-		width:45%;
+		width:40%;
 		float:left;
-		margin:20px 2.5%;
+		margin:20px 5%;
+		max-width:none;
 	}
 }
 @media (max-width: 1024px){
