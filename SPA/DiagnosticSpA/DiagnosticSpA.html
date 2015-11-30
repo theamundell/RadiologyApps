@@ -23,7 +23,7 @@
 
   <link rel="stylesheet" href="../css/swiper.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.1.2/js/swiper.min.js"></script>
-
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/specific-css.css">
   <link rel="stylesheet" href="../css/case-studies.css">
 
@@ -350,11 +350,6 @@
                   <li>It does however include the New York radiographic changes of unilateral grade 3-4 or bilateral grade 2 disease.</li>
                   <li>As such the current imaging component of the ASAS criteria are limited when assessing the individual patient.</li>
                 </ul>
-                <br>
-                <br>
-                <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="../AlternatePathologies/AlternatePathologies.html">
-              Continue to Alternate Pathologies <i class="zmdi zmdi-long-arrow-right"></i>
-            </a>
               </div>
             </div>
 
@@ -365,7 +360,14 @@
 
           <!-- If we need navigation buttons -->
           <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-next" id="button-next">
+            <div class="next-case-button"></div>
+            <div class="index-button">
+              <a href="../AlternatePathologies/AlternatePathologies.html">
+                <p>Continue<i class="zmdi zmdi-long-arrow-right"></i></p>
+              </a>
+            </div>
+          </div>
         </div>
         <!-- Swiper end-->
 
@@ -380,6 +382,7 @@
   $(document).ready(function() {
     var slideheight = $('.swiper-slide-active > .padding').height();
     $('.swiper-slide').height(slideheight);
+    $('.index-button').hide();
   });
 
 
@@ -391,8 +394,19 @@
     keyboardControl: true,
 
     // Navigation arrows
-    nextButton: '.swiper-button-next',
+    nextButton: '.next-case-button',
     prevButton: '.swiper-button-prev',
+    onSlideChangeStart: function(swiper) {
+      if(swiper.isEnd) {
+        $('.next-case-button').hide('slow');
+        $('.swiper-button-next').addClass('swiper-button-no-image');
+        $('.index-button').show('slow');
+      } else {
+        $('.next-case-button').show('slow');
+        $('.swiper-button-next').removeClass('swiper-button-no-image');
+        $('.index-button').hide('slow');
+      }
+    }
 
   });
 
