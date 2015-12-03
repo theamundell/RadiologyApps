@@ -497,6 +497,9 @@ section.header h2{
 
 .book-review p {
 	text-indent: 50px;
+}
+
+.book-review * {
 	padding-left: 20%;
 	padding-right: 20%;
 }

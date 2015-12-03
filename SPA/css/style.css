@@ -115,6 +115,37 @@ END OF css for collapsible menu MENU
 }
 
 
+article.diagnosis {
+	display: none;
+}
+
+.diagnosis > ul > li {
+	list-style-type: none;
+}
+
+.diagnosis-button {
+	margin: auto;
+	padding: 10px 15px;
+  background: #ff6060;
+  color: #000;
+	border-radius: 4px;
+	border: 1px solid #000;
+
+	-webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.diagnosis-button:hover, .diagnosis-button:active {
+  background: #000;
+	color: #ff6060;
+	border: 1px solid #ff6060;
+}
+
+.diagnosis-button:focus {
+  outline: none;
+}
+
 /* Apply a pointer cursor and style the background upon hover to indicate <summary> is a clickable element. */
 /* These styles can be applied regardless of whether the fallback is needed */
 summary {
@@ -462,4 +493,18 @@ section.header h2{
 
 .mdl-layout__container {
 	z-index: 1;
+}
+
+.book-review p {
+	text-indent: 50px;
+}
+
+.book-review * {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.book-review {
+	padding-top: 4%;
+	padding-bottom: 4%;
 }
