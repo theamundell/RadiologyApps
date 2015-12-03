@@ -30,18 +30,18 @@
 	<div class="mdl-layout mdl-js-layout dark-back">
 
 		<header class="mdl-layout__header mdl-layout__header--transparent">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">
-          <div class="logo">
-            <span>E</span>SIMR
-          </div>
-        </span>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <span class="mdl-layout-title">Imaging Anatomy</span>
-      </div>
-    </header>
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title">
+					<div class="logo">
+						<span>E</span>SIMR
+					</div>
+				</span>
+				<!-- Add spacer, to align navigation to the right -->
+				<div class="mdl-layout-spacer"></div>
+				<span class="mdl-layout-title">Imaging Anatomy</span>
+			</div>
+		</header>
 
 		<div class="mdl-layout__drawer">
 			<span class="mdl-layout-title">Table of Contents</span>
@@ -65,7 +65,9 @@
 					<div class="swiper-slide">
 						<div class="padding">
 							<section class="header">
-								<h2><span class="orange">Joint</span></h2>
+								<h2>
+									<span class="orange">Joint</span>
+								</h2>
 							</section>
 							<section>
 								<ul>
@@ -133,7 +135,9 @@
 					<div class="swiper-slide">
 						<div class="padding">
 							<section class="header">
-								<h2><span class="orange">Joints of the Hand</span></h2>
+								<h2>
+									<span class="orange">Joints of the Hand</span>
+								</h2>
 							</section>
 							<section>
 								<ul>
@@ -161,7 +165,9 @@
 
 
 							<section class="header">
-								<h2><span class="orange">Bones of the Hand</span></h2>
+								<h2>
+									<span class="orange">Bones of the Hand</span>
+								</h2>
 							</section>
 							<section class="two-images">
 
@@ -184,7 +190,9 @@
 							</section>
 
 							<section class="header">
-								<h2><span class="orange">Test Youself</span></h2>
+								<h2>
+									<span class="orange">Test Youself</span>
+								</h2>
 							</section>
 							<section>
 								<ul>
@@ -220,19 +228,38 @@
 						</div>
 					</div>
 
+					<div class="swiper-slide">
+						<div class="padding">
+							<section class="header">
+								<h2>
+									<span class="orange">Videos</span>
+								</h2>
+							</section>
+
+							<video controls>
+								<source src="videos/imaginganatomy/joint-video-1.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+							</video>
+
+							<video controls>
+								<source src="videos/imaginganatomy/joint-video-2.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+							</video>
+
+						</div>
+					</div>
+
 
 				</div>
 
 				<div class="swiper-button-prev"></div>
 				<div class="swiper-button-next" id="button-next">
-          <div class="next-case-button"></div>
-          <div class="index-button">
-            <a href="index.html">
-              <p>Back to Index</p>
-              <i class="material-icons">home</i>
-            </a>
-          </div>
-        </div>
+					<div class="next-case-button"></div>
+					<div class="index-button">
+						<a href="index.html">
+							<p>Back to Index</p>
+							<i class="material-icons">home</i>
+						</a>
+					</div>
+				</div>
 			</div>
 
 		</article>
@@ -247,7 +274,7 @@
 	$(document).ready(function() {
 		$(".fancybox").fancybox();
 
-		if(!swiper.isEnd) {
+		if (!swiper.isEnd) {
 			$('.index-button').hide();
 		}
 	});
@@ -260,7 +287,7 @@
 		nextButton: '.next-case-button',
 		prevButton: '.swiper-button-prev',
 		onSlideChangeStart: function(swiper) {
-			if(swiper.isEnd) {
+			if (swiper.isEnd) {
 				$('.next-case-button').hide('slow');
 				$('.swiper-button-next').addClass('swiper-button-no-image');
 				$('.index-button').show('slow');

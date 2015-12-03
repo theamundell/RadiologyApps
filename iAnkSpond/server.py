@@ -33,6 +33,9 @@ class Handler(SimpleHTTPServer.SimpleHTTPRequestHandler):
             if self.path.endswith(".css"):
             	mimetype='text/css'
             	sendReply = True
+            if self.path.endswith(".mp4"):
+            	mimetype='video/mp4'
+            	sendReply = True
 
             if sendReply == True:
                 f = open( curdir + self.path )
