@@ -31,6 +31,13 @@ footer{
 footer{
 	margin-top:40px
 }
+
+.swiper-button-next .next-case-button {
+	width: 20px;
+	height: 40px;
+	margin-left: 0px;
+}
+
 nav{
 	max-width:1024px;
 	display: -webkit-box;

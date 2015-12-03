@@ -48,6 +48,7 @@ nav{
 footer nav{
 	margin:0px auto 40px;
 }
+
 .clearfix:after {
     display: block;
     content: '';
