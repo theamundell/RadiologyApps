@@ -494,3 +494,14 @@ section.header h2{
 .mdl-layout__container {
 	z-index: 1;
 }
+
+.book-review p {
+	text-indent: 50px;
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.book-review {
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
