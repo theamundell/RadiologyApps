@@ -744,7 +744,13 @@
 <script src="js/swiper.js"></script>
 <script>
 	$(document).ready(function() {
-		$(".fancybox").fancybox();
+		$(".fancybox").fancybox({
+			helpers : {
+		        title: {
+		            type: 'inside'
+		        }
+		    }
+		});
 
 		if (!swiper.isEnd) {
 			$('.index-button').hide();
