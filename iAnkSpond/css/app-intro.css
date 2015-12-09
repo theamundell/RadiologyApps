@@ -14,7 +14,12 @@ body{
 	color:#fff;
 	text-align:center;
 	font-size:30px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display:flex;
+	-webkit-align-items: center;
 	align-items:center;
 	opacity:1;
 	-webkit-filter: opacity(0.99999);
@@ -46,10 +51,12 @@ body{
  	margin:0px auto;
 }
 .intro-animation .logowrapper{
+	display:block;
 	position:absolute;
-	top:;
 	width:100%;
 	opacity:0;
+	-ms-transform: translateX(50%);
+  -webkit-transform:translateX(50%);
 	transform:translateX(50%);
 }
 /* The animation code */
@@ -61,6 +68,8 @@ body{
 }
 
 .intro-animation.start-animation .logowrapper{
+	-ms-transform: translateX(0%);
+  -webkit-transform:translateX(0%);
 	transform:translateX(0%);
 	-webkit-animation: logowrapper forwards;
     animation: logowrapper forwards;
@@ -80,15 +89,18 @@ body{
 	letter-spacing:1px;
 }
 .intro-animation .full-text{
+	display:block;
 	position:absolute;
+	-ms-transform: translateY(0%);
+  -webkit-transform:translateY(0%);
 	transform:translateY(0);
 	width:100%;
 	opacity:0;
 }
 /* The animation code */
 @keyframes fulltext {
-    0% {opacity:0; transform:translateY(0);}
-    100% {opacity:1; transform:translateY(85px);}
+    0% {opacity:0; -ms-transform: translateY(0px); -webkit-transform:translateY(0px); transform:translateY(0px);}
+    100% {opacity:1; -ms-transform: translateY(85px); -webkit-transform:translateY(85px);transform:translateY(85px);}
 }
 .intro-animation.start-animation .full-text{
 	-webkit-animation: fulltext forwards;
@@ -98,25 +110,32 @@ body{
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     opacity:1;
-    transform:translateY(85);
+		-ms-transform: translateY(85px);
+	  -webkit-transform:translateY(85px);
+    transform:translateY(85px);
     -webkit-backface-visibility: hidden;
 }
 .intro-animation .app-title{
+	display:block;
 	position:absolute;
 	top:146px;
 	width:100%;
 	opacity:0;
+	-ms-transform: translateY(50%);
+  -webkit-transform:translateY(50%);
 	transform:translateY(50%);
 }
 /* The animation code */
 @keyframes apptitle {
-	0% {transform:translateY(50%); opacity:0;}
-    80% {transform:translateY(50%); opacity:0;}
-    100% {transform:translateY(0); opacity:1;}
+	0% {-ms-transform: translateY(50%); -webkit-transform:translateY(50%); transform:translateY(50%); opacity:0;}
+    80% {-ms-transform: translateY(50%); -webkit-transform:translateY(50%); transform:translateY(50%); opacity:0;}
+    100% {-ms-transform: translateY(0); -webkit-transform:translateY(0); transform:translateY(0); opacity:1;}
 }
 
 .intro-animation.start-animation .app-title{
-	transform:translateY(0);
+		-ms-transform: translateY(0%);
+		-webkit-transform:translateY(0%);
+		transform:translateY(0);
     -webkit-animation: apptitle forwards ;
     -webkit-animation-duration: 3s;
     -webkit-animation-timing-function: ease-in;
@@ -125,6 +144,7 @@ body{
 }
 
 .intro-animation .enter-button-wrapper{
+	display:block;
 	position:absolute;
 	bottom:0px;
 	opacity:0;
@@ -138,7 +158,7 @@ body{
     100% {opacity:1;}
 }
 .intro-animation.start-animation .enter-button-wrapper{
-	opacity:1px;
+	opacity:1;
 	-webkit-animation:button forwards;
 	animation:button forwards;
 	-webkit-animation-duration: 4s;
@@ -155,6 +175,7 @@ body{
 	padding:5px 20px;
 	font-size:20px;
 	cursor:pointer;
+	-webkit-transition: All .25s;
 	transition:All .25s;
 	border:3px solid #ff6060;
 }

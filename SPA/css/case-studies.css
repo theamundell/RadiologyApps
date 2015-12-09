@@ -213,6 +213,7 @@ button{
 .dark-back {
 	background:rgb(40,40,40);
 	color:rgb(245,245,245);
+	z-index: 2;
 }
 .dark-back h2,
 .dark-back h3,
@@ -325,6 +326,10 @@ section.header h2{
 	width:25%;
 	color:#ff6060;
 	font-size:16px;
+}
+.card-index .header a{
+	color:#ffffff;
+	text-decoration: none;
 }
 .card-index .header + section .close{
 	text-align:left;

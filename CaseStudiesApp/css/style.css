@@ -256,6 +256,7 @@ button{
 .dark-back {
 	background:rgb(40,40,40);
 	color:rgb(245,245,245);
+	z-index:2;
 }
 .dark-back h2,
 .dark-back h3,
