@@ -203,55 +203,33 @@
                   </tr>
                 </table>
 
-                <div class="card-wrapper2 margin-top">
+                <div class="three-images">
+                  <div class="card-wrapper2 margin-top">
 
-                  <div class="grid-sizer"></div>
+                    <div class="grid-sizer"></div>
 
-                  <div class="mdl-card mdl-shadow--2dp demo-card-image">
-                    <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/001.jpg') center / 130%;" href="images/001.jpg" data-fancybox-group="gallery-2">
+                    <a class="fancybox" href="images/001.jpg" data-fancybox-group="gallery-2" title="normal">
+                      <img src="images/001.jpg">
                     </a>
-                    <i class="material-icons open-supporting-text">info_outline</i>
-                    <div class="mdl-card__supporting-text">
-                      Normal
-                    </div>
-                  </div>
 
-                  <div class="mdl-card mdl-shadow--2dp demo-card-image">
-                    <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/002.jpg') center / 130%;" href="images/002.jpg" data-fancybox-group="gallery-2">
+                    <a class="fancybox" href="images/002.jpg" data-fancybox-group="gallery-2" title="Grade 1 with suspicious changes, possible early erosions inferior sacroiliac joints bilaterally">
+                      <img src="images/002.jpg">
                     </a>
-                    <i class="material-icons open-supporting-text">info_outline</i>
-                    <div class="mdl-card__supporting-text">
-                      Grade 1 with suspicious changes, possible early erosions inferior sacroiliac joints bilaterally
-                    </div>
-                  </div>
 
-                  <div class="mdl-card mdl-shadow--2dp demo-card-image">
-                    <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/003.jpg') center / 130%;" href="images/003.jpg" data-fancybox-group="gallery-2">
+                    <a class="fancybox" href="images/003.jpg" data-fancybox-group="gallery-2" title="Grade 2 in this 36y F with bilateral erosions and maintained joint space">
+                      <img src="images/003.jpg">
                     </a>
-                    <i class="material-icons open-supporting-text">info_outline</i>
-                    <div class="mdl-card__supporting-text">
-                      Grade 2 in this 36y F with bilateral erosions and maintained joint space
-                    </div>
-                  </div>
 
-                  <div class="mdl-card mdl-shadow--2dp demo-card-image">
-                    <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/004.jpg') center / 130%;" href="images/004.jpg" data-fancybox-group="gallery-2">
+                    <a class="fancybox" href="images/004.jpg" data-fancybox-group="gallery-2" title="Grade 3 18F with bilateral erosions, joint space loss and partial ankylosis">
+                      <img src="images/004.jpg">
                     </a>
-                    <i class="material-icons open-supporting-text">info_outline</i>
-                    <div class="mdl-card__supporting-text">
-                      Grade 3 18F with bilateral erosions, joint space loss and partial ankylosis
-                    </div>
-                  </div>
 
-                  <div class="mdl-card mdl-shadow--2dp demo-card-image">
-                    <a class="mdl-card__title mdl-card--expand fancybox-button" style="background: url('images/005.jpg') center / 130%;" href="images/005.jpg" data-fancybox-group="gallery-2">
+                    <a class="fancybox" href="images/005.jpg" data-fancybox-group="gallery-2" title="Grade 4 Bilateral SIJ ankylosis">
+                      <img src="images/005.jpg">
                     </a>
-                    <i class="material-icons open-supporting-text">info_outline</i>
-                    <div class="mdl-card__supporting-text">
-                      Grade 4 Bilateral SIJ ankylosis
-                    </div>
                   </div>
                 </div>
+
               </div>
             </div>
 
@@ -395,7 +373,7 @@
     nextButton: '.next-case-button',
     prevButton: '.swiper-button-prev',
     onSlideChangeStart: function(swiper) {
-      if(swiper.isEnd) {
+      if (swiper.isEnd) {
         $('.next-case-button').hide('slow');
         $('.swiper-button-next').addClass('swiper-button-no-image');
         $('.index-button').show('slow');

@@ -216,7 +216,7 @@
   $(document).ready(function() {
     var slideheight = $('.swiper-slide-active > .padding').height();
     $('.swiper-slide').height(slideheight);
-		$('.index-button').hide();
+    $('.index-button').hide();
   });
   var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
@@ -229,7 +229,7 @@
     nextButton: '.next-case-button',
     prevButton: '.swiper-button-prev',
     onSlideChangeStart: function(swiper) {
-      if(swiper.isEnd) {
+      if (swiper.isEnd) {
         $('.next-case-button').hide('slow');
         $('.swiper-button-next').addClass('swiper-button-no-image');
         $('.index-button').show('slow');
