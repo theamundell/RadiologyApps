@@ -429,8 +429,7 @@ a.center-large-image img{
 	box-sizing:border-box;
 	max-width:700px;
 }
-.two-images img,
-.three-images img{
+.two-images img{
 	margin:10px 1%;
 	border:1px solid #fff;
 	width:48%;
@@ -438,14 +437,20 @@ a.center-large-image img{
 	box-sizing:border-box;
 	max-width:330px;
 }
-.three-images a:last-child:before{
-	content:'';
-	display:block;
-	clear:both;
+.three-images img{
+	width:95%;
+	border:1px solid #fff;
 }
-.three-images a:last-child img{
-	float:none;
-	margin:auto;
+
+/* MASONRY */
+.grid-sizer,
+.grid-item {
+	width: 50%;
+}
+.grid-item{
+	margin-bottom:20px;
+	box-sizing: border-box;
+	text-align:center;
 }
 
 .open-supporting-text{
@@ -487,6 +492,7 @@ a.center-large-image img{
 	border-top:1px solid;
 	padding-top:20px;
 }
+
 @media (min-width:1024px){
 	.card-index{
 		max-height:550px;
