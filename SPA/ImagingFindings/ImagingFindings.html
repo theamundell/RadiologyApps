@@ -257,13 +257,13 @@
                   </div>
 
                   <div class="grid-item">
-                    <a class="fancybox" href="images/images.0012.jpg" data-fancybox-group="gallery-4">
-                      <img src="images/images.0012.jpg">
+                    <a class="fancybox" href="images/images.012.jpg" data-fancybox-group="gallery-4">
+                      <img src="images/images.012.jpg">
                     </a>
                   </div>
                   <div class="grid-item">
                     <a class="fancybox" href="images/images.013.jpg" data-fancybox-group="gallery-4">
-                      <img src="images/images.012.jpg">
+                      <img src="images/images.013.jpg">
                     </a>
                   </div>
                 </div>
@@ -1139,6 +1139,25 @@
       buttons: {}
     }
   });
+
+  //MASONRY
+      if ($(".grid")[0]){
+
+        $('.grid').imagesLoaded( {
+            // options...
+            },
+            function() {
+              $('.grid').masonry({
+                // options
+                percentPosition: true,
+                itemSelector: '.grid-item',
+                columnWidth: '.grid-sizer'
+              });
+            }
+          );
+      } else {
+          // Do something if class does not exist
+      };
 </script>
 
 </html>
