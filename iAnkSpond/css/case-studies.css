@@ -395,6 +395,10 @@ a.center-large-image img{
 	width:95%;
 	border:1px solid #fff;
 }
+a.fancybox {
+	position:relative;
+	color:#fff;
+}
 
 /* MASONRY */
 .grid-sizer,
@@ -425,24 +429,17 @@ a.center-large-image img{
 	z-index:1;
 	color:#fff;
 }
-.open-supporting-text:hover{
-	opacity:0;
-	right:0px;
-	cursor:pointer;
-}
 .mdl-card__supporting-text{
 	display:none;
-	background:#fff;
+	background:#000;
 	position:absolute;
-	left:0;
-	bottom:0;
-	right:0;
-	padding:5px 10px 0px;
-	width:100%;
+	bottom:0px;
+	color:#fff;
+	z-index:1;
 	box-sizing:border-box;
-	z-index:0;
+	width:100%;
 }
-.open-supporting-text:hover + .mdl-card__supporting-text{
+a.fancybox:hover .mdl-card__supporting-text{
 	display:block;
 }
 

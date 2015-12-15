@@ -390,6 +390,21 @@ a.center-large-image img{
 	border:1px solid #fff;
 }
 
+.image-left{
+	width:300px;
+}
+.image-left a.fancybox {
+	position:relative;
+	color:#fff;
+	border:1px solid #fff;
+	width:90%;
+	display:block;
+	margin-bottom:30px;
+}
+.image-left a.fancybox img{
+	width:100%;
+}
+
 /* MASONRY */
 .grid-sizer,
 .grid-item {

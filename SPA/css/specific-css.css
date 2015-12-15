@@ -178,15 +178,19 @@ a.no-color{
 	padding:10px;
 	transition:opacity .25s;
 	transition:right .1s;
-}
-.open-supporting-text:hover{
-	opacity:0;
-	right:0px;
-	cursor:pointer;
+	z-index:1;
+	color:#fff;
 }
 .mdl-card__supporting-text{
 	display:none;
+	background:#000;
+	position:absolute;
+	bottom:0px;
+	color:#fff;
+	z-index:1;
+	box-sizing:border-box;
+	width:100%;
 }
-.open-supporting-text:hover + .mdl-card__supporting-text{
+a.fancybox:hover .mdl-card__supporting-text{
 	display:block;
 }
