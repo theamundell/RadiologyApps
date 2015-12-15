@@ -98,11 +98,12 @@
 								</ul>
 							</section>
 
-							<section class="two-images">
+							<div class="two-images">
 
 								<a class="fancybox" href="images/imaginganatomy/synovial1.jpg">
 									<img src="images/imaginganatomy/synovial1.jpg">
 								</a>
+
 								<a class="fancybox" href="images/imaginganatomy/synovial2.jpg" title="PA radiograph of 2nd DIPJ , the joint space (arrow) represents for the most part the radiolucent articular cartilage. The subchondral bone plate lies deep to the cartilage (line)">
 									<img src="images/imaginganatomy/synovial2.jpg">
 									<i class="material-icons open-supporting-text">info_outline</i>
@@ -110,7 +111,8 @@
 										PA radiograph of 2nd DIPJ , the joint space (arrow) represents for the most part the radiolucent articular cartilage. The subchondral bone plate lies deep to the cartilage (line)
 									</div>
 								</a>
-							</section>
+
+							</div>
 						</div>
 
 					</div>
@@ -155,7 +157,8 @@
 									<span class="orange">Bones of the Hand</span>
 								</h2>
 							</section>
-							<section class="two-images">
+
+							<div class="two-images">
 
 								<a class="fancybox" href="images/imaginganatomy/handbones1.jpg" data-fancybox-group="bones">
 									<img src="images/imaginganatomy/handbones1.jpg">
@@ -165,7 +168,7 @@
 									<img src="images/imaginganatomy/handbones2.jpg">
 								</a>
 
-							</section>
+							</div>
 
 							<section class="header">
 								<h2>
@@ -287,4 +290,22 @@
 		swiper.slideTo($(this).data('index') - 1, 1);
 		$('.mdl-layout__drawer').removeClass('is-visible');
 	});
+	//MASONRY
+	if ($(".grid")[0]) {
+
+		$('.grid').imagesLoaded({
+				// options...
+			},
+			function() {
+				$('.grid').masonry({
+					// options
+					percentPosition: true,
+					itemSelector: '.grid-item',
+					columnWidth: '.grid-sizer'
+				});
+			}
+		);
+	} else {
+		// Do something if class does not exist
+	};
 </script>

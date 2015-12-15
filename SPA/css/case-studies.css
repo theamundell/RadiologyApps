@@ -367,12 +367,14 @@ section.header h2{
 	box-sizing:border-box;
 
 }
-a.center-large-image img{
+a.center-large-image{
 	display:block;
 	margin:30px auto;
 	max-width:450px;
-	max-height:450px;
 	border:1px solid #fff;
+}
+a.center-large-image img{
+	width:100%;
 }
 .two-images,
 .three-images{
@@ -381,17 +383,24 @@ a.center-large-image img{
 	box-sizing:border-box;
 	max-width:700px;
 }
-.two-images img{
+.two-images a{
 	margin:10px 1%;
 	border:1px solid #fff;
 	width:48%;
 	float:left;
 	box-sizing:border-box;
 	max-width:330px;
+	position:relative;
+}
+.two-images a img{
+	width:100%;
+}
+.three-images a{
+	border:1px solid #fff;
+	width:95%;
 }
 .three-images img{
-	width:95%;
-	border:1px solid #fff;
+	width:100%;
 }
 
 .image-left{
