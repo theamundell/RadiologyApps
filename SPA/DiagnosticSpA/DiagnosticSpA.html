@@ -358,6 +358,8 @@
   </div>
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js"></script>
 
 <script>
   $(document).ready(function() {
@@ -407,11 +409,6 @@
     $('.mdl-layout__drawer').removeClass('is-visible');
   });
 
-  $('.card-wrapper2').masonry({
-    columnWidth: '.grid-sizer',
-    itemSelector: '.mdl-card',
-    percentPosition: true
-  });
 
   $('.mdl-layout__content').scroll(function() {
     if ($('.mdl-layout__content').scrollTop() > 50) {
@@ -435,6 +432,25 @@
       buttons: {}
     }
   });
+
+  //MASONRY
+  if ($(".grid")[0]){
+
+    $('.grid').imagesLoaded( {
+        // options...
+        },
+        function() {
+          $('.grid').masonry({
+            // options
+            percentPosition: true,
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer'
+          });
+        }
+      );
+  } else {
+      // Do something if class does not exist
+  };
 </script>
 
 </html>

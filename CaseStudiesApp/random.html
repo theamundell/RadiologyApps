@@ -84,6 +84,9 @@
       </div>
     </article>
   </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js"></script>
 
   <script type="text/javascript">
     $(document).ready(function() {
@@ -126,6 +129,25 @@
         $('.swiper-button-next').show('slow');
       }
     });
+
+    //MASONRY
+    if ($(".grid")[0]){
+
+      $('.grid').imagesLoaded( {
+          // options...
+          },
+          function() {
+            $('.grid').masonry({
+              // options
+              percentPosition: true,
+              itemSelector: '.grid-item',
+              columnWidth: '.grid-sizer'
+            });
+          }
+        );
+    } else {
+        // Do something if class does not exist
+    };
   </script>
 </body>
 

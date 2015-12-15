@@ -92,13 +92,15 @@
   </div>
 
   <script src="js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js"></script>
 
 
   <script type="text/javascript">
 
     // Loads the swiper slides into .swiper-wrapper div.
     loadCases(4);
-    
+
     $(document).ready(function() {
       $(".fancybox").fancybox();
       if(!swiper.isEnd) {
@@ -146,6 +148,24 @@
       swiper.slideTo($(this).data('index') - 1, 1);
       $('.mdl-layout__drawer').removeClass('is-visible');
     });
+    //MASONRY
+    if ($(".grid")[0]){
+
+      $('.grid').imagesLoaded( {
+          // options...
+          },
+          function() {
+            $('.grid').masonry({
+              // options
+              percentPosition: true,
+              itemSelector: '.grid-item',
+              columnWidth: '.grid-sizer'
+            });
+          }
+        );
+    } else {
+        // Do something if class does not exist
+    };
   </script>
 </body>
 

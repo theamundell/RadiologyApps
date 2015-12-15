@@ -94,15 +94,15 @@
                 </section>
                 <ul>
                   <div class="image-left">
-                    <a class="fancybox center-large-image" href="images/1.jpg" data-fancybox-group="gallery" title="a) Illustration normal anatomy of the sacroiliac joints with overlying ligaments-Anterior view">
+                    <a class="fancybox" href="images/1.jpg" data-fancybox-group="gallery" title="a) Illustration normal anatomy of the sacroiliac joints with overlying ligaments-Anterior view">
                       <img src="images/1.jpg">
                     </a>
 
-                    <a class="fancybox center-large-image" href="images/2.jpg" data-fancybox-group="gallery" title="b) Illustration normal anatomy of the sacroiliac joints with overlying ligaments-Posterior view">
+                    <a class="fancybox" href="images/2.jpg" data-fancybox-group="gallery" title="b) Illustration normal anatomy of the sacroiliac joints with overlying ligaments-Posterior view">
                       <img src="images/2.jpg">
                     </a>
 
-                    <a class="fancybox center-large-image" href="images/3.jpg" data-fancybox-group="gallery" title="c) Illustration normal anatomy of the right sacroiliac joint -axial cut through the joint demonstrating normal interdigitations of the articulation">
+                    <a class="fancybox" href="images/3.jpg" data-fancybox-group="gallery" title="c) Illustration normal anatomy of the right sacroiliac joint -axial cut through the joint demonstrating normal interdigitations of the articulation">
                       <img src="images/3.jpg">
                     </a>
                   </div>
@@ -521,6 +521,8 @@
   </div>
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js"></script>
 
 <script>
   $(document).ready(function() {
@@ -599,23 +601,25 @@
   });
 
   //MASONRY
-      if ($(".grid")[0]){
+  if ($(".grid")[0]){
 
-        $('.grid').imagesLoaded( {
-            // options...
-            },
-            function() {
-              $('.grid').masonry({
-                // options
-                percentPosition: true,
-                itemSelector: '.grid-item',
-                columnWidth: '.grid-sizer'
-              });
-            }
-          );
-      } else {
-          // Do something if class does not exist
-      };
+    $('.grid').imagesLoaded( {
+        // options...
+        },
+        function() {
+          $('.grid').masonry({
+            // options
+            percentPosition: true,
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer'
+          });
+        }
+      );
+  } else {
+      // Do something if class does not exist
+  };
+
+
 </script>
 
 </html>
