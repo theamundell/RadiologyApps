@@ -289,6 +289,10 @@
 
 							<a class="fancybox center-large-image" href="images/radiographicbasics/tomodiagram.jpg" title="Illustration demonstrating the acquisition of a tomosynthesis series of the hand, note the arc of the x-ray tube as the images are acquired.">
 								<img src="images/radiographicbasics/tomodiagram.jpg">
+								<i class="material-icons open-supporting-text">info_outline</i>
+								<div class="mdl-card__supporting-text">
+									Illustration demonstrating the acquisition of a tomosynthesis series of the hand, note the arc of the x-ray tube as the images are acquired.
+								</div>
 							</a>
 
 
@@ -405,21 +409,21 @@
 		$('.mdl-layout__drawer').removeClass('is-visible');
 	});
 	//MASONRY
-  if ($(".grid")[0]){
+	if ($(".grid")[0]) {
 
-    $('.grid').imagesLoaded( {
-        // options...
-        },
-        function() {
-          $('.grid').masonry({
-            // options
-            percentPosition: true,
-            itemSelector: '.grid-item',
-            columnWidth: '.grid-sizer'
-          });
-        }
-      );
-  } else {
-      // Do something if class does not exist
-  };
+		$('.grid').imagesLoaded({
+				// options...
+			},
+			function() {
+				$('.grid').masonry({
+					// options
+					percentPosition: true,
+					itemSelector: '.grid-item',
+					columnWidth: '.grid-sizer'
+				});
+			}
+		);
+	} else {
+		// Do something if class does not exist
+	};
 </script>
