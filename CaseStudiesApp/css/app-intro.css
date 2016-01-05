@@ -54,27 +54,13 @@ body{
 	display:block;
 	position:absolute;
 	width:100%;
-	opacity:0;
-	-ms-transform: translateX(50%);
-  -webkit-transform:translateX(50%);
-	transform:translateX(50%);
-}
-/* The animation code */
-@keyframes logowrapper {
-    0% {transform:translateX(50%); opacity:0;}
-    50% {transform:translateX(50%); opacity:0;}
-    80% {opacity:1;}
-    100% {transform:translateX(0%);}
 }
 
 .intro-animation.start-animation .logowrapper{
-	-ms-transform: translateX(0%);
-  -webkit-transform:translateX(0%);
-	transform:translateX(0%);
 	-webkit-animation: logowrapper forwards;
     animation: logowrapper forwards;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
+    -webkit-animation-duration: .1s;
+    animation-duration: .1s;
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
     opacity:1;
@@ -91,15 +77,16 @@ body{
 .intro-animation .full-text{
 	display:block;
 	position:absolute;
-	-ms-transform: translateY(0%);
-  -webkit-transform:translateY(0%);
-	transform:translateY(0);
+	-ms-transform: translateY(40px);
+  -webkit-transform:translateY(40px);
+	transform:translateY(40px);
 	width:100%;
 	opacity:0;
 }
 /* The animation code */
 @keyframes fulltext {
-    0% {opacity:0; -ms-transform: translateY(0px); -webkit-transform:translateY(0px); transform:translateY(0px);}
+    0% {opacity:0; -ms-transform: translateY(40px); -webkit-transform:translateY(40px); transform:translateY(40px);}
+		30% {opacity:0; -ms-transform: translateY(40px); -webkit-transform:translateY(40px); transform:translateY(40px);}
     100% {opacity:1; -ms-transform: translateY(85px); -webkit-transform:translateY(85px);transform:translateY(85px);}
 }
 .intro-animation.start-animation .full-text{
@@ -137,7 +124,7 @@ body{
 		-webkit-transform:translateY(0%);
 		transform:translateY(0);
     -webkit-animation: apptitle forwards ;
-    -webkit-animation-duration: 3s;
+    -webkit-animation-duration: 2s;
     -webkit-animation-timing-function: ease-in;
     opacity:1;
     -webkit-backface-visibility: hidden;
@@ -162,7 +149,7 @@ body{
 	-webkit-animation:button forwards;
 	animation:button forwards;
 	-webkit-animation-duration: 4s;
-	animation-duration: 4s;
+	animation-duration: 3s;
 	-webkit-animation-timing-function: ease-in;
 	animation-timing-function: ease-in;
 	-webkit-backface-visibility: hidden;

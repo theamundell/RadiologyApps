@@ -115,9 +115,7 @@ function sendAJAX(url) {
     }).done(function(returned_data) {
       $('.swiper-wrapper').append(returned_data);
       // swiper.init();
-      if(url.substring(0, 14) == 'cases/section2') {
-        $('.hidden-section').hide();
-      }
+
     }).fail(function(data) {
       console.log("An error occurred during AJAX request.");
     });

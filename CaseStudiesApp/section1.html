@@ -5,25 +5,19 @@
 <head>
   <title>Section 1</title>
   <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
+  <meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport">
 
   <!-- MDL -->
   <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.blue_grey-red.min.css" />
   <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
-
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/swiper.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 
-  <!-- FancyBox -->
-  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
-  <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-
-  <script type="text/javascript" src="js/section-cases.js"></script>
 </head>
 
 <body>
@@ -96,6 +90,10 @@
     </article>
   </div>
 
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="js/section-cases.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js"></script>
@@ -111,6 +109,7 @@
       if(!swiper.isEnd) {
         $('.index-button').hide();
       }
+      console.log('doc ready loaded');
     });
 
     $(document).on('click', 'button', function() {
@@ -138,6 +137,8 @@
       }
     });
 
+    console.log('swiper loaded');
+
     $('.mdl-layout__content').scroll(function() {
       if ($('.mdl-layout__content').scrollTop() > 50) {
         $('.swiper-button-prev').hide('slow');
@@ -153,11 +154,9 @@
       $('.mdl-layout__drawer').removeClass('is-visible');
     });
 
-//MASONRY
+    //MASONRY
     if ($(".grid")[0]){
-
       $('.grid').imagesLoaded( {
-          // options...
           },
           function() {
             $('.grid').masonry({
@@ -169,7 +168,6 @@
           }
         );
     } else {
-        // Do something if class does not exist
     };
   </script>
 </body>

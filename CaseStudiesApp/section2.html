@@ -4,7 +4,7 @@
 <head>
   <title>Section 2</title>
   <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
+  <meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport">
 
   <!-- MDL -->
   <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.blue_grey-red.min.css" />
@@ -109,72 +109,72 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js"></script>
 <script>
 
-  // Loads the swiper slides into .swiper-wrapper div.
-  loadCases(2);
+// Loads the swiper slides into .swiper-wrapper div.
+loadCases(2);
 
-  $(document).ready(function() {
+$(document).ready(function() {
+  $(".fancybox").fancybox();
 
-    $(".fancybox").fancybox();
+  if(!swiper.isEnd) {
+    $('.index-button').hide();
+  }
+});
 
-    if(!swiper.isEnd) {
-      $('.index-button').hide();
-    }
+$(document).on('click', 'button', function() {
+  $('article #' + this.value).toggle('slow', function() {
   });
+});
 
-  $(document).on('click', 'button', function() {
-    $('article #' + this.value).toggle('slow', function() {
-    });
-  });
-
-  var swiper = new Swiper('.swiper-container', {
-    hashnav: true,
-    paginationClickable: true,
-    keyboardControl: true,
-    nextButton: '.next-case-button',
-    prevButton: '.swiper-button-prev',
-    onSlideChangeStart: function(swiper) {
-      if(swiper.isEnd) {
-        $('.next-case-button').hide('slow');
-        $('.swiper-button-next').addClass('swiper-button-no-image');
-        $('.index-button').show('slow');
-      } else {
-        $('.next-case-button').show('slow');
-        $('.swiper-button-next').removeClass('swiper-button-no-image');
-        $('.index-button').hide('slow');
-      }
-    }
-  });
-
-  $('.mdl-layout__content').scroll(function() {
-    if ($('.mdl-layout__content').scrollTop() > 50) {
-      $('.swiper-button-prev').hide('slow');
-      $('.swiper-button-next').hide('slow');
+var swiper = new Swiper('.swiper-container', {
+  hashnav: true,
+  pagination: '.swiper-pagination',
+  paginationClickable: true,
+  keyboardControl: true,
+  nextButton: '.next-case-button',
+  prevButton: '.swiper-button-prev',
+  onSlideChangeStart: function(swiper) {
+    if(swiper.isEnd) {
+      $('.next-case-button').hide('slow');
+      $('.swiper-button-next').addClass('swiper-button-no-image');
+      $('.index-button').show('slow');
     } else {
-      $('.swiper-button-prev').show('slow');
-      $('.swiper-button-next').show('slow');
+      $('.next-case-button').show('slow');
+      $('.swiper-button-next').removeClass('swiper-button-no-image');
+      $('.index-button').hide('slow');
     }
-  });
+  }
+});
 
-  $('.sub-nav-item').on('click', function(e) {
-    swiper.slideTo($(this).data('index'), 1);
-    $('.mdl-layout__drawer').removeClass('is-visible');
-  });
-  //MASONRY
-  if ($(".grid")[0]){
-
-    $('.grid').imagesLoaded( {
-        // options...
-        },
-        function() {
-          $('.grid').masonry({
-            // options
-            percentPosition: true,
-            itemSelector: '.grid-item',
-            columnWidth: '.grid-sizer'
-          });
-        }
-      );
+$('.mdl-layout__content').scroll(function() {
+  if ($('.mdl-layout__content').scrollTop() > 50) {
+    $('.swiper-button-prev').hide('slow');
+    $('.swiper-button-next').hide('slow');
   } else {
-      // Do something if class does not exist
-  };
+    $('.swiper-button-prev').show('slow');
+    $('.swiper-button-next').show('slow');
+  }
+});
+
+$('.sub-nav-item').on('click', function(e) {
+  swiper.slideTo($(this).data('index') - 1, 1);
+  $('.mdl-layout__drawer').removeClass('is-visible');
+});
+
+//MASONRY
+if ($(".grid")[0]){
+  $('.grid').imagesLoaded({},
+      function() {
+        $('.grid').masonry({
+          // options
+          percentPosition: true,
+          itemSelector: '.grid-item',
+          columnWidth: '.grid-sizer'
+        });
+
+      $('.hidden-section').hide();
+      }
+    );
+
+} else {
+};
 </script>
