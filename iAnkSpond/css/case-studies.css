@@ -453,6 +453,14 @@ a.fancybox{
 	z-index:1;
 	color:#fff;
 }
+
+.differential-dianosis > li{
+	padding-bottom:10px;
+}
+.differential-dianosis > li ul{
+	padding-top:10px;
+	color:#ccc;
+}
 .mdl-card__supporting-text{
 	display:none;
 	background:#000;
@@ -488,6 +496,10 @@ li.has-image{
 .iankspond-index.card-index .card a{
 	color:#fff;
 	text-decoration:none;
+}
+.narrow{
+	max-width:800px;
+	margin:0 auto;
 }
 @media (min-width:1024px){
 	.card-index .card{

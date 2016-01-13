@@ -46,7 +46,7 @@
 		<div class="mdl-layout__drawer">
 			<span class="mdl-layout-title">Table of Contents</span>
 			<nav class="mdl-navigation">
-				<a class="mdl-navigation__link" href="index.html">Index</a>
+				<a class="mdl-navigation__link" href="toc.html">Index</a>
 				<a class="mdl-navigation__link" href="introduction.html">Introduction</a>
 				<a class="mdl-navigation__link" href="radiographicbasics.html">Radiographic Basics</a>
 				<a class="mdl-navigation__link current" href="imaginganatomy.html">Imaging Anatomy</a>
@@ -98,13 +98,13 @@
 								</ul>
 							</section>
 
-							<div class="two-images">
 
-								<a class="fancybox" href="images/imaginganatomy/synovial1.jpg">
+
+								<a class="fancybox center-large-image" href="images/imaginganatomy/synovial1.jpg">
 									<img src="images/imaginganatomy/synovial1.jpg">
 								</a>
 
-								<a class="fancybox" href="images/imaginganatomy/synovial2.jpg" title="PA radiograph of 2nd DIPJ , the joint space (arrow) represents for the most part the radiolucent articular cartilage. The subchondral bone plate lies deep to the cartilage (line)">
+								<a class="fancybox center-large-image" href="images/imaginganatomy/synovial2.jpg" data-fancybox-title="PA radiograph of 2nd DIPJ , the joint space (arrow) represents for the most part the radiolucent articular cartilage. The subchondral bone plate lies deep to the cartilage (line)">
 									<img src="images/imaginganatomy/synovial2.jpg">
 									<i class="material-icons open-supporting-text">info_outline</i>
 									<div class="mdl-card__supporting-text">
@@ -112,7 +112,6 @@
 									</div>
 								</a>
 
-							</div>
 						</div>
 
 					</div>
@@ -172,13 +171,32 @@
 
 							<section class="header">
 								<h2>
-									<span class="orange">Test Youself</span>
+									<span class="orange">3-D CT of the Hand</span>
+									<p style="text-align:center;">Press play to rotate</p>
+								</h2>
+							</section>
+
+							<video controls>
+								<source src="https://s3.amazonaws.com/radiology.app.videos/SP+HAND+SER+251.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+							</video>
+							<video controls>
+								<source src="https://s3.amazonaws.com/radiology.app.videos/SP+HAND+SER+253.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+							</video>
+
+
+
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="padding">
+							<section class="header">
+								<h2>
+									<span class="orange" >Test Youself</span>
 								</h2>
 							</section>
 							<section>
-								<ul>
-									<li>Describe the 3 provided radiographic views and naming the individual joints and bones</li>
-								</ul>
+									<p style="text-align:center;">Describe the 3 provided radiographic views and naming the individual joints and bones</p>
 							</section>
 
 							<div class="three-images grid clearfix">
@@ -203,25 +221,6 @@
 						</div>
 					</div>
 
-					<div class="swiper-slide">
-						<div class="padding">
-							<section class="header">
-								<h2>
-									<span class="orange">Videos</span>
-								</h2>
-							</section>
-
-							<video controls>
-								<source src="https://s3.amazonaws.com/radiology.app.videos/SP+HAND+SER+251.mp4" type="video/mp4"> Your browser does not support HTML5 video.
-							</video>
-
-							<video controls>
-								<source src="https://s3.amazonaws.com/radiology.app.videos/SP+HAND+SER+253.mp4" type="video/mp4"> Your browser does not support HTML5 video.
-							</video>
-
-						</div>
-					</div>
-
 
 				</div>
 
@@ -229,7 +228,7 @@
 				<div class="swiper-button-next" id="button-next">
 					<div class="next-case-button"></div>
 					<div class="index-button">
-						<a href="index.html">
+						<a href="toc.html">
 							<p>Back to Index</p>
 							<i class="material-icons">home</i>
 						</a>
