@@ -134,7 +134,7 @@ a.no-color{
 
 .swiper-slide{
 	display:flex;
-	align-items:center;
+	align-items:top;
 	justify-content:center;
 	width:100%;
 	height:auto;
@@ -190,7 +190,21 @@ a.no-color{
 	z-index:1;
 	box-sizing:border-box;
 	width:100%;
+	left:0px;
 }
 a.fancybox:hover .mdl-card__supporting-text{
 	display:block;
+}
+.shorthand-legend{
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	padding:10px;
+	transition:opacity .25s;
+	transition:right .1s;
+	z-index:1;
+	color:#fff;
+	cursor:default;
+	left:0px;
 }
