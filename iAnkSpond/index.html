@@ -1,188 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8">
-	<title>iAnkSpond</title>
+	<head>
+		<title>iAnkSpond</title>
+  	<meta charset="UTF-8">
+  	<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
 
-	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue_grey-blue.min.css" />
-	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
-	<link rel="stylesheet" href="css/case-studies.css">
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue_grey-blue.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
 
-	<link rel="stylesheet" href="css/app-intro.css">
-	<link rel="stylesheet" href="css/guide.css">
+		<!-- App CSS -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/case-studies.css">
+		<link rel="stylesheet" href="css/app-intro.css">
+		<link rel="stylesheet" href="css/guide.css">
+	</head>
 
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
-
-</head>
-
-<body>
-	<div class="intro-animation">
-		<div class="content">
-			<div class="logowrapper">
-				<div class="logo">
-					<span>E</span>SIMR
-				</div>
-			</div>
-			<div class="full-text">
-				<span>E</span>ssential Imaging In Rheumatology</div>
-			<div class="app-title">
-				<span>U</span>ncovering The
-				<span>H</span>and
-				<span>R</span>adiograph</div>
-
-			<div class="enter-button-wrapper">
-				<div class="button">
-					Click to enter
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="guide-toggle"><i class="zmdi zmdi-help-outline"></i></div>
-	<div class="guide-wrapper">
-		<div class="guide">
-			<div class="guide-content">
-				<div class="close"><i class="zmdi zmdi-close-circle-o"></i></div>
-				<h4>How to use this app</h4>
-				<hr>
-				<p>You are viewing the guide, empty right now, more to come.</p>
-				<ul>
-					<li>you can add lists</li>
-					<li>and some photos would be nice also</li>
-				</ul>
-
-			</div>
-		</div>
-	</div>
-
-	<!-- Uses a header that scrolls with the text, rather than staying
-  locked at the top -->
-	<div class="demo-layout-transparent mdl-layout mdl-js-layout dark-back">
-		<header class="mdl-layout__header mdl-layout__header--transparent">
-			<div class="mdl-layout__header-row">
-				<!-- Title -->
-				<span class="mdl-layout-title">
+	<body>
+		<div class="intro-animation">
+			<div class="content">
+				<div class="logowrapper">
 					<div class="logo">
 						<span>E</span>SIMR
 					</div>
-				</span>
+				</div>
+				<div class="full-text">
+					<span>E</span>ssential Imaging In Rheumatology</div>
+				<div class="app-title">
+					<span>U</span>ncovering The
+					<span>H</span>and
+					<span>R</span>adiograph</div>
 
+				<div class="enter-button-wrapper">
+					<div class="button">
+						Click to enter
+					</div>
+				</div>
 			</div>
-		</header>
-		<div class="mdl-layout__drawer">
-			<span class="mdl-layout-title">Table of Contents</span>
-			<nav class="mdl-navigation">
-				<a class="mdl-navigation__link current" href="toc.html">Index</a>
-				<a class="mdl-navigation__link" href="introduction.html">Introduction</a>
-				<a class="mdl-navigation__link" href="radiographicbasics.html">Radiographic Basics</a>
-				<a class="mdl-navigation__link" href="imaginganatomy.html">Imaging Anatomy</a>
-				<a class="mdl-navigation__link" href="imagingfeatures.html" class="current">Imaging Features</a>
-				<a class="mdl-navigation__link" href="approach.html">Radiographic Interpretation</a>
-				<a class="mdl-navigation__link" href="diagnosis.html">Clinical Diagnosis</a>
-				<a class="mdl-navigation__link" href="arthritides.html">The Arthitides</a>
-				<a class="mdl-navigation__link" href="cases.html">Cases</a>
-			</nav>
+		</div>
+		<div class="guide-toggle"><i class="zmdi zmdi-help-outline"></i></div>
+		<div class="guide-wrapper">
+			<div class="guide">
+				<div class="guide-content">
+					<div class="close"><i class="zmdi zmdi-close-circle-o"></i></div>
+					<h4>How to use this app</h4>
+					<hr>
+					<p>You are viewing the guide, empty right now, more to come.</p>
+					<ul>
+						<li>you can add lists</li>
+						<li>and some photos would be nice also</li>
+					</ul>
+
+				</div>
+			</div>
 		</div>
 
-		<!-- Content Below -->
+		<!-- Uses a header that scrolls with the text, rather than staying
+	  locked at the top -->
 		<div class="demo-layout-transparent mdl-layout mdl-js-layout dark-back">
-			<article class="mdl-layout__content card-index iankspond-index">
+			<header class="mdl-layout__header mdl-layout__header--transparent">
+				<div class="mdl-layout__header-row">
+					<!-- Title -->
+					<span class="mdl-layout-title">
+						<div class="logo">
+							<span>E</span>SIMR
+						</div>
+					</span>
 
-				<div class="card">
-					<section class="header">
-						<a href="introduction.html">
-							<h1>Introduction</h1>
-						</a>
-					</section>
+				</div>
+			</header>
+			<div class="mdl-layout__drawer">
+				<span class="mdl-layout-title">Table of Contents</span>
+				<nav class="mdl-navigation">
+					<a class="mdl-navigation__link current" href="toc.html">Index</a>
+					<a class="mdl-navigation__link" href="introduction.html">Introduction</a>
+					<a class="mdl-navigation__link" href="radiographicbasics.html">Radiographic Basics</a>
+					<a class="mdl-navigation__link" href="imaginganatomy.html">Imaging Anatomy</a>
+					<a class="mdl-navigation__link" href="imagingfeatures.html" class="current">Imaging Features</a>
+					<a class="mdl-navigation__link" href="approach.html">Radiographic Interpretation</a>
+					<a class="mdl-navigation__link" href="diagnosis.html">Clinical Diagnosis</a>
+					<a class="mdl-navigation__link" href="arthritides.html">The Arthitides</a>
+					<a class="mdl-navigation__link" href="cases.html">Cases</a>
+				</nav>
+			</div>
+
+			<!-- Content Below -->
+			<article class="mdl-layout__content">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+
+						<div class="swiper-slide" data-hash="Intro">
+							<section class="header">
+								<h2>
+									<span class="orange">Uncovering The Hand Radiograph</span>
+									<br>
+									<span class="subheader">Essential Imaging In Arthritis</span>
+								</h2>
+							</section>
+							<section>
+								<ul>
+									<li>“The hand radiograph made simple” could have been an alternative title for our mission and for the most part that is what we have set out to do, however as many of you are aware the hand radiograph can on occasions be far from simple, and we would
+										hate to mislead you.</li>
+									<li>Instead you are going to uncover the secrets of the hand radiograph by using the tools within this app that will allow you to answer many of your own questions.</li>
+
+								</ul>
+							</section>
+
+						</div>
+						<div class="swiper-slide" data-hash="Overview">
+							<section class="header">
+								<h2>App Overview</h2>
+							</section>
+							<section>
+								<ul>
+									<li>We will begin at the start, radiographic basics, and provide a brief overview of what goes into acquiring an image and what is important about each image.</li>
+									<li>This is followed by “Imaging Anatomy”, an essential component. We follow the maxim that you need to know what’s normal before you can recognize the abnormal</li>
+									<li>‘Key Imaging Features” includes definitions and imaging appearance of common pathologies and will provide you with the arsenal to conquer the complex case.</li>
+									<li>“Approach to Interpretation” provides an overview of the “JABS technique” for deciphering the radiograph as well as a review of “Pattern Recognition” of common arthritides. </li>
+									<li>“Approach to Clinical Diagnosis” provides an overview of a clinical diagnostic approach to the patient presenting with an arthritis and was “borrowed” from our sister publication ‘Essential Imaging in Rheumatology, Springer 2015’</li>
+									<li>An overview of the common and uncommon radiographic presentation of the“Arthritides” will help solidify the information presented before taking on the practice cases</li>
+
+								</ul>
+							</section>
+						</div>
+
+
+
+						<div class="swiper-slide" data-hash="References">
+							<section class="header">
+								<h2>References</h2>
+							</section>
+							<section>
+								<ul>
+									<li>This “App” is founded upon and supplements the textbook “Essential Imaging in Rheumatology”</li>
+									<li><i>Essential Imaging in Rheumatology</i>, John O’Neill MD - New York: Springer Science+Business Media; 2015</li>
+									<li> ISBN 978-1-4939-1672-6</li>
+									<li>ISBN 978-1-4939-1673-3 (eBook)</li>
+									<li>DOI 10.1007/978-1-4939-1673-3 </li>
+									<li>Library of Congress Control Number: 2014955607 </li>
+
+								</ul>
+							</section>
+
+							<section class="header">
+								<h2>Buy it on:</h2>
+							</section>
+							<section>
+								<ul style="list-style-type: none" class="buy-it-on">
+
+									<li>
+										<a href="http://www.amazon.ca/Essential-Imaging-Rheumatology-John-ONeill/dp/1493916726">
+											<img src="images/amazonlogo.jpg">
+										</a>
+									</li>
+									<li>
+										<a href="http://www.springer.com/ca/book/9781493916726">
+											<img src="images/springerlogo.jpg">
+										</a>
+									</li>
+									<li>
+										<a href="https://www.chapters.indigo.ca/en-ca/books/product/9781493916726-item.html?mkwid=sHJM65blR_dc&pcrid=44154474422&pkw=&pmt=&s_campaign=goo-Shopping_Books&gclid=CI73oYfGj8cCFY4AaQodmCEA7g">
+											<img src="images/indigologo.jpg">
+										</a>
+									</li>
+
+								</ul>
+							</section>
+						</div>
+
+						<div class="swiper-slide" data-hash="Reviews">
+							<div class="padding">
+								<section class="header">
+									<h2>Book Reviews</h2>
+								</section>
+								<section>
+									<p>
+										<b><span class="orange">"Essential Imaging In Rheumatology"</span></b> has received excellent peer reviews in leading rheumatology and radiology journals which have highlighted the strong educational offerings .....explores all current methods
+										of imaging and imaging techniques related to common rheumatic symptoms and specific rheumatic diseases......</p>
+									<p>
+										well-written and comprehensive resource in its coverage of the rheumatic diseases as well as its description of multiple imaging modalities ....the authors have done an excellent job tying the clinical aspects of rheumatic diseases to the radiographic
+										findings.........It is a concise reference source for radiologists and rheumatologists delivering up-to-date and complete information on the imaging of rheumatic disease.....the 17 chapters (426 pages in total) are well laid out, the content
+										of each is concise, and the text within each section is clearly written, with ample tables, illustrations, and images...........excellent tables of various classi cation systems, nomenclature, and diagnostic criteria. Each section covers the
+										individual topic with clarity and detail, providing many case examples as well as common clinical presentations............caters to a large target audience of general radiologists, radiology residents, and, in particular, rheumatologists at
+										all levels of training for whom it will be a most excellent resource.
+									</p>
+								</section>
+
+                <div class="checkbox">
+                	<label>
+    								<input type="checkbox" id="skip-intro-checkbox"> Don't show Intro
+  								</label>
+                </div>
+
+								<button class="diagnosis-button" type="button" value='1'>Review 1</button>
+								<article class='book-review diagnosis' id='1'>
+									<p>
+										There are many books, journals, and online resources available to individual groups of both rheumatologists and radiologists but very few that cater to both in one product. This book aims to do just that and is intended for all comers from the fields
+										of rheumatology and radiology with a unique approach.
+									</p>
+									<p>
+										The 17 chapters (426 pages in total) are well laid out, the content of each is concise, and the text within each section is clearly written, with ample tables, illustrations, and images. The book is divided into two main parts. The first part, “Introduction,”
+										comprises four chapters. The first chapter, “Introduction to Imaging,” seems targeted to nonradiologists but is a nice overview of some basic physics and includes general terminology and lists advantages and disadvantages to the various imaging
+										modalities. No doubt rheumatologists, particularly those in training, would find this chapter most useful. The table on contraindications to magnetic resonance imaging is somewhat misleading as almost all listed are relative contraindications
+										and others are not contraindications at all. The remaining chapters in this section are also aimed predominantly at nonradiologists and discuss a diagnostic approach to image analysis and some common image-guided interventional procedures for
+										both diagnosis and treatment. Chapter 3 is divided in terms of muscle, fascia, tendon, ligament, nerve, bursa, bone, joints, cartilage and effusions, each of which is discussed in detail in terms of anatomy and the strengths of various imaging
+										modalities.
+									</p>
+									<p>
+										The second part (“Imaging in Rheumatology”) is divided into 13 separate chapters on individual arthritides, including separate chapters on topics such as infection, diabetic foot, and bone and synovial tumors. The chapters each follow a similar pattern,
+										and most include excellent tables of various classification systems, nomenclature, and diagnostic criteria. Each section covers the individual topic with clarity and detail, providing many case examples as well as common clinical presentations.
+										In each of the chapters, the authors have included appropriate and up-to-date references.
+									</p>
+									<p>
+										Images are generally of good quality and plentiful, with clear image legends. The matte finish does not do some of the images justice compared with the glossy finish of some other books; however, there are accompanying applications due out for both iOS
+										and android users that will not doubt be a great addition once available.
+									</p>
+									<p>
+										One of the real strengths of this book is the appendix, which describes in detail the various scoring systems used, albeit predominantly in research settings. It is very difficult to find this information in one place and so this section is most welcome,
+										not to mention up to date.
+									</p>
+									<p>
+										Ultimately, the book succeeds in what the editor sets out to achieve in merging clinical presentations with imaging patterns of disease in a wide gamut of rheumatologic disorders. Retailing at $249.00 for the hardcover edition (eBook is available for
+										$189.00), this book is not cheap. Although there are some excellent alternative books available that may contain more detail and therefore are targeted at fellowship-trained musculoskeletal radiologists, this book is nonetheless comprehensive
+										and caters to a large target audience of general radiologists, radiology residents, and, in particular, rheumatologists at all levels of training for whom it will be a most excellent resource.
+									</p>
+									<ul>
+										<li>
+											Reviewed by Darra T. Murphy, MB BCh BAO, MRCPI, FFR(RCSI), FRCPC
+										</li>
+										<li>Review published by Radiology Volume 227: Number 2</li>
+									</ul>
+								</article>
+
+								<button class="diagnosis-button" type="button" value='2'>Review 2</button>
+								<article class='book-review diagnosis' id='2'>
+									<p>
+										Imaging is an essential component in both the diagnosis and management of rheumatic disease, and imaging interpretation is a skill every rheumatologist strives to master. As a rheumatology fellow, imaging was one of the most daunting and challenging areas
+										of the specialty. Useful comprehensive resources were and are both welcome and appreciated.
+									</p>
+									<p>
+										A new rheumatology title, Essential Imaging in Rheumatology, is a valuable resource in our field. The book's editor is Dr. John O'Neill, an Associate Professor of Radiology at McMaster University, Hamilton, Ontario. The other contributions are all rheumatologists
+										from McMaster, making this a decidedly Canadian publication!
+									</p>
+									<p>
+										Essential Imaging in Rheumatology explores all current methods of imaging and imaging techniques related to common rheumatic symptoms and specific rheumatic diseases. This is a well-written and comprehensive resource in its coverage of the rheumatic diseases
+										as well as its description of multiple imaging modalities, including radiographs, ultrasound, bone scan, CT, and MRI. Each section starts with an overview of the clinical aspects of the disease followed by an indepth discussion of the imaging
+										modalities, including examples of high-resolution images, used in diagnosis and management.
+									</p>
+									<p>
+										The authors have done an excellent job tying the clinical aspects of rheumatic diseasesto the radiographic findings. This is an important feature for new learners as they appreciate the relationship between clinical and radiographic findings. The more
+										experienced learner will appreciate exploring some of the more rare diseases or more esoteric radiographic findings.
+									</p>
+									<p>
+										This book should be recommended to all PGY-4 and -5 rheumatology trainees as essential reading. It is a concise reference source for radiologists and rheumatologists delivering up-to-date and complete information on the imaging of rheumatic disease.
+									</p>
+									<ul>
+										<li>
+											Reviewed by Andy Thompson, MD, FRCPC, MHPE Associate Professor of Medicine, Division of Rheumatology, Department of Medicine, Schulich School of Medicine, Western University London, Ontario
+										</li>
+										<li>Review published by The Canadian Rhuematology Association Journal 2015 Volume 25: Number 3</li>
+									</ul>
+								</article>
+							</div>
+						</div>
+
+
+
+					</div>
+
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next" id="button-next">
+						<div class="next-case-button"></div>
+						<div class="index-button">
+							<a href="index.html">
+								<p>Back to Index</p>
+								<i class="material-icons">home</i>
+							</a>
+						</div>
+					</div>
+
 				</div>
 
-				<div class="card">
-					<section class="header">
-						<a href="radiographicbasics.html">
-							<h1>Radiographic Basics</h1>
-						</a>
-					</section>
-				</div>
-
-				<div class="card">
-					<section class="header">
-						<a href="imaginganatomy.html">
-							<h1>Imaging Anatomy</h1>
-						</a>
-					</section>
-				</div>
-
-				<div class="card">
-					<section class="header">
-						<a href="imagingfeatures.html">
-							<h1>Imaging Features</h1>
-						</a>
-					</section>
-				</div>
-
-				<div class="card">
-					<section class="header">
-						<a href="approach.html">
-							<h1>Radiographic Interpretation</h1>
-						</a>
-					</section>
-				</div>
-
-				<div class="card">
-					<section class="header">
-						<a href="diagnosis.html">
-							<h1>Clinical Diagnosis</h1>
-						</a>
-					</section>
-				</div>
-
-
-				<div class="card">
-					<section class="header">
-						<a href="arthritides.html">
-							<h1>The Arthitides</h1>
-						</a>
-					</section>
-				</div>
-
-				<div class="card">
-					<section class="header">
-						<a href="cases.html">
-							<h1>Cases</h1>
-						</a>
-					</section>
-				</div>
 			</article>
 		</div>
-	</div>
 
-</body>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.0/js/swiper.min.js"></script>
 
-<script>
-	$('.card-wrapper').masonry({
-		columnWidth: '.grid-sizer',
-		itemSelector: '.mdl-card',
-		percentPosition: true
-	});
+		<!-- Page-specific CSS -->
+		<script>
+		$(function() {
+      var slideheight = $( '.swiper-slide-active > .padding' ).height();
+      $( '.swiper-slide' ).height(slideheight);
+      $( '.index-button' ).hide();
 
-	$('.intro-animation').addClass('start-animation');
+      var mySwiper = new Swiper( '.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+        hashnav: true,
+        keyboardControl: true,
 
-	$('.intro-animation').click(function() {
-		$('.intro-animation').addClass('hide');
-	});
+        // Navigation arrows
+        nextButton: '.next-case-button',
+        prevButton: '.swiper-button-prev',
+        onSlideChangeStart: function( swiper ) {
+          if ( swiper.isEnd ) {
+            $( '.next-case-button' ).hide( 'slow' );
+            $( '.swiper-button-next' ).addClass( 'swiper-button-no-image' );
+            $( '.index-button' ).show( 'slow' );
+          } else {
+            $( '.next-case-button' ).show( 'slow' );
+            $( '.swiper-button-next' ).removeClass('swiper-button-no-image' );
+            $( '.index-button' ).hide( 'slow' );
+          }
+        }
+      });
 
-	$('.guide-toggle').click(function() {
-		$('.guide').removeClass('hide-again');
-		$('.guide').addClass('show');
-		$('.guide-wrapper').addClass('show');
-	});
-	$('.close').click(function() {
-		$('.guide').addClass('hide-again');
-		$('.guide-wrapper').removeClass('show');
-	});
-</script>
+      mySwiper.on( 'slideChangeStart', function() {
+        var slideheight = $( '.swiper-slide-active > .padding' ).height();
+        $( '.swiper-slide' ).height( slideheight );
+      });
 
+      $( '.sub-nav-item' ).on( 'click', function() {
+        mySwiper.slideTo( $(this).data( 'index' ), 1 );
+        $('.mdl-layout__drawer').removeClass( 'is-visible' );
+      });
+
+      $( '.mdl-layout__content' ).scroll( function() {
+        if ( $( '.mdl-layout__content' ).scrollTop() > 50 ) {
+          $( '.swiper-button-prev' ).hide( 'slow' );
+          $( '.swiper-button-next' ).hide( 'slow' );
+        } else {
+          $( '.swiper-button-prev' ).show( 'slow' );
+          $( '.swiper-button-next' ).show( 'slow' );
+        }
+      });
+
+			// event handlers
+
+      $(document).on( 'click', 'button', function() {
+        $( '#' + this.value ).toggle( 'slow', function() {} );
+      });
+
+			$( '#skip-intro-checkbox' ).change( function( event ) {
+				if ( $( this ).is( ':checked' ) ) {
+					localStorage.setItem( 'skip-iankspond-intro', 'true' )
+				} else {
+					localStorage.setItem( 'skip-iankspond-intro', 'false' );
+				}
+			} );
+
+			$( '.intro-animation' ).click( function() {
+				$( '.intro-animation' ).addClass( 'hide' );
+			} );
+
+			$( '.guide-toggle' ).click( function() {
+				$( '.guide' ).removeClass( 'hide-again' );
+				$( '.guide' ).addClass( 'show' );
+				$( '.guide-wrapper' ).addClass( 'show' );
+			});
+
+			$( '.close' ).click( function() {
+				$( '.guide' ).addClass( 'hide-again' );
+				$( '.guide-wrapper' ).removeClass( 'show' );
+			});
+
+			// start this off
+			var skipIntro = localStorage.getItem( 'skip-iankspond-intro' );
+			if ( JSON.parse( skipIntro ) === true ) {
+				$( ".intro-animation" ).remove();
+				$( ".mdl-layout__content" ).empty();
+				window.location.replace( "toc.html" );
+			} else {
+				$( '.intro-animation' ).addClass( 'start-animation' );
+			};
+		});
+		</script>
+	</body>
 </html>

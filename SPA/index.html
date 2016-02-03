@@ -2,8 +2,9 @@
 <html lang="en">
 
 	<head>
+    <title>SPA</title>
 		<meta charset="UTF-8">
-		<title>SPA</title>
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
 
 		<!-- Vendor CSS -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -386,9 +387,9 @@
 
 			$( '#skip-intro-checkbox' ).change( function( event ) {
 				if ( $( this ).is( ':checked' ) ) {
-					localStorage.setItem( 'skip-intro', 'true' )
+					localStorage.setItem( 'skip-spa-intro', 'true' )
 				} else {
-					localStorage.setItem( 'skip-intro', 'false' );
+					localStorage.setItem( 'skip-spa-intro', 'false' );
 				}
 			} );
 
@@ -408,7 +409,7 @@
 			});
 
 			// start this off
-			var skipIntro = localStorage.getItem( 'skip-intro' );
+			var skipIntro = localStorage.getItem( 'skip-spa-intro' );
 			if ( JSON.parse( skipIntro ) === true ) {
 				$( ".intro-animation" ).remove();
 				$( ".mdl-layout__content" ).empty();

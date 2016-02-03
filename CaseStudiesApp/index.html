@@ -7,14 +7,12 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
 
-  <!-- MDL -->
-  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.blue_grey-red.min.css" />
-  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+  <!-- Vendor CSS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.blue_grey-red.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
 
-
-  <!-- Styling -->
+  <!-- App CSS -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/swiper.css">
   <link rel="stylesheet" href="css/style.css">
@@ -24,6 +22,25 @@
 
 <body>
 
+  <div class="intro-animation">
+    <div class="content">
+      <div class="logowrapper">
+        <div class="logo">
+          <span>E</span>SIMR
+        </div>
+      </div>
+      <div class="full-text">
+        <span>E</span>ssential Imaging In Rheumatology</div>
+      <div class="app-title">
+        <span>C</span>linical Case Challenge</div>
+
+      <div class="enter-button-wrapper">
+        <div class="button">
+          Click to enter
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="guide-toggle"><i class="zmdi zmdi-help-outline"></i></div>
   <div class="guide-wrapper">
     <div class="guide">
@@ -78,156 +95,109 @@
     </div>
 
 
-    <article class="mdl-layout__content card-index">
+    <article class="mdl-layout__content">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
 
-      <div class="card top-left">
-        <section class="header">
-          <h1>Section 1</h1>
-          <h2>Spot cases</h2>
-        </section>
-
-        <section class="toggle-open">
-
-          <a href="section1.html#1"> Sec 1.1 <!-- Achilles tendon thickening --></a>
-          <a href="section1.html#2">Sec 1.2 <!--Subchondral Insufficency fracture --></a>
-          <a href="section1.html#3">Sec 1.3 <!-- AVN Hip --></a>
-          <a href="section1.html#4">Sec 1.4 <!-- Grade 1 SII--></a>
-          <a href="section1.html#5">Sec 1.5 <!-- Gout--></a>
-          <a href="section1.html#6">Sec 1.6 <!-- JIA SH--></a>
-          <a href="section1.html#7">Sec 1.7 <!-- Paget's with humeral fracture --></a>
-          <a href="section1.html#8">Sec 1.8 <!-- PsA Feet--></a>
-          <a href="section1.html#9">Sec 1.9 <!-- Butterfly vertebrae--></a>
-          <a href="section1.html#10">Sec 1.10 <!-- Rheumatoid arthritis - rice bodies --></a>
-          <a href="section1.html#11">Sec 1.11 <!-- AS Syndesmophytes Cervical MRI --></a>
-          <a href="section1.html#12">Sec 1.12 <!-- Atlantoaxial Subluxation --></a>
-          <a href="section1.html#14">Sec 1.14 <!-- Basilar Invagination --></a>
-          <a href="section1.html#15">Sec 1.15 <!-- DISH Cervical spine --></a>
-          <a href="section1.html#16">Sec 1.16 <!-- OPLL --></a>
-          <a href="section1.html#17">Sec 1.17 <!-- Sudeck’s atrophy --></a>
-        </section>
-      </div>
-
-      <div class="card top-right">
-
-        <section class="header">
-          <h1>Section 2</h1>
-          <h2>Extended Cases</h2>
-        </section>
-
-        <section class="toggle-open">
-
-          <a href="section2.html#1">Sec 2.1 <!-- Calcific tendinosis--></a>
-          <a href="section2.html#2">Sec 2.2 <!-- CPPD acute case --></a>
-          <a href="section2.html#3">Sec 2.3 <!-- Stress fractures--></a>
-          <a href="section2.html#4">Sec 2.4 <!-- DISH --></a>
-          <a href="section2.html#5">Sec 2.5 <!-- Myeloma--></a>
-          <a href="section2.html#6">Sec 2.6 <!-- Gout chronic tophaceous case --></a>
-          <a href="section2.html#7">Sec 2.7 <!-- Hypertrophic Osteoarthropathy --></a>
-          <a href="section2.html#8">Sec 2.8 <!-- Osteomyelitis case--></a>
-          <a href="section2.html#9">Sec 2.9 <!-- Psoriatic arthritis --></a>
-          <a href="section2.html#10">Sec 2.10 <!-- RA chronic erosive case --></a>
-          <a href="section2.html#11">Sec 2.11 <!-- RS3PE (moved to Short)--></a>
-          <a href="section2.html#12">Sec 2.12 <!-- SAPHO --></a>
-          <a href="section2.html#13">Sec 2.13 <!-- Scheuermann's Disease SHORT CASE--></a>
-          <a href="section2.html#14">Sec 2.14 <!-- Septic arthritis --></a>
-          <a href="section2.html#15">Sec 2.15 <!-- Stress fracture--></a>
-          <a href="section2.html#16">Sec 2.16 <!-- SpA--></a>
-          <a href="section2.html#17">Sec 2.17 <!-- Spondylolysis --></a>
-          <a href="section2.html#18">Sec 2.18 <!-- Septic arthritis (vs DM foot) case--></a>
-          <a href="section2.html#19">Sec 2.19 <!-- CPPD chronic case--></a>
-          <a href="section2.html#20">Sec 2.20 <!-- Cellulitis--></a>
-          <a href="section2.html#21">Sec 2.21 <!-- Myeloma--></a>
-        </section>
-      </div>
+          <div class="swiper-slide" data-hash="1">
+            <div class="padding">
+              <section class="header">
+                <h2>
+                  <span class="orange">Introduction</span>
+                  <br>Missing Content</h2>
+              </section>
 
 
-      <div class="card bottom-left">
-        <section class="header">
-          <h1>Section 3</h1>
-          <h2>Short Cases</h2>
-        </section>
+              <!-- <a class="fancybox center-large-image" href="images/section1/1.1.1.jpg">
+                <img src="images/section1/1.1.1.jpg">
+              </a> -->
 
-        <section class="toggle-open">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" id="skip-intro-checkbox"> Don't show Intro
+                </label>
+              </div>
 
-          <a href="section3.html#1">Sec 3.1 <!-- Early DISH --></a>
-          <a href="section3.html#2">Sec 3.2 <!-- Normal --></a>
-          <a href="section3.html#3">Sec 3.3 <!-- Milwaukee shoulder --></a>
-          <a href="section3.html#4">Sec 3.4 <!-- MCRH--></a>
-          <a href="section3.html#5">Sec 3.5 <!-- Acromegaly --></a>
-          <a href="section3.html#6">Sec 3.6 <!-- Hyperparathyroidism --></a>
-          <a href="section3.html#7">Sec 3.7 <!-- PsA - minor degenerative changes --></a>
-          <a href="section3.html#8">Sec 3.8 <!-- quinolone-induced Achilles Tendon--></a>
-          <a href="section3.html#9">Sec 3.9 <!-- Unilateral sacroiliitis --></a>
-          <a href="section3.html#10">Sec 3.10 <!--RS3PE --></a>
-          <a href="section3.html#11">Sec 3.11 <!--Sternal insufficiency fracture --></a>
-          <a href="section3.html#12">Sec 3.12 <!--Ankle infection - abscess +/- septic arthritis --></a>
-          <a href="section3.html#13">Sec 3.13 <!--CRMO --></a>
-        </section>
-      </div>
+            </div>
+          </div>
 
+        </div>
 
-      <div class="card bottom-right">
-        <section class="header">
-          <h1>Section 4</h1>
-          <h2>Spot Cases 2</h2>
-        </section>
+        <div class="swiper-button-prev">
+          <div>Previous Case</div>
+        </div>
 
-        <section class="toggle-open">
-          <a href="section4.html#1">Sec 4.1 <!-- Sharp Method --></a>
-          <a href="section4.html#2">Sec 4.2 <!-- Lupus Vasculopathy --></a>
-          <a href="section4.html#3">Sec 4.3 <!-- PAN CT  --></a>
-          <a href="section4.html#4">Sec 4.4 <!-- Amyloid ankle MRI --></a>
-          <a href="section4.html#5">Sec 4.5 <!-- Eburnation --></a>
-          <a href="section4.html#6">Sec 4.6 <!-- Metacarpal Index --></a>
-          <a href="section4.html#7">Sec 4.7 <!-- Rugger Jersey lat spine --></a>
-          <a href="section4.html#8">Sec 4.8 <!-- Atypical Stress Fracture --></a>
-          <a href="section4.html#9">Sec 4.9 <!-- Medullary Infarcts --></a>
-          <a href="section4.html#10">Sec 4.10 <!-- Focal Protrusion --></a>
-          <a href="section4.html#11">Sec 4.11 <!-- DDD Baastrup’s --></a>
-          <a href="section4.html#12">Sec 4.12 <!-- Dermatomyositis --></a>
-          <a href="section4.html#13">Sec 4.13 <!-- Tumoral calcinosis --></a>
-          <a href="section4.html#14">Sec 4.14 <!-- PVNS --></a>
-          <a href="section4.html#15">Sec 4.15 <!-- Chondrocarcinoma --></a>
-        </section>
+        <div class="swiper-button-next" id="button-next">
+          <div class="next-case-button">Next Case</div>
+          <div class="index-button">
+            <a href="index.html">
+              <p>Back to Index</p>
+              <i class="material-icons">home</i>
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
       </div>
     </article>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-  <script src="js/swiper.min.js"></script>
 
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.0/js/swiper.min.js"></script>
 
+  <!-- Page-specific JS -->
   <script>
-    var swiper = new Swiper('.swiper-container', {
-      pagination: '.swiper-pagination',
-      paginationClickable: true,
-      keyboardControl: true,
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-    });
+    $(function() {
+      var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        keyboardControl: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+      });
 
-    $('.card section.header').click(function() {
-      $(this).siblings().toggleClass('open');
-    })
+      $('.card section.header').click(function() {
+        $(this).siblings().toggleClass('open');
+      })
 
-    $('.card section.header').dblclick(function() {
-      var link = $($(this).siblings()[0]).find('a')[0].href;
-      location.href = link;
-    })
+      $('.card section.header').dblclick(function() {
+        var link = $($(this).siblings()[0]).find('a')[0].href;
+        location.href = link;
+      })
 
-    $('.intro-animation').addClass('start-animation');
+      $( '#skip-intro-checkbox' ).change( function( event ) {
+        if ( $( this ).is( ':checked' ) ) {
+          localStorage.setItem( 'skip-casestudy-intro', 'true' )
+        } else {
+          localStorage.setItem( 'skip-casestudy-intro', 'false' );
+        }
+      } );
 
-    $('.intro-animation').click(function() {
-      $('.intro-animation').addClass('hide');
-    });
+      $('.intro-animation').click(function() {
+        $('.intro-animation').addClass('hide');
+      });
 
-    $('.guide-toggle').click(function() {
-      $('.guide').removeClass('hide-again');
-      $('.guide').addClass('show');
-      $('.guide-wrapper').addClass('show');
-    });
-    $('.close').click(function() {
-      $('.guide').addClass('hide-again');
-      $('.guide-wrapper').removeClass('show');
+      $('.guide-toggle').click(function() {
+        $('.guide').removeClass('hide-again');
+        $('.guide').addClass('show');
+        $('.guide-wrapper').addClass('show');
+      });
+
+      $('.close').click(function() {
+        $('.guide').addClass('hide-again');
+        $('.guide-wrapper').removeClass('show');
+      });
+
+      // start this off
+      var skipIntro = localStorage.getItem( 'skip-casestudy-intro' );
+      if ( JSON.parse( skipIntro ) === true ) {
+        $( ".intro-animation" ).remove();
+        $( ".mdl-layout__content" ).empty();
+        window.location.replace( "toc.html" );
+      } else {
+        $( '.intro-animation' ).addClass( 'start-animation' );
+      };
     });
   </script>
 </body>
