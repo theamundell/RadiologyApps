@@ -159,6 +159,10 @@ header h1{
 li{
 	line-height:1.5;
 	margin-bottom:15px;
+	font-size:16px;
+}
+p{
+	font-size:16px;
 }
 ol ol li{
 	list-style-type: lower-alpha;
@@ -519,7 +523,19 @@ a.fancybox:hover .mdl-card__supporting-text{
 	border-top:1px solid;
 	padding-top:20px;
 }
-
+.buy-it-on {
+		margin:0 auto;
+		display:block;
+		text-align:center;
+}
+.buy-it-on li{
+	display:inline-block;
+	width:35%;
+}
+.buy-it-on li img{
+	width:70%;
+	max-width: 250px;
+}
 @media (min-width:1024px){
 	.card-index{
 		max-height:550px;

@@ -323,13 +323,25 @@
 
 
   <script>
-    var swiper = new Swiper('.swiper-container', {
-      pagination: '.swiper-pagination',
-      paginationClickable: true,
-      keyboardControl: true,
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-    });
+  var swiper = new Swiper( '.swiper-container', {
+    pagination: '.swiper-pagination',
+    hashnav: true,
+    paginationClickable: true,
+    keyboardControl: true,
+    nextButton: '.next-case-button',
+    prevButton: '.swiper-button-prev',
+    onSlideChangeStart: function(swiper) {
+      if ( swiper.isEnd ) {
+        $( '.next-case-button' ).hide( 'slow' );
+        $( '.swiper-button-next' ).addClass( 'swiper-button-no-image' );
+        $( '.index-button' ).show( 'slow' );
+      } else {
+        $( '.next-case-button' ).show( 'slow' );
+        $( '.swiper-button-next' ).removeClass( 'swiper-button-no-image' );
+        $( '.index-button' ).hide( 'slow' );
+      }
+    }
+  });
 
     $('.card section.header').click(function() {
       $(this).siblings().toggleClass('open');
