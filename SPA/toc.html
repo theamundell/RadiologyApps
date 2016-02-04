@@ -235,8 +235,13 @@
 			});
 
 			$( '.card .header' ).click( function() {
-				$('.card--expanded-section').hide("slow");
-				$( this ).parent().children('.card--expanded-section').slideToggle("slow");
+				if ($(this).parent().children('.card--expanded-section').css('display') == 'none') {
+					$('.card--expanded-section').hide("slow");
+					$( this ).parent().children('.card--expanded-section').slideToggle("slow");
+				}else {
+					$( this ).parent().children('.card--expanded-section').slideToggle("slow");
+				}
+
 			});
 
 			$('.card section.header').dblclick(function() {
