@@ -300,6 +300,7 @@ section.header h2{
 	box-sizing:border-box;
 	max-width:500px;
 	margin:0 auto 30px;
+	vertical-align: top;
 }
 .card-index section.header{
 	width:100%;
@@ -434,6 +435,19 @@ a.center-large-image img{
 	border-top:1px solid;
 	padding-top:20px;
 }
+.card-index .card .card--expanded-section{
+	padding:20px 0px;
+	border-top:1px solid
+}
+.card-index .card .card--expanded-section a{
+	color:#ff6060;
+	text-decoration:underline;
+	width:49%;
+	display:inline-block;
+	box-sizing:border-box;
+	vertical-align:middle;
+	margin:5px 0px;;
+}
 @media (min-width:1024px){
 	.card-index{
 		padding:20px;
@@ -486,6 +500,9 @@ a.center-large-image img{
 	}
 	section.header h2{
 		line-height:1.4
+	}
+	.card-index .card .card--expanded-section a{
+		width:100%;
 	}
 }
 @media (max-width:530px){
