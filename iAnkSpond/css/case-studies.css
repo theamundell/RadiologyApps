@@ -286,7 +286,9 @@ section.header h2{
 	border-bottom: none;
 	box-sizing:border-box;
 }
-
+section.header h2.align-left{
+	text-align:left;
+}
 .dark-back{
 	background:#000;
 }
