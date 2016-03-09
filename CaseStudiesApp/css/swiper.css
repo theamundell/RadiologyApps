@@ -119,14 +119,14 @@
 .swiper-button-next {
   position: absolute;
   top: 50%;
-  width: 27px;
-  height: 44px;
+  width: 20px;
+  height: 40px;
   margin-top: -22px;
   z-index: 10;
   cursor: pointer;
-  -moz-background-size: 27px 44px;
-  -webkit-background-size: 27px 44px;
-  background-size: 27px 44px;
+  -moz-background-size: 20px 40px;
+  -webkit-background-size: 20px 40px;
+  background-size: 20px 40px;
   background-position: center;
   background-repeat: no-repeat;
 }
