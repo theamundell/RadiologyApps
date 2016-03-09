@@ -48,6 +48,7 @@
       <span class="mdl-layout-title">Table of Contents</span>
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="index.html">Index</a>
+        <a class="mdl-navigation__link" href="introduction.html">introduction</a>
         <a class="mdl-navigation__link" href="section1.html">Spot Cases - Section 1</a>
         <a class="mdl-navigation__link" href="section2.html">Extended Cases - Section 2</a>
         <a class="mdl-navigation__link" href="section3.html">Short Cases - Section 3</a>
@@ -91,7 +92,7 @@
     </article>
   </div>
 
-  <script src="js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js"></script>
 
@@ -121,6 +122,7 @@
       keyboardControl: true,
       nextButton: '.next-case-button',
       prevButton: '.swiper-button-prev',
+      autoHeight: true,
       onSlideChangeStart: function(swiper) {
         if(swiper.isEnd) {
           $('.next-case-button').hide('slow');

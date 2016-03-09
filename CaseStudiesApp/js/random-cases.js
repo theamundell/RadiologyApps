@@ -15,11 +15,6 @@
 	randomCases[9]='cases/section1/1-10.html';
 	randomCases[10]='cases/section1/1-11.html';
 	randomCases[11]='cases/section1/1-12.html';
-	// randomCases[12]='cases/section1/1-13.html';  // Case 12 doesn't exist for some reason.
-	randomCases[13]='cases/section1/1-14.html';
-	randomCases[14]='cases/section1/1-15.html';
-	randomCases[15]='cases/section1/1-16.html';
-	randomCases[16]='cases/section1/1-17.html';
 
 	// Section 2
 	randomCases[17]='cases/section2/2-1.html';
@@ -38,11 +33,6 @@
 	randomCases[30]='cases/section2/2-14.html';
 	randomCases[31]='cases/section2/2-15.html';
 	randomCases[32]='cases/section2/2-16.html';
-	randomCases[33]='cases/section2/2-17.html';
-	randomCases[34]='cases/section2/2-18.html';
-	randomCases[35]='cases/section2/2-19.html';
-	randomCases[36]='cases/section2/2-20.html';
-	randomCases[37]='cases/section2/2-21.html';
 
 	// Section 3
 	randomCases[38]='cases/section3/3-1.html';
@@ -57,7 +47,6 @@
 	randomCases[47]='cases/section3/3-10.html';
 	randomCases[48]='cases/section3/3-11.html';
 	randomCases[49]='cases/section3/3-12.html';
-	randomCases[50]='cases/section3/3-13.html';
 
 	// Section 4
 	randomCases[51]='cases/section4/4-1.html';
@@ -72,9 +61,6 @@
 	randomCases[60]='cases/section4/4-10.html';
 	randomCases[61]='cases/section4/4-11.html';
 	randomCases[62]='cases/section4/4-12.html';
-	randomCases[63]='cases/section4/4-13.html';
-	randomCases[64]='cases/section4/4-14.html';
-	randomCases[65]='cases/section4/4-15.html';
 
 	while (randomCases.length > 0) {
 		var rand = Math.floor(Math.random()*randomCases.length);

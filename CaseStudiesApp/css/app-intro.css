@@ -82,6 +82,7 @@ body{
 	transform:translateY(40px);
 	width:100%;
 	opacity:0;
+	line-height:1.2;
 }
 /* The animation code */
 @keyframes fulltext {
@@ -105,7 +106,7 @@ body{
 .intro-animation .app-title{
 	display:block;
 	position:absolute;
-	top:146px;
+	top:175px;
 	width:100%;
 	opacity:0;
 	-ms-transform: translateY(50%);

@@ -84,7 +84,7 @@
       </div>
     </article>
   </div>
-  
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js"></script>
 
@@ -107,6 +107,7 @@
       lazyLoading: true,
       nextButton: '.next-case-button',
       prevButton: '.swiper-button-prev',
+      autoHeight: true,
       onSlideChangeStart: function(swiper) {
         if(swiper.isEnd) {
           $('.next-case-button').hide('slow');
