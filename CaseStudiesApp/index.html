@@ -384,7 +384,6 @@
         keyboardControl: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
-        autoHeight: true,
         onSlideChangeStart: function(swiper) {
           if ( swiper.isEnd ) {
             $( '.swiper-button-next' ).hide();
@@ -396,6 +395,8 @@
           }
         }
       });
+
+      $( '.swiper-slide' ).wrapInner( '<div class="slide-content-wrap"></div>' )
 
       $('.card section.header').click(function() {
         $(this).siblings().toggleClass('open');
@@ -438,6 +439,11 @@
       } else {
         $( '.intro-animation' ).addClass( 'start-animation' );
       };
+
+      $( '.diagnosis-button' ).on( 'click', function() {
+        var val = $( this ).val();
+        $( '#' + val ).toggle();
+      });
     });
   </script>
 </body>
