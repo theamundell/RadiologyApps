@@ -255,6 +255,7 @@ ol ol li{
   right: 0px;
   top: 50%;
   margin-top: -35px;
+  z-index: 10;
   display: none;
 }
 
