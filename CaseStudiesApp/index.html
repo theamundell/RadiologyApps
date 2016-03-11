@@ -356,14 +356,15 @@
 
         <div class="swiper-button-next" id="button-next">
           <div class="next-case-button"></div>
-          <div class="index-button">
-            <a href="index.html">
-              <p>Back to Index</p>
-              <i class="material-icons">home</i>
-            </a>
-          </div>
         </div>
 
+
+        <div class="index-button">
+          <a href="index.html">
+            <p>Back to Index</p>
+            <i class="material-icons">home</i>
+          </a>
+        </div>
       </div>
     </article>
 
@@ -381,18 +382,17 @@
         hashnav: true,
         paginationClickable: true,
         keyboardControl: true,
-        nextButton: '.next-case-button',
+        nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         autoHeight: true,
         onSlideChangeStart: function(swiper) {
           if ( swiper.isEnd ) {
-            $( '.next-case-button' ).hide( 'slow' );
-            $( '.swiper-button-next' ).addClass( 'swiper-button-no-image' );
-            $( '.index-button' ).show( 'slow' );
+            $( '.swiper-button-next' ).hide();
+            $( '.index-button' ).show();
           } else {
-            $( '.next-case-button' ).show( 'slow' );
-            $( '.swiper-button-next' ).removeClass( 'swiper-button-no-image' );
-            $( '.index-button' ).hide( 'slow' );
+            $( '.next-case-button' ).show();
+            $( '.swiper-button-next' ).show();
+            $( '.index-button' ).hide();
           }
         }
       });
