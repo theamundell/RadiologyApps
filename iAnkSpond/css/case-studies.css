@@ -503,6 +503,29 @@ li.has-image{
 	max-width:800px;
 	margin:0 auto;
 }
+.book-cover{
+	width:20%;
+	float:left;
+	margin-right:;
+}
+.book-cover img{
+	width:100%;
+}
+.book-cover + ul{
+	float:right;
+	width:80%;
+	box-sizing:border-box;
+	margin-top:0;
+}
+.skip-intro .checkbox{
+	border:1px solid;
+	padding:20px;
+	display:inline-block;
+}
+.skip-intro input[type='checkbox']{
+	border:none;
+	margin-right:5px;
+}
 @media (min-width:1024px){
 	.card-index .card{
 		width:40%;

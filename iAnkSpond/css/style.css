@@ -495,15 +495,6 @@ section.header h2{
 	z-index: 1;
 }
 
-.book-review p {
-	text-indent: 50px;
-}
-
-.book-review * {
-	padding-left: 20%;
-	padding-right: 20%;
-}
-
 .book-review {
 	padding-top: 4%;
 	padding-bottom: 4%;
