@@ -448,6 +448,31 @@ a.center-large-image img{
 	vertical-align:middle;
 	margin:5px 0px;;
 }
+
+.book-cover{
+	width:20%;
+	float:left;
+	margin-right:;
+}
+.book-cover img{
+	width:100%;
+}
+.book-cover + ul{
+	float:right;
+	width:80%;
+	box-sizing:border-box;
+	margin-top:0;
+}
+.skip-intro .checkbox{
+	border:1px solid;
+	padding:20px;
+	display:inline-block;
+}
+.skip-intro input[type='checkbox']{
+	border:none;
+	margin-right:5px;
+}
+
 @media (min-width:1024px){
 	.card-index{
 		padding:20px;
@@ -522,6 +547,9 @@ a.center-large-image img{
 			margin-bottom:0;
 			display:block;
 			width:100%;
+		}
+		.padding{
+			padding:0px;
 		}
 	}
 	@media (max-width:430px){
