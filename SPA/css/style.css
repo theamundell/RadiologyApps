@@ -136,7 +136,7 @@ article.diagnosis {
 	-moz-transition-duration: 0.2s;
 	transition-duration: 0.2s;
 	line-height: 4;
-
+	min-height: 47px;
 }
 
 .diagnosis-button:hover, .diagnosis-button:active {
