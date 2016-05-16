@@ -70,8 +70,9 @@
       <nav class="mdl-navigation">
         <a class="mdl-navigation__link" href="toc.html">Index</a>
         <a class="mdl-navigation__link" href="introduction.html">introduction</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="1" href="introduction.html#overview">Overview</a>
-        <a class="mdl-navigation__link sub-nav-item" data-index="2" href="introduction.html#guide">Guide</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="2" href="introduction.html#overview">Overview</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="3" href="introduction.html#guide">Guide</a>
+        <a class="mdl-navigation__link sub-nav-item" data-index="4" href="introduction.html#references">References</a>
         <a class="mdl-navigation__link" href="section1.html">Section 1</a>
         <a class="mdl-navigation__link" href="section2.html">Section 2</a>
         <a class="mdl-navigation__link" href="section3.html">Section 3</a>
@@ -104,7 +105,7 @@
           <div class="swiper-slide" data-hash="overview">
             <div class="padding">
               <section class="header">
-                <h2>App Overview</h2>
+                <h2><span class="orange">App Overview</span></h2>
               </section>
               <section>
 
@@ -171,7 +172,11 @@
 
                 </ul>
               </section>
+            </div>
+          </div>
 
+          <div class="swiper-slide" data-hash="reviews">
+            <div class="padding">
               <section class="header">
                 <h2>Book Reviews</h2>
               </section>
@@ -379,6 +384,11 @@
         $( '.index-button' ).hide();
       }
     }
+  });
+
+  $('.sub-nav-item').on('click', function(e) {
+    swiper.slideTo($(this).data('index') - 1, 1);
+    $('.mdl-layout__drawer').removeClass('is-visible');
   });
 
     $('.card section.header').click(function() {
