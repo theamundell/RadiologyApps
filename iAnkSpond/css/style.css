@@ -324,8 +324,13 @@ ol ol li{
 }
 
 .index-button {
-	/*margin-right: 50%;*/
-	text-align: center;
+  margin-right: 3%;
+  text-align: center;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  margin-top: -35px;
+  display: none;
 }
 
 .index-button a {
