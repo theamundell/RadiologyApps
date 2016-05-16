@@ -241,16 +241,6 @@ div.swiper-slide a.fancybox {
 .mdl-card__title-text {
 	margin: none;
 }
-.mdl-layout__header.mdl-layout__header--transparent.is-casting-shadow,
-.mdl-layout__drawer-button{
-	z-index:8;
-}
-.mdl-layout__obfuscator{
-	z-index: 10;
-}
-.mdl-layout__drawer.is-visible{
-	z-index: 11;
-}
 
 table {
 	/*border: none;*/
@@ -272,6 +262,7 @@ section{
 	max-width:1024px;
 	margin:0 auto;
 	padding:0 20px;
+	width:94%;
 }
 section.header{
 	/*background:#f4f4f4;*/
