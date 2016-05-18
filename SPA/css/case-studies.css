@@ -512,6 +512,11 @@ a.center-large-image img{
 		width:47%;
 	}
 }
+@media(max-width:750px){
+	.image-left{
+		width:100%;
+	}
+}
 @media(max-width:630px){
 	.two-images .mdl-card{
 		width:100%;
@@ -549,7 +554,7 @@ a.center-large-image img{
 			width:100%;
 		}
 		.padding{
-			padding:0px;
+			padding:0px 40px;
 		}
 	}
 	@media (max-width:430px){
