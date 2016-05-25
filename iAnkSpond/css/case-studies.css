@@ -70,6 +70,10 @@ summary:focus {
 	margin-left:40px;
 }
 
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link.mdl-navigation__link.sub-nav-item.sub-sub-nav{
+ 	padding-left:40px;
+}
+
 .mdl-layout-title .logo{
 	border:3px solid;
 	display:inline-block;

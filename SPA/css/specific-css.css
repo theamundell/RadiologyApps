@@ -143,7 +143,6 @@ a.no-color{
 
 .padding{
 	padding:10px 80px;
-	display:flex;
 	flex-direction:column;
 	width:100%;
 }
