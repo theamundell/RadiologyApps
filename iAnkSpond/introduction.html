@@ -302,6 +302,21 @@
 
 
 
+
+            <div class="swiper-slide" data-hash="skip-intro">
+	            <div class="padding padding-double">
+	              <section class="skip-intro" style="text-align:center;">
+	                <div class="checkbox" style="text-align:center;">
+	                  <label>
+	                    <input type="checkbox" id="skip-intro-checkbox"> Don't show introduction on app opening again.
+	                  </label>
+	                </div>
+	              </section>
+	            </div>
+	          </div>
+
+
+
 					</div>
 
 					<div class="swiper-button-prev"></div>
@@ -365,13 +380,26 @@
 	        location.href = link;
 	      })
 
+        // Toggle intro checkbox
+        // ----------------------------------------------------------
 	      $( '#skip-intro-checkbox' ).change( function( event ) {
 	        if ( $( this ).is( ':checked' ) ) {
-	          localStorage.setItem( 'skip-casestudy-intro', 'true' )
+	          localStorage.setItem( 'skip-iank-intro', 'true' )
 	        } else {
-	          localStorage.setItem( 'skip-casestudy-intro', 'false' );
+	          localStorage.setItem( 'skip-iank-intro', 'false' );
 	        }
 	      } );
+
+        // Set Checkbox for intro to appropriate setting
+        // ----------------------------------------------------------
+        var skipIntro = localStorage.getItem( 'skip-iank-intro' );
+	      if ( JSON.parse( skipIntro ) === true ) {
+          $( '#skip-intro-checkbox' ).prop( 'checked', true );
+        } else {
+          $( '#skip-intro-checkbox' ).prop( 'checked', false );
+        }
+
+
 
 	      $('.intro-animation').click(function() {
 	        $('.intro-animation').addClass('hide');
@@ -387,16 +415,6 @@
 	        $('.guide').addClass('hide-again');
 	        $('.guide-wrapper').removeClass('show');
 	      });
-
-	      // start this off
-	      var skipIntro = localStorage.getItem( 'skip-casestudy-intro' );
-	      if ( JSON.parse( skipIntro ) === true ) {
-	        $( ".intro-animation" ).remove();
-	        $( ".mdl-layout__content" ).empty();
-	        window.location.replace( "toc.html" );
-	      } else {
-	        $( '.intro-animation' ).addClass( 'start-animation' );
-	      };
 
 	      $( '.diagnosis-button' ).on( 'click', function() {
 	        var val = $( this ).val();

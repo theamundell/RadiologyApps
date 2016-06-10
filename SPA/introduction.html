@@ -321,6 +321,20 @@
               </div>
 
 
+
+              <div class="swiper-slide">
+                <div class="padding">
+									<section class="skip-intro">
+										<div class="checkbox" style="text-align:center;">
+			                <label>
+			                  <input type="checkbox" id="skip-intro-checkbox"> Don't show introduction again
+			                </label>
+			              </div>
+									</section>
+                </div>
+              </div>
+
+
             </div>
             <!-- Slide Wrapper end-->
 
@@ -402,6 +416,26 @@
         }
       });
     });
+
+
+    // Toggle intro checkbox
+    // ----------------------------------------------------------
+    $( '#skip-intro-checkbox' ).change( function( event ) {
+      if ( $( this ).is( ':checked' ) ) {
+        localStorage.setItem( 'skip-spa-intro', 'true' )
+      } else {
+        localStorage.setItem( 'skip-spa-intro', 'false' );
+      }
+    } );
+
+    // Set Checkbox for intro to appropriate setting
+    // ----------------------------------------------------------
+    var skipIntro = localStorage.getItem( 'skip-spa-intro' );
+    if ( JSON.parse( skipIntro ) === true ) {
+      $( '#skip-intro-checkbox' ).prop( 'checked', true );
+    } else {
+      $( '#skip-intro-checkbox' ).prop( 'checked', false );
+    }
     </script>
   </body>
 </html>

@@ -330,6 +330,24 @@
             </div>
           </div>
 
+
+
+
+          <div class="swiper-slide" data-hash="skip-intro">
+            <div class="padding padding-double">
+              <section class="skip-intro" style="text-align:center;">
+                <div class="checkbox" style="text-align:center;">
+                  <label>
+                    <input type="checkbox" id="skip-intro-checkbox"> Don't show introduction on app opening again.
+                  </label>
+                </div>
+              </section>
+            </div>
+          </div>
+
+
+
+
         </div>
 
         <div class="swiper-button-prev">
@@ -359,7 +377,7 @@
     hashnav: true,
     paginationClickable: true,
     keyboardControl: true,
-    nextButton: '.next-case-button',
+    nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
     autoHeight: true,
     onSlideChangeStart: function(swiper) {
@@ -404,6 +422,26 @@
       $('.guide').addClass('hide-again');
       $('.guide-wrapper').removeClass('show');
     });
+
+
+    // Toggle intro checkbox
+    // ----------------------------------------------------------
+    $( '#skip-intro-checkbox' ).change( function( event ) {
+      if ( $( this ).is( ':checked' ) ) {
+        localStorage.setItem( 'skip-casestudies-intro', 'true' )
+      } else {
+        localStorage.setItem( 'skip-casestudies-intro', 'false' );
+      }
+    } );
+
+    // Set Checkbox for intro to appropriate setting
+    // ----------------------------------------------------------
+    var skipIntro = localStorage.getItem( 'skip-casestudies-intro' );
+    if ( JSON.parse( skipIntro ) === true ) {
+      $( '#skip-intro-checkbox' ).prop( 'checked', true );
+    } else {
+      $( '#skip-intro-checkbox' ).prop( 'checked', false );
+    }
   </script>
 </body>
 

@@ -396,9 +396,9 @@
 
 	      $( '#skip-intro-checkbox' ).change( function( event ) {
 	        if ( $( this ).is( ':checked' ) ) {
-	          localStorage.setItem( 'skip-casestudy-intro', 'true' )
+	          localStorage.setItem( 'skip-iank-intro', 'true' )
 	        } else {
-	          localStorage.setItem( 'skip-casestudy-intro', 'false' );
+	          localStorage.setItem( 'skip-iank-intro', 'false' );
 	        }
 	      } );
 
@@ -418,7 +418,7 @@
 	      });
 
 	      // start this off
-	      var skipIntro = localStorage.getItem( 'skip-casestudy-intro' );
+	      var skipIntro = localStorage.getItem( 'skip-iank-intro' );
 	      if ( JSON.parse( skipIntro ) === true ) {
 	        $( ".intro-animation" ).remove();
 	        $( ".mdl-layout__content" ).empty();
