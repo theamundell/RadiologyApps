@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/app-intro.css">
   <link rel="stylesheet" href="css/guide.css">
+  <link rel="stylesheet" href="css/disclaimer.css">
 </head>
 
 <body>
@@ -61,6 +62,18 @@
         </ul>
 
       </div>
+    </div>
+  </div>
+
+  <div class="disclaimer-wrapper">
+    <div class="disclaimer">
+        <div class="close"><i class="zmdi zmdi-close-circle-o"></i></div>
+        <h4>Disclaimer</h4>
+        <hr>
+        <p>The information given in this app is for educational purposes only.
+We can not accept responsilbility for the acts of any physicians or any other individual who receive information on any medical procedures acquired through this app.  </p>
+        <p>We accept no legal responsibility for any injury or damage to persons or property from any of the suggestions or material discussed herein. </p>
+        <p>The images and illustrations on this site may be reproduced for educational purposes with due credit being given to the original author. </p>
     </div>
   </div>
 
@@ -425,9 +438,13 @@
         $('.guide-wrapper').addClass('show');
       });
 
-      $('.close').click(function() {
+      $('.guide .close').click(function() {
         $('.guide').addClass('hide-again');
         $('.guide-wrapper').removeClass('show');
+      });
+
+      $('.disclaimer .close').click(function() {
+        $('.disclaimer-wrapper').addClass('hidden');
       });
 
       // start this off
